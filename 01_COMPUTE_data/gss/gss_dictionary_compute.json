@@ -1,0 +1,4426 @@
+{
+  "ID": {
+    "type": "numeric",
+    "raw_recode": "system",
+    "label_original": "",
+    "selection_alias": "ID"
+  },
+  "year": {
+    "type": "numeric",
+    "raw_recode": "system",
+    "label_original": "GSS year for this respondent",
+    "order": ["1972", "1973", "1974", "1975", "1976", "1977", "1978", "1980", "1982", "1983", "1984", "1985", "1986", "1987", "1988", "1989", "1990", "1991", "1993", "1994", "1996", "1998", "2000", "2002", "2004", "2006", "2008", "2010", "2012", "2014", "2016", "2018", "2021", "2022", "2024"],
+    "year_min": 1972,
+    "year_max": 2024,
+    "selection_alias": "Gss Year for this Respondent"
+  },
+  "vstrat": {
+    "type": "numeric",
+    "raw_recode": "system",
+    "label_original": "Variance stratum",
+    "selection_alias": "Variance Stratum"
+  },
+  "vpsu": {
+    "type": "numeric",
+    "raw_recode": "system",
+    "label_original": "Variance primary sampling unit",
+    "selection_alias": "Variance Primary Sampling Unit"
+  },
+  "wtssps": {
+    "type": "numeric",
+    "raw_recode": "system",
+    "label_original": "Person post-stratification weight",
+    "selection_alias": "Person Post-Stratification Weight"
+  },
+  "wtssnrps": {
+    "type": "numeric",
+    "raw_recode": "system",
+    "label_original": "Person post-stratification weight, nonrespondents adjusted",
+    "selection_alias": "Person Post-Stratification Weight, Nonrespondents Adjusted"
+  },
+  "weight_use": {
+    "type": "numeric",
+    "raw_recode": "system",
+    "label_original": "",
+    "selection_alias": "Weight_use"
+  },
+  "ChurchAttendance": {
+    "type": "categorical",
+    "raw_recode": "recoded",
+    "outcome_demo": "demo",
+    "label_original": "",
+    "values": {
+      "1": "RARELY",
+      "2": "SOMETIMES",
+      "3": "WEEKLY"
+    },
+    "order": ["Rarely", "Sometimes", "Weekly"],
+    "title": "Church Attendance",
+    "selection_alias": "Church Attendance",
+    "compute_alias": "Church Attendance",
+    "recoded_levels": {
+      "Rarely": ["ABOUT ONCE OR TWICE A YEAR", "NEVER", "LESS THAN ONCE A YEAR"],
+      "Sometimes": ["ABOUT ONCE A MONTH", "SEVERAL TIMES A YEAR", "2-3 TIMES A MONTH"],
+      "Weekly": ["EVERY WEEK", "SEVERAL TIMES A WEEK", "NEARLY EVERY WEEK"]
+    },
+    "parent": "attend",
+    "value_counts": {
+      "Rarely": 30850,
+      "Sometimes": 20410,
+      "Weekly": 23706
+    },
+    "value_percents": {
+      "Rarely": 41.2,
+      "Sometimes": 27.2,
+      "Weekly": 31.6
+    }
+  },
+  "Religion": {
+    "type": "categorical",
+    "raw_recode": "recoded",
+    "outcome_demo": "demo",
+    "label_original": "",
+    "values": {
+      "1": "PROTESTANT",
+      "2": "CATHOLIC",
+      "3": "OTHER"
+    },
+    "order": ["Protestant", "Catholic", "Other"],
+    "title": "Religion",
+    "selection_alias": "Religion",
+    "compute_alias": "Religion",
+    "recoded_levels": {
+      "Protestant": "PROTESTANT",
+      "Catholic": "CATHOLIC",
+      "Other": ["JEWISH", "OTHER", "NONE", "INTER-NONDENOMINATIONAL", "CHRISTIAN", "MUSLIM/ISLAM", "BUDDHISM", "ORTHODOX-CHRISTIAN", "NATIVE AMERICAN", "HINDUISM", "OTHER EASTERN RELIGIONS"]
+    },
+    "parent": "relig",
+    "value_counts": {
+      "Protestant": 40124,
+      "Catholic": 17242,
+      "Other": 14587
+    },
+    "value_percents": {
+      "Protestant": 55.8,
+      "Catholic": 24,
+      "Other": 20.3
+    }
+  },
+  "ReligiousStrength": {
+    "type": "categorical",
+    "raw_recode": "recoded",
+    "outcome_demo": "demo",
+    "label_original": "",
+    "values": {
+      "1": "NOT STRONG",
+      "2": "SOMEWHAT STRONG",
+      "3": "STRONG"
+    },
+    "order": ["Not Strong", "Somewhat Strong", "Strong"],
+    "title": "Religious Belief",
+    "selection_alias": "Religious Belief",
+    "compute_alias": "Religious Belief",
+    "recoded_levels": {
+      "Not Strong": ["NOT VERY STRONG", "NO RELIGION"],
+      "Somewhat Strong": "SOMEWHAT STRONG (VOL.)",
+      "Strong": "STRONG"
+    },
+    "parent": "reliten",
+    "value_counts": {
+      "Not Strong": 33070,
+      "Somewhat Strong": 6080,
+      "Strong": 23782
+    },
+    "value_percents": {
+      "Not Strong": 52.5,
+      "Somewhat Strong": 9.7,
+      "Strong": 37.8
+    }
+  },
+  "PolParty": {
+    "type": "categorical",
+    "raw_recode": "recoded",
+    "outcome_demo": "demo",
+    "label_original": "",
+    "values": {
+      "1": "DEMOCRAT",
+      "2": "OTHER",
+      "3": "REPUBLICAN"
+    },
+    "order": ["Democrat", "Other", "Republican"],
+    "title": "Political Party",
+    "selection_alias": "Political Party",
+    "compute_alias": "Political Party",
+    "recoded_levels": {
+      "Democrat": ["INDEPENDENT, CLOSE TO DEMOCRAT", "NOT VERY STRONG DEMOCRAT", "STRONG DEMOCRAT"],
+      "Other": ["INDEPENDENT (NEITHER, NO RESPONSE)", "OTHER PARTY"],
+      "Republican": ["NOT VERY STRONG REPUBLICAN", "INDEPENDENT, CLOSE TO REPUBLICAN", "STRONG REPUBLICAN"]
+    },
+    "parent": "partyid",
+    "value_counts": {
+      "Democrat": 35988,
+      "Other": 13744,
+      "Republican": 25441
+    },
+    "value_percents": {
+      "Democrat": 47.9,
+      "Other": 18.3,
+      "Republican": 33.8
+    }
+  },
+  "Ideology": {
+    "type": "categorical",
+    "raw_recode": "recoded",
+    "outcome_demo": "demo",
+    "label_original": "",
+    "values": {
+      "1": "LIBERAL",
+      "2": "MODERATE",
+      "3": "CONSERVATIVE"
+    },
+    "order": ["Liberal", "Moderate", "Conservative"],
+    "title": "Ideology",
+    "selection_alias": "Ideology",
+    "compute_alias": "Ideology",
+    "recoded_levels": {
+      "Liberal": ["LIBERAL", "SLIGHTLY LIBERAL", "EXTREMELY LIBERAL"],
+      "Moderate": "MODERATE, MIDDLE OF THE ROAD",
+      "Conservative": ["SLIGHTLY CONSERVATIVE", "CONSERVATIVE", "EXTREMELY CONSERVATIVE"]
+    },
+    "parent": "polviews",
+    "value_counts": {
+      "Liberal": 18533,
+      "Moderate": 25140,
+      "Conservative": 22205
+    },
+    "value_percents": {
+      "Liberal": 28.1,
+      "Moderate": 38.2,
+      "Conservative": 33.7
+    }
+  },
+  "Income": {
+    "type": "categorical",
+    "raw_recode": "recoded",
+    "outcome_demo": "demo",
+    "label_original": "",
+    "values": {
+      "1": "BOTTOM 20%",
+      "2": "21-40%",
+      "3": "41-60%",
+      "4": "61-80%",
+      "5": "TOP 20%"
+    },
+    "order": ["Bottom 20%", "21-40%", "41-60%", "61-80%", "Top 20%"],
+    "title": "Income",
+    "selection_alias": "Income",
+    "compute_alias": "Income",
+    "recoded_levels": {
+      "Bottom 20%": {},
+      "21-40%": {},
+      "41-60%": {},
+      "61-80%": {},
+      "Top 20%": {}
+    },
+    "parent": "realinc",
+    "value_counts": {
+      "Bottom 20%": 12997,
+      "21-40%": 12991,
+      "41-60%": 12982,
+      "61-80%": 12975,
+      "Top 20%": 12967
+    },
+    "value_percents": {
+      "Bottom 20%": 20,
+      "21-40%": 20,
+      "41-60%": 20,
+      "61-80%": 20,
+      "Top 20%": 20
+    }
+  },
+  "Political_Era": {
+    "type": "categorical",
+    "raw_recode": "recoded",
+    "outcome_demo": "demo",
+    "label_original": "",
+    "values": {
+      "1": "TRUMAN",
+      "2": "EISENHOWER",
+      "3": "KENNEDY",
+      "4": "JOHNSON",
+      "5": "NIXON",
+      "6": "FORD",
+      "7": "CARTER",
+      "8": "REAGAN",
+      "9": "BUSH SR.",
+      "10": "CLINTON",
+      "11": "BUSH JR.",
+      "12": "OBAMA",
+      "13": "TRUMP",
+      "14": "BIDEN"
+    },
+    "order": ["Truman", "Eisenhower", "Kennedy", "Johnson", "Nixon", "Ford", "Carter", "Reagan", "Bush Sr.", "Clinton", "Bush Jr.", "Obama", "Trump", "Biden"],
+    "title": "Political Era",
+    "selection_alias": "Political Era",
+    "compute_alias": "Political Era",
+    "recoded_levels": {
+      "Truman": [],
+      "Eisenhower": [],
+      "Kennedy": [],
+      "Johnson": [],
+      "Nixon": ["1972", "1973", "1974"],
+      "Ford": ["1975", "1976"],
+      "Carter": ["1977", "1978", "1980"],
+      "Reagan": ["1982", "1983", "1984", "1985", "1986", "1987", "1988"],
+      "Bush Sr.": ["1989", "1990", "1991"],
+      "Clinton": ["1993", "1994", "1996", "1998", "2000"],
+      "Bush Jr.": ["2002", "2004", "2006", "2008"],
+      "Obama": ["2010", "2012", "2014", "2016"],
+      "Trump": "2018",
+      "Biden": ["2021", "2022", "2024"]
+    },
+    "parent": "year",
+    "value_counts": {
+      "Truman": 0,
+      "Eisenhower": 0,
+      "Kennedy": 0,
+      "Johnson": 0,
+      "Nixon": 4601,
+      "Ford": 2989,
+      "Carter": 4530,
+      "Reagan": 11236,
+      "Bush Sr.": 4426,
+      "Clinton": 13151,
+      "Bush Jr.": 12110,
+      "Obama": 9423,
+      "Trump": 2348,
+      "Biden": 10885
+    },
+    "value_percents": {
+      "Truman": 0,
+      "Eisenhower": 0,
+      "Kennedy": 0,
+      "Johnson": 0,
+      "Nixon": 6.1,
+      "Ford": 3.9,
+      "Carter": 6,
+      "Reagan": 14.8,
+      "Bush Sr.": 5.8,
+      "Clinton": 17.4,
+      "Bush Jr.": 16,
+      "Obama": 12.4,
+      "Trump": 3.1,
+      "Biden": 14.4
+    }
+  },
+  "Work_Status": {
+    "type": "categorical",
+    "raw_recode": "recoded",
+    "outcome_demo": "demo",
+    "label_original": "",
+    "values": {
+      "1": "EMPLOYED",
+      "2": "UNEMPLOYED",
+      "3": "RETIRED",
+      "4": "OTHER"
+    },
+    "order": ["Employed", "Unemployed", "Retired", "Other"],
+    "title": "Employment",
+    "selection_alias": "Employment",
+    "compute_alias": "Employment",
+    "recoded_levels": {
+      "Employed": ["WORKING FULL TIME", "WORKING PART TIME", "WITH A JOB, BUT NOT AT WORK BECAUSE OF TEMPORARY ILLNESS, VACATION, STRIKE"],
+      "Unemployed": "UNEMPLOYED, LAID OFF, LOOKING FOR WORK",
+      "Retired": "RETIRED",
+      "Other": ["KEEPING HOUSE", "IN SCHOOL", "OTHER"]
+    },
+    "parent": "wrkstat",
+    "value_counts": {
+      "Employed": 46095,
+      "Unemployed": 2796,
+      "Retired": 11683,
+      "Other": 15078
+    },
+    "value_percents": {
+      "Employed": 60.9,
+      "Unemployed": 3.7,
+      "Retired": 15.4,
+      "Other": 19.9
+    }
+  },
+  "Education": {
+    "type": "categorical",
+    "raw_recode": "recoded",
+    "outcome_demo": "demo",
+    "label_original": "",
+    "values": {
+      "1": "L/T HIGH SCHOOL",
+      "2": "HIGH SCHOOL",
+      "3": "COLLEGE"
+    },
+    "order": ["L/T High School", "High School", "College"],
+    "title": "Education",
+    "selection_alias": "Education",
+    "compute_alias": "Education",
+    "recoded_levels": {
+      "L/T High School": "LESS THAN HIGH SCHOOL",
+      "High School": ["HIGH SCHOOL", "ASSOCIATE/JUNIOR COLLEGE"],
+      "College": ["BACHELOR'S", "GRADUATE"]
+    },
+    "parent": "degree",
+    "value_counts": {
+      "L/T High School": 14498,
+      "High School": 42606,
+      "College": 18396
+    },
+    "value_percents": {
+      "L/T High School": 19.2,
+      "High School": 56.4,
+      "College": 24.4
+    }
+  },
+  "College": {
+    "type": "categorical",
+    "raw_recode": "recoded",
+    "outcome_demo": "demo",
+    "label_original": "",
+    "values": {
+      "1": "NO COLLEGE",
+      "2": "COLLEGE+"
+    },
+    "order": ["No College", "College+"],
+    "title": "College Education",
+    "selection_alias": "College Education",
+    "compute_alias": "College Education",
+    "recoded_levels": {
+      "No College": ["LESS THAN HIGH SCHOOL", "HIGH SCHOOL", "ASSOCIATE/JUNIOR COLLEGE"],
+      "College+": ["BACHELOR'S", "GRADUATE"]
+    },
+    "parent": "degree",
+    "value_counts": {
+      "No College": 57104,
+      "College+": 18396
+    },
+    "value_percents": {
+      "No College": 75.6,
+      "College+": 24.4
+    }
+  },
+  "Kids": {
+    "type": "categorical",
+    "raw_recode": "recoded",
+    "outcome_demo": "demo",
+    "label_original": "",
+    "values": {
+      "1": "0",
+      "2": "1",
+      "3": "2",
+      "4": "3",
+      "5": "4+"
+    },
+    "order": ["0", "1", "2", "3", "4+"],
+    "title": "Children",
+    "selection_alias": "Children",
+    "compute_alias": "Children",
+    "recoded_levels": {
+      "0": {},
+      "1": {},
+      "2": {},
+      "3": {},
+      "4+": [null, "8 OR MORE"]
+    },
+    "parent": "childs",
+    "value_counts": {
+      "0": 20956,
+      "1": 11979,
+      "2": 18989,
+      "3": 11671,
+      "4+": 11812
+    },
+    "value_percents": {
+      "0": 27.8,
+      "1": 15.9,
+      "2": 25.2,
+      "3": 15.5,
+      "4+": 15.7
+    }
+  },
+  "Marital_Status": {
+    "type": "categorical",
+    "raw_recode": "recoded",
+    "outcome_demo": "demo",
+    "label_original": "",
+    "values": {
+      "1": "NEVER MARRIED",
+      "2": "MARRIED",
+      "3": "DIVORCE/SEP",
+      "4": "WIDOWED"
+    },
+    "order": ["Never Married", "Married", "Divorce/Sep", "Widowed"],
+    "title": "Marital Status",
+    "selection_alias": "Marital Status",
+    "compute_alias": "Marital Status",
+    "recoded_levels": {
+      "Never Married": "NEVER MARRIED",
+      "Married": "MARRIED",
+      "Divorce/Sep": ["DIVORCED", "SEPARATED"],
+      "Widowed": "WIDOWED"
+    },
+    "parent": "marital",
+    "value_counts": {
+      "Never Married": 16963,
+      "Married": 38959,
+      "Divorce/Sep": 12706,
+      "Widowed": 7005
+    },
+    "value_percents": {
+      "Never Married": 22.4,
+      "Married": 51.5,
+      "Divorce/Sep": 16.8,
+      "Widowed": 9.3
+    }
+  },
+  "Race": {
+    "type": "categorical",
+    "raw_recode": "recoded",
+    "outcome_demo": "demo",
+    "label_original": "",
+    "values": {
+      "1": "WHITE",
+      "2": "BLACK",
+      "3": "OTHER"
+    },
+    "order": ["White", "Black", "Other"],
+    "title": "Race",
+    "selection_alias": "Race",
+    "compute_alias": "Race",
+    "recoded_levels": {
+      "White": "WHITE",
+      "Black": "BLACK",
+      "Other": "OTHER"
+    },
+    "parent": "race",
+    "value_counts": {
+      "White": 59937,
+      "Black": 10787,
+      "Other": 4803
+    },
+    "value_percents": {
+      "White": 79.4,
+      "Black": 14.3,
+      "Other": 6.4
+    }
+  },
+  "Gender": {
+    "type": "categorical",
+    "raw_recode": "recoded",
+    "outcome_demo": "demo",
+    "label_original": "",
+    "values": {
+      "1": "FEMALE",
+      "2": "MALE"
+    },
+    "order": ["Female", "Male"],
+    "title": "Gender",
+    "selection_alias": "Gender",
+    "compute_alias": "Gender",
+    "recoded_levels": {
+      "Female": "FEMALE",
+      "Male": "MALE"
+    },
+    "parent": "sex",
+    "value_counts": {
+      "Female": 42124,
+      "Male": 33444
+    },
+    "value_percents": {
+      "Female": 55.7,
+      "Male": 44.3
+    }
+  },
+  "Census_Region": {
+    "type": "categorical",
+    "raw_recode": "recoded",
+    "outcome_demo": "demo",
+    "label_original": "",
+    "values": {
+      "1": "EAST",
+      "2": "MIDWEST",
+      "3": "SOUTH",
+      "4": "WEST"
+    },
+    "order": ["East", "MidWest", "South", "West"],
+    "title": "Census Region",
+    "selection_alias": "Census Region",
+    "compute_alias": "Census Region",
+    "recoded_levels": {
+      "East": ["NEW ENGLAND", "MIDDLE ATLANTIC"],
+      "MidWest": ["EAST NORTH CENTRAL", "WEST NORTH CENTRAL"],
+      "South": ["WEST SOUTH CENTRAL", "EAST SOUTH CENTRAL", "SOUTH ATLANTIC"],
+      "West": ["PACIFIC", "MOUNTAIN"]
+    },
+    "parent": "region",
+    "value_counts": {
+      "East": 14072,
+      "MidWest": 19174,
+      "South": 27257,
+      "West": 15196
+    },
+    "value_percents": {
+      "East": 18.6,
+      "MidWest": 25.3,
+      "South": 36,
+      "West": 20.1
+    }
+  },
+  "Age": {
+    "type": "categorical",
+    "raw_recode": "recoded",
+    "outcome_demo": "demo",
+    "label_original": "",
+    "values": {
+      "1": "18-34",
+      "2": "35-49",
+      "3": "50-64",
+      "4": "65+"
+    },
+    "order": ["18-34", "35-49", "50-64", "65+"],
+    "title": "Age",
+    "selection_alias": "Age",
+    "compute_alias": "Age",
+    "recoded_levels": {
+      "18-34": {},
+      "35-49": {},
+      "50-64": {},
+      "65+": [null, "89 OR OLDER"]
+    },
+    "parent": "age",
+    "value_counts": {
+      "18-34": 24337,
+      "35-49": 20600,
+      "50-64": 16556,
+      "65+": 13336
+    },
+    "value_percents": {
+      "18-34": 32.5,
+      "35-49": 27.5,
+      "50-64": 22.1,
+      "65+": 17.8
+    }
+  },
+  "Subj_class": {
+    "type": "categorical",
+    "raw_recode": "recoded",
+    "outcome_demo": "demo",
+    "label_original": "",
+    "values": {
+      "1": "WORKING CLASS",
+      "2": "MIDDLE CLASS",
+      "3": "UPPER CLASS"
+    },
+    "order": ["Working Class", "Middle Class", "Upper Class"],
+    "title": "Social Class",
+    "selection_alias": "Social Class",
+    "compute_alias": "Social Class",
+    "recoded_levels": {
+      "Working Class": ["WORKING CLASS", "LOWER CLASS"],
+      "Middle Class": "MIDDLE CLASS",
+      "Upper Class": "UPPER CLASS"
+    },
+    "parent": "class",
+    "value_counts": {
+      "Working Class": 37218,
+      "Middle Class": 32465,
+      "Upper Class": 2442
+    },
+    "value_percents": {
+      "Working Class": 51.6,
+      "Middle Class": 45,
+      "Upper Class": 3.4
+    }
+  },
+  "abany_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Legalizing Abortion for Any Reason",
+    "selection_alias": "Support Access to a Legal Abortion if the Woman Wants it for Any Reason",
+    "compute_alias": "Support Access to a Legal Abortion if the Woman Wants it for Any Reason",
+    "recoded_levels": {
+      "0": "NO",
+      "1": "YES"
+    },
+    "parent": "abany",
+    "value_counts": {
+      "0": 23465,
+      "1": 17933
+    },
+    "value_percents": {
+      "0": 56.7,
+      "1": 43.3
+    }
+  },
+  "abdefect_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Legalizing Abortion for Serious Birth Defect",
+    "selection_alias": "Support Access to a Legal Abortion if There is a Strong Chance of a Serious Birth Defect",
+    "compute_alias": "Support Access to a Legal Abortion if There is a Strong Chance of a Serious Birth Defect",
+    "recoded_levels": {
+      "0": "NO",
+      "1": "YES"
+    },
+    "parent": "abdefect",
+    "value_counts": {
+      "0": 9806,
+      "1": 38428
+    },
+    "value_percents": {
+      "0": 20.3,
+      "1": 79.7
+    }
+  },
+  "abhlth_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Legalizing Abortion if Woman's Health Endangered",
+    "selection_alias": "Support Access to a Legal Abortion if the Woman's Health is Seriously Endangered",
+    "compute_alias": "Support Access to a Legal Abortion if the Woman's Health is Seriously Endangered",
+    "recoded_levels": {
+      "0": "NO",
+      "1": "YES"
+    },
+    "parent": "abhlth",
+    "value_counts": {
+      "0": 4950,
+      "1": 43538
+    },
+    "value_percents": {
+      "0": 10.2,
+      "1": 89.8
+    }
+  },
+  "abnomore_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Legalizing Abortion if Woman Wants No More Children",
+    "selection_alias": "Support Access to a Legal Abortion if the Woman Wants No More Children",
+    "compute_alias": "Support Access to a Legal Abortion if the Woman Wants No More Children",
+    "recoded_levels": {
+      "0": "NO",
+      "1": "YES"
+    },
+    "parent": "abnomore",
+    "value_counts": {
+      "0": 26077,
+      "1": 22063
+    },
+    "value_percents": {
+      "0": 54.2,
+      "1": 45.8
+    }
+  },
+  "abpoor_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Legalizing Abortion if Can't Afford More Children",
+    "selection_alias": "Support Access to a Legal Abortion if the Woman Cannot Afford More Children",
+    "compute_alias": "Support Access to a Legal Abortion if the Woman Cannot Afford More Children",
+    "recoded_levels": {
+      "0": "NO",
+      "1": "YES"
+    },
+    "parent": "abpoor",
+    "value_counts": {
+      "0": 24941,
+      "1": 23164
+    },
+    "value_percents": {
+      "0": 51.8,
+      "1": 48.2
+    }
+  },
+  "abrape_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Legalizing Abortion in Cases of Rape",
+    "selection_alias": "Support Access to a Legal Abortion if the Woman is Pregnant as a Result of Rape",
+    "compute_alias": "Support Access to a Legal Abortion if the Woman is Pregnant as a Result of Rape",
+    "recoded_levels": {
+      "0": "NO",
+      "1": "YES"
+    },
+    "parent": "abrape",
+    "value_counts": {
+      "0": 8783,
+      "1": 39237
+    },
+    "value_percents": {
+      "0": 18.3,
+      "1": 81.7
+    }
+  },
+  "absingle_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Legalizing Abortion if not Married",
+    "selection_alias": "Support Access to a Legal Abortion if not Married",
+    "compute_alias": "Support Access to a Legal Abortion if not Married",
+    "recoded_levels": {
+      "0": "NO",
+      "1": "YES"
+    },
+    "parent": "absingle",
+    "value_counts": {
+      "0": 26358,
+      "1": 21745
+    },
+    "value_percents": {
+      "0": 54.8,
+      "1": 45.2
+    }
+  },
+  "conarmy_high": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Confidence in Institutions: Military",
+    "selection_alias": "Have a Great Deal of Confidence in the Military",
+    "compute_alias": "Have a Great Deal of Confidence in the Military",
+    "recoded_levels": {
+      "0": ["ONLY SOME", "HARDLY ANY"],
+      "1": "A GREAT DEAL"
+    },
+    "parent": "conarmy",
+    "value_counts": {
+      "0": 29005,
+      "1": 20952
+    },
+    "value_percents": {
+      "0": 58.1,
+      "1": 41.9
+    }
+  },
+  "conbus_high": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Confidence in Institutions: Major Companies",
+    "selection_alias": "Have a Great Deal of Confidence in Major Companies",
+    "compute_alias": "Have a Great Deal of Confidence in Major Companies",
+    "recoded_levels": {
+      "0": ["ONLY SOME", "HARDLY ANY"],
+      "1": "A GREAT DEAL"
+    },
+    "parent": "conbus",
+    "value_counts": {
+      "0": 38422,
+      "1": 10975
+    },
+    "value_percents": {
+      "0": 77.8,
+      "1": 22.2
+    }
+  },
+  "conclerg_high": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Confidence in Institutions: Organized Religion",
+    "selection_alias": "Have a Great Deal of Confidence in Organized Religion",
+    "compute_alias": "Have a Great Deal of Confidence in Organized Religion",
+    "recoded_levels": {
+      "0": ["HARDLY ANY", "ONLY SOME"],
+      "1": "A GREAT DEAL"
+    },
+    "parent": "conclerg",
+    "value_counts": {
+      "0": 36776,
+      "1": 12727
+    },
+    "value_percents": {
+      "0": 74.3,
+      "1": 25.7
+    }
+  },
+  "coneduc_high": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Confidence in Institutions: Education",
+    "selection_alias": "Have a Great Deal of Confidence in Education",
+    "compute_alias": "Have a Great Deal of Confidence in Education",
+    "recoded_levels": {
+      "0": ["HARDLY ANY", "ONLY SOME"],
+      "1": "A GREAT DEAL"
+    },
+    "parent": "coneduc",
+    "value_counts": {
+      "0": 36282,
+      "1": 14282
+    },
+    "value_percents": {
+      "0": 71.8,
+      "1": 28.2
+    }
+  },
+  "confed_high": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Confidence in Institutions: Executive Branch of Government",
+    "selection_alias": "Have a Great Deal of Confidence in the Executive Branch of Government",
+    "compute_alias": "Have a Great Deal of Confidence in the Executive Branch of Government",
+    "recoded_levels": {
+      "0": ["ONLY SOME", "HARDLY ANY"],
+      "1": "A GREAT DEAL"
+    },
+    "parent": "confed",
+    "value_counts": {
+      "0": 42089,
+      "1": 7783
+    },
+    "value_percents": {
+      "0": 84.4,
+      "1": 15.6
+    }
+  },
+  "confinan_high": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Confidence in Institutions: Banks and Financial Institutions",
+    "selection_alias": "Have a Great Deal of Confidence in Banks and Financial Institutions",
+    "compute_alias": "Have a Great Deal of Confidence in Banks and Financial Institutions",
+    "recoded_levels": {
+      "0": ["ONLY SOME", "HARDLY ANY"],
+      "1": "A GREAT DEAL"
+    },
+    "parent": "confinan",
+    "value_counts": {
+      "0": 36326,
+      "1": 11077
+    },
+    "value_percents": {
+      "0": 76.6,
+      "1": 23.4
+    }
+  },
+  "conjudge_high": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Confidence in Institutions: United States Supreme Court",
+    "selection_alias": "Have a Great Deal of Confidence in the United States Supreme Court",
+    "compute_alias": "Have a Great Deal of Confidence in the United States Supreme Court",
+    "recoded_levels": {
+      "0": ["ONLY SOME", "HARDLY ANY"],
+      "1": "A GREAT DEAL"
+    },
+    "parent": "conjudge",
+    "value_counts": {
+      "0": 34453,
+      "1": 14858
+    },
+    "value_percents": {
+      "0": 69.9,
+      "1": 30.1
+    }
+  },
+  "conlabor_high": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Confidence in Institutions: Organized Labor",
+    "selection_alias": "Have a Great Deal of Confidence in Organized Labor",
+    "compute_alias": "Have a Great Deal of Confidence in Organized Labor",
+    "recoded_levels": {
+      "0": ["ONLY SOME", "HARDLY ANY"],
+      "1": "A GREAT DEAL"
+    },
+    "parent": "conlabor",
+    "value_counts": {
+      "0": 41567,
+      "1": 5896
+    },
+    "value_percents": {
+      "0": 87.6,
+      "1": 12.4
+    }
+  },
+  "conlegis_high": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Confidence in Institutions: Congress",
+    "selection_alias": "Have a Great Deal of Confidence in Congress",
+    "compute_alias": "Have a Great Deal of Confidence in Congress",
+    "recoded_levels": {
+      "0": ["ONLY SOME", "HARDLY ANY"],
+      "1": "A GREAT DEAL"
+    },
+    "parent": "conlegis",
+    "value_counts": {
+      "0": 44295,
+      "1": 5551
+    },
+    "value_percents": {
+      "0": 88.9,
+      "1": 11.1
+    }
+  },
+  "conmedic_high": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Confidence in Institutions: Medicine",
+    "selection_alias": "Have a Great Deal of Confidence in Medicine",
+    "compute_alias": "Have a Great Deal of Confidence in Medicine",
+    "recoded_levels": {
+      "0": ["ONLY SOME", "HARDLY ANY"],
+      "1": "A GREAT DEAL"
+    },
+    "parent": "conmedic",
+    "value_counts": {
+      "0": 28420,
+      "1": 22240
+    },
+    "value_percents": {
+      "0": 56.1,
+      "1": 43.9
+    }
+  },
+  "conpress_high": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Confidence in Institutions: Press",
+    "selection_alias": "Have a Great Deal of Confidence in the Press",
+    "compute_alias": "Have a Great Deal of Confidence in the Press",
+    "recoded_levels": {
+      "0": ["ONLY SOME", "HARDLY ANY"],
+      "1": "A GREAT DEAL"
+    },
+    "parent": "conpress",
+    "value_counts": {
+      "0": 42915,
+      "1": 7310
+    },
+    "value_percents": {
+      "0": 85.4,
+      "1": 14.6
+    }
+  },
+  "consci_high": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Confidence in Institutions: Scientific Community",
+    "selection_alias": "Have a Great Deal of Confidence in the Scientific Community",
+    "compute_alias": "Have a Great Deal of Confidence in the Scientific Community",
+    "recoded_levels": {
+      "0": ["ONLY SOME", "HARDLY ANY"],
+      "1": "A GREAT DEAL"
+    },
+    "parent": "consci",
+    "value_counts": {
+      "0": 27336,
+      "1": 20537
+    },
+    "value_percents": {
+      "0": 57.1,
+      "1": 42.9
+    }
+  },
+  "contv_high": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Confidence in Institutions: Television",
+    "selection_alias": "Have a Great Deal of Confidence in Television",
+    "compute_alias": "Have a Great Deal of Confidence in Television",
+    "recoded_levels": {
+      "0": ["HARDLY ANY", "ONLY SOME"],
+      "1": "A GREAT DEAL"
+    },
+    "parent": "contv",
+    "value_counts": {
+      "0": 44195,
+      "1": 6251
+    },
+    "value_percents": {
+      "0": 87.6,
+      "1": 12.4
+    }
+  },
+  "conarmy_low": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "No Confidence in Institutions: Military",
+    "selection_alias": "Have Hardly any Confidence in the Military",
+    "compute_alias": "Have Hardly any Confidence in the Military",
+    "recoded_levels": {
+      "0": ["A GREAT DEAL", "ONLY SOME"],
+      "1": "HARDLY ANY"
+    },
+    "parent": "conarmy",
+    "value_counts": {
+      "0": 44021,
+      "1": 5936
+    },
+    "value_percents": {
+      "0": 88.1,
+      "1": 11.9
+    }
+  },
+  "conbus_low": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "No Confidence in Institutions: Major Companies",
+    "selection_alias": "Have Hardly any Confidence in Major Companies",
+    "compute_alias": "Have Hardly any Confidence in Major Companies",
+    "recoded_levels": {
+      "0": ["ONLY SOME", "A GREAT DEAL"],
+      "1": "HARDLY ANY"
+    },
+    "parent": "conbus",
+    "value_counts": {
+      "0": 41247,
+      "1": 8150
+    },
+    "value_percents": {
+      "0": 83.5,
+      "1": 16.5
+    }
+  },
+  "conclerg_low": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "No Confidence in Institutions: Organized Religion",
+    "selection_alias": "Have Hardly any Confidence in Organized Religion",
+    "compute_alias": "Have Hardly any Confidence in Organized Religion",
+    "recoded_levels": {
+      "0": ["A GREAT DEAL", "ONLY SOME"],
+      "1": "HARDLY ANY"
+    },
+    "parent": "conclerg",
+    "value_counts": {
+      "0": 38005,
+      "1": 11498
+    },
+    "value_percents": {
+      "0": 76.8,
+      "1": 23.2
+    }
+  },
+  "coneduc_low": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "No Confidence in Institutions: Education",
+    "selection_alias": "Have Hardly any Confidence in Education",
+    "compute_alias": "Have Hardly any Confidence in Education",
+    "recoded_levels": {
+      "0": ["A GREAT DEAL", "ONLY SOME"],
+      "1": "HARDLY ANY"
+    },
+    "parent": "coneduc",
+    "value_counts": {
+      "0": 42710,
+      "1": 7854
+    },
+    "value_percents": {
+      "0": 84.5,
+      "1": 15.5
+    }
+  },
+  "confed_low": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "No Confidence in Institutions: Executive Branch of Government",
+    "selection_alias": "Have Hardly any Confidence in the Executive Branch of Government",
+    "compute_alias": "Have Hardly any Confidence in the Executive Branch of Government",
+    "recoded_levels": {
+      "0": ["ONLY SOME", "A GREAT DEAL"],
+      "1": "HARDLY ANY"
+    },
+    "parent": "confed",
+    "value_counts": {
+      "0": 32529,
+      "1": 17343
+    },
+    "value_percents": {
+      "0": 65.2,
+      "1": 34.8
+    }
+  },
+  "confinan_low": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "No Confidence in Institutions: Banks and Financial Institutions",
+    "selection_alias": "Have Hardly any Confidence in Banks and Financial Institutions",
+    "compute_alias": "Have Hardly any Confidence in Banks and Financial Institutions",
+    "recoded_levels": {
+      "0": ["A GREAT DEAL", "ONLY SOME"],
+      "1": "HARDLY ANY"
+    },
+    "parent": "confinan",
+    "value_counts": {
+      "0": 37740,
+      "1": 9663
+    },
+    "value_percents": {
+      "0": 79.6,
+      "1": 20.4
+    }
+  },
+  "conjudge_low": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "No Confidence in Institutions: United States Supreme Court",
+    "selection_alias": "Have Hardly any Confidence in the United States Supreme Court",
+    "compute_alias": "Have Hardly any Confidence in the United States Supreme Court",
+    "recoded_levels": {
+      "0": ["A GREAT DEAL", "ONLY SOME"],
+      "1": "HARDLY ANY"
+    },
+    "parent": "conjudge",
+    "value_counts": {
+      "0": 40528,
+      "1": 8783
+    },
+    "value_percents": {
+      "0": 82.2,
+      "1": 17.8
+    }
+  },
+  "conlabor_low": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "No Confidence in Institutions: Organized Labor",
+    "selection_alias": "Have Hardly any Confidence in Organized Labor",
+    "compute_alias": "Have Hardly any Confidence in Organized Labor",
+    "recoded_levels": {
+      "0": ["ONLY SOME", "A GREAT DEAL"],
+      "1": "HARDLY ANY"
+    },
+    "parent": "conlabor",
+    "value_counts": {
+      "0": 32815,
+      "1": 14648
+    },
+    "value_percents": {
+      "0": 69.1,
+      "1": 30.9
+    }
+  },
+  "conlegis_low": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "No Confidence in Institutions: Congress",
+    "selection_alias": "Have Hardly any Confidence in Congress",
+    "compute_alias": "Have Hardly any Confidence in Congress",
+    "recoded_levels": {
+      "0": ["ONLY SOME", "A GREAT DEAL"],
+      "1": "HARDLY ANY"
+    },
+    "parent": "conlegis",
+    "value_counts": {
+      "0": 32277,
+      "1": 17569
+    },
+    "value_percents": {
+      "0": 64.8,
+      "1": 35.2
+    }
+  },
+  "conmedic_low": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "No Confidence in Institutions: Medicine",
+    "selection_alias": "Have Hardly any Confidence in Medicine",
+    "compute_alias": "Have Hardly any Confidence in Medicine",
+    "recoded_levels": {
+      "0": ["ONLY SOME", "A GREAT DEAL"],
+      "1": "HARDLY ANY"
+    },
+    "parent": "conmedic",
+    "value_counts": {
+      "0": 45710,
+      "1": 4950
+    },
+    "value_percents": {
+      "0": 90.2,
+      "1": 9.8
+    }
+  },
+  "conpress_low": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "No Confidence in Institutions: Press",
+    "selection_alias": "Have Hardly any Confidence in the Press",
+    "compute_alias": "Have Hardly any Confidence in the Press",
+    "recoded_levels": {
+      "0": ["ONLY SOME", "A GREAT DEAL"],
+      "1": "HARDLY ANY"
+    },
+    "parent": "conpress",
+    "value_counts": {
+      "0": 32728,
+      "1": 17497
+    },
+    "value_percents": {
+      "0": 65.2,
+      "1": 34.8
+    }
+  },
+  "consci_low": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "No Confidence in Institutions: Scientific Community",
+    "selection_alias": "Have Hardly any Confidence in the Scientific Community",
+    "compute_alias": "Have Hardly any Confidence in the Scientific Community",
+    "recoded_levels": {
+      "0": ["ONLY SOME", "A GREAT DEAL"],
+      "1": "HARDLY ANY"
+    },
+    "parent": "consci",
+    "value_counts": {
+      "0": 44163,
+      "1": 3710
+    },
+    "value_percents": {
+      "0": 92.3,
+      "1": 7.7
+    }
+  },
+  "contv_low": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "No Confidence in Institutions: Television",
+    "selection_alias": "Have Hardly any Confidence in Television",
+    "compute_alias": "Have Hardly any Confidence in Television",
+    "recoded_levels": {
+      "0": ["ONLY SOME", "A GREAT DEAL"],
+      "1": "HARDLY ANY"
+    },
+    "parent": "contv",
+    "value_counts": {
+      "0": 32631,
+      "1": 17815
+    },
+    "value_percents": {
+      "0": 64.7,
+      "1": 35.3
+    }
+  },
+  "nataid_toolittle": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Government Spending: Too Little on Foreign Aid",
+    "selection_alias": "Believe Too Little Government Spending on Foreign Aid",
+    "compute_alias": "Believe Too Little Government Spending on Foreign Aid",
+    "recoded_levels": {
+      "0": ["TOO MUCH", "ABOUT RIGHT"],
+      "1": "TOO LITTLE"
+    },
+    "parent": "nataid",
+    "value_counts": {
+      "0": 37536,
+      "1": 2901
+    },
+    "value_percents": {
+      "0": 92.8,
+      "1": 7.2
+    }
+  },
+  "natarms_toolittle": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Government Spending: Too Little on Military",
+    "selection_alias": "Believe Too Little Government Spending on Military, Armaments, & Defense",
+    "compute_alias": "Believe Too Little Government Spending on Military, Armaments, & Defense",
+    "recoded_levels": {
+      "0": ["ABOUT RIGHT", "TOO MUCH"],
+      "1": "TOO LITTLE"
+    },
+    "parent": "natarms",
+    "value_counts": {
+      "0": 30211,
+      "1": 10320
+    },
+    "value_percents": {
+      "0": 74.5,
+      "1": 25.5
+    }
+  },
+  "natchld_toolittle": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Government Spending: Too Little on Childcare",
+    "selection_alias": "Believe Too Little Government Spending on Assistance for Childcare",
+    "compute_alias": "Believe Too Little Government Spending on Assistance for Childcare",
+    "recoded_levels": {
+      "0": ["ABOUT RIGHT", "TOO MUCH"],
+      "1": "TOO LITTLE"
+    },
+    "parent": "natchld",
+    "value_counts": {
+      "0": 14208,
+      "1": 19788
+    },
+    "value_percents": {
+      "0": 41.8,
+      "1": 58.2
+    }
+  },
+  "natcity_toolittle": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Government Spending: Too Little on Big City Problems",
+    "selection_alias": "Believe Too Little Government Spending on Solving Problems of Big Cities",
+    "compute_alias": "Believe Too Little Government Spending on Solving Problems of Big Cities",
+    "recoded_levels": {
+      "0": ["TOO MUCH", "ABOUT RIGHT"],
+      "1": "TOO LITTLE"
+    },
+    "parent": "natcity",
+    "value_counts": {
+      "0": 18261,
+      "1": 19575
+    },
+    "value_percents": {
+      "0": 48.3,
+      "1": 51.7
+    }
+  },
+  "natcrime_toolittle": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Government Spending: Too Little on Crime Reduction",
+    "selection_alias": "Believe Too Little Government Spending on Halting Rising Crime Rate",
+    "compute_alias": "Believe Too Little Government Spending on Halting Rising Crime Rate",
+    "recoded_levels": {
+      "0": ["TOO MUCH", "ABOUT RIGHT"],
+      "1": "TOO LITTLE"
+    },
+    "parent": "natcrime",
+    "value_counts": {
+      "0": 13258,
+      "1": 27622
+    },
+    "value_percents": {
+      "0": 32.4,
+      "1": 67.6
+    }
+  },
+  "natdrug_toolittle": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Government Spending: Too Little on Drug Addiction",
+    "selection_alias": "Believe Too Little Government Spending on Dealing with Drug Addiction",
+    "compute_alias": "Believe Too Little Government Spending on Dealing with Drug Addiction",
+    "recoded_levels": {
+      "0": ["TOO MUCH", "ABOUT RIGHT"],
+      "1": "TOO LITTLE"
+    },
+    "parent": "natdrug",
+    "value_counts": {
+      "0": 14946,
+      "1": 25571
+    },
+    "value_percents": {
+      "0": 36.9,
+      "1": 63.1
+    }
+  },
+  "nateduc_toolittle": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Government Spending: Too Little on Education",
+    "selection_alias": "Believe Too Little Government Spending on Improving Nation's Education System",
+    "compute_alias": "Believe Too Little Government Spending on Improving Nation's Education System",
+    "recoded_levels": {
+      "0": ["ABOUT RIGHT", "TOO MUCH"],
+      "1": "TOO LITTLE"
+    },
+    "parent": "nateduc",
+    "value_counts": {
+      "0": 14044,
+      "1": 27453
+    },
+    "value_percents": {
+      "0": 33.8,
+      "1": 66.2
+    }
+  },
+  "natenvir_toolittle": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Government Spending: Too Little on Environmental Protection",
+    "selection_alias": "Believe Too Little Government Spending on Improving and Protecting Environment",
+    "compute_alias": "Believe Too Little Government Spending on Improving and Protecting Environment",
+    "recoded_levels": {
+      "0": ["TOO MUCH", "ABOUT RIGHT"],
+      "1": "TOO LITTLE"
+    },
+    "parent": "natenvir",
+    "value_counts": {
+      "0": 15461,
+      "1": 25329
+    },
+    "value_percents": {
+      "0": 37.9,
+      "1": 62.1
+    }
+  },
+  "natfare_toolittle": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Government Spending: Too Little on Welfare",
+    "selection_alias": "Believe Too Little Government Spending on Welfare",
+    "compute_alias": "Believe Too Little Government Spending on Welfare",
+    "recoded_levels": {
+      "0": ["TOO MUCH", "ABOUT RIGHT"],
+      "1": "TOO LITTLE"
+    },
+    "parent": "natfare",
+    "value_counts": {
+      "0": 31639,
+      "1": 9186
+    },
+    "value_percents": {
+      "0": 77.5,
+      "1": 22.5
+    }
+  },
+  "natheal_toolittle": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Government Spending: Too Little on Improving Health",
+    "selection_alias": "Believe Too Little Government Spending on Government Spending on Improving and Protecting Nations Health",
+    "compute_alias": "Believe Too Little Government Spending on Government Spending on Improving and Protecting Nations Health",
+    "recoded_levels": {
+      "0": ["ABOUT RIGHT", "TOO MUCH"],
+      "1": "TOO LITTLE"
+    },
+    "parent": "natheal",
+    "value_counts": {
+      "0": 13702,
+      "1": 27538
+    },
+    "value_percents": {
+      "0": 33.2,
+      "1": 66.8
+    }
+  },
+  "natmass_toolittle": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Government Spending: Too Little on Mass Transportation",
+    "selection_alias": "Believe Too Little Government Spending on Mass Transportation",
+    "compute_alias": "Believe Too Little Government Spending on Mass Transportation",
+    "recoded_levels": {
+      "0": ["ABOUT RIGHT", "TOO MUCH"],
+      "1": "TOO LITTLE"
+    },
+    "parent": "natmass",
+    "value_counts": {
+      "0": 30605,
+      "1": 19696
+    },
+    "value_percents": {
+      "0": 60.8,
+      "1": 39.2
+    }
+  },
+  "natpark_toolittle": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Government Spending: Too Little on Parks and Recreation",
+    "selection_alias": "Believe Too Little Government Spending on Parks and Recreation",
+    "compute_alias": "Believe Too Little Government Spending on Parks and Recreation",
+    "recoded_levels": {
+      "0": ["ABOUT RIGHT", "TOO MUCH"],
+      "1": "TOO LITTLE"
+    },
+    "parent": "natpark",
+    "value_counts": {
+      "0": 34924,
+      "1": 17891
+    },
+    "value_percents": {
+      "0": 66.1,
+      "1": 33.9
+    }
+  },
+  "natrace_toolittle": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Government Spending: Too Little on Improving Black Lives",
+    "selection_alias": "Believe Too Little Government Spending on Improving the Conditions of Blacks",
+    "compute_alias": "Believe Too Little Government Spending on Improving the Conditions of Blacks",
+    "recoded_levels": {
+      "0": ["TOO MUCH", "ABOUT RIGHT"],
+      "1": "TOO LITTLE"
+    },
+    "parent": "natrace",
+    "value_counts": {
+      "0": 24137,
+      "1": 14909
+    },
+    "value_percents": {
+      "0": 61.8,
+      "1": 38.2
+    }
+  },
+  "natroad_toolittle": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Government Spending: Too Little on Highways and Bridges",
+    "selection_alias": "Believe Too Little Government Spending on Highways and Bridges",
+    "compute_alias": "Believe Too Little Government Spending on Highways and Bridges",
+    "recoded_levels": {
+      "0": ["ABOUT RIGHT", "TOO MUCH"],
+      "1": "TOO LITTLE"
+    },
+    "parent": "natroad",
+    "value_counts": {
+      "0": 31379,
+      "1": 24463
+    },
+    "value_percents": {
+      "0": 56.2,
+      "1": 43.8
+    }
+  },
+  "natsci_toolittle": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Government Spending: Too Little on Funding Scientific Research",
+    "selection_alias": "Believe Too Little Government Spending on Supporting Scientific Research",
+    "compute_alias": "Believe Too Little Government Spending on Supporting Scientific Research",
+    "recoded_levels": {
+      "0": ["ABOUT RIGHT", "TOO MUCH"],
+      "1": "TOO LITTLE"
+    },
+    "parent": "natsci",
+    "value_counts": {
+      "0": 16653,
+      "1": 12103
+    },
+    "value_percents": {
+      "0": 57.9,
+      "1": 42.1
+    }
+  },
+  "natsoc_toolittle": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Government Spending: Too Little on Social Security",
+    "selection_alias": "Believe Too Little Government Spending on Social Security",
+    "compute_alias": "Believe Too Little Government Spending on Social Security",
+    "recoded_levels": {
+      "0": ["ABOUT RIGHT", "TOO MUCH"],
+      "1": "TOO LITTLE"
+    },
+    "parent": "natsoc",
+    "value_counts": {
+      "0": 22998,
+      "1": 32386
+    },
+    "value_percents": {
+      "0": 41.5,
+      "1": 58.5
+    }
+  },
+  "natspac_toolittle": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Government Spending: Too Little on Space Exploration",
+    "selection_alias": "Believe Too Little Government Spending on Space Exploration Program",
+    "compute_alias": "Believe Too Little Government Spending on Space Exploration Program",
+    "recoded_levels": {
+      "0": ["TOO MUCH", "ABOUT RIGHT"],
+      "1": "TOO LITTLE"
+    },
+    "parent": "natspac",
+    "value_counts": {
+      "0": 34025,
+      "1": 5905
+    },
+    "value_percents": {
+      "0": 85.2,
+      "1": 14.8
+    }
+  },
+  "nataid_toomuch": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Government Spending: Too Much on Foreign Aid",
+    "selection_alias": "Believe Too Much Government Spending on Foreign Aid",
+    "compute_alias": "Believe Too Much Government Spending on Foreign Aid",
+    "recoded_levels": {
+      "0": ["ABOUT RIGHT", "TOO LITTLE"],
+      "1": "TOO MUCH"
+    },
+    "parent": "nataid",
+    "value_counts": {
+      "0": 13031,
+      "1": 27406
+    },
+    "value_percents": {
+      "0": 32.2,
+      "1": 67.8
+    }
+  },
+  "natarms_toomuch": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Government Spending: Too Much on Military",
+    "selection_alias": "Believe Too Much Government Spending on Military, Armaments, & Defense",
+    "compute_alias": "Believe Too Much Government Spending on Military, Armaments, & Defense",
+    "recoded_levels": {
+      "0": ["ABOUT RIGHT", "TOO LITTLE"],
+      "1": "TOO MUCH"
+    },
+    "parent": "natarms",
+    "value_counts": {
+      "0": 27475,
+      "1": 13056
+    },
+    "value_percents": {
+      "0": 67.8,
+      "1": 32.2
+    }
+  },
+  "natchld_toomuch": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Government Spending: Too Much on Childcare",
+    "selection_alias": "Believe Too Much Government Spending on Assistance for Childcare",
+    "compute_alias": "Believe Too Much Government Spending on Assistance for Childcare",
+    "recoded_levels": {
+      "0": ["ABOUT RIGHT", "TOO LITTLE"],
+      "1": "TOO MUCH"
+    },
+    "parent": "natchld",
+    "value_counts": {
+      "0": 31505,
+      "1": 2491
+    },
+    "value_percents": {
+      "0": 92.7,
+      "1": 7.3
+    }
+  },
+  "natcity_toomuch": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Government Spending: Too Much on Big City Problems",
+    "selection_alias": "Believe Too Much Government Spending on Solving Problems of Big Cities",
+    "compute_alias": "Believe Too Much Government Spending on Solving Problems of Big Cities",
+    "recoded_levels": {
+      "0": ["TOO LITTLE", "ABOUT RIGHT"],
+      "1": "TOO MUCH"
+    },
+    "parent": "natcity",
+    "value_counts": {
+      "0": 31780,
+      "1": 6056
+    },
+    "value_percents": {
+      "0": 84,
+      "1": 16
+    }
+  },
+  "natcrime_toomuch": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Government Spending: Too Much on Crime Reduction",
+    "selection_alias": "Believe Too Much Government Spending on Halting Rising Crime Rate",
+    "compute_alias": "Believe Too Much Government Spending on Halting Rising Crime Rate",
+    "recoded_levels": {
+      "0": ["TOO LITTLE", "ABOUT RIGHT"],
+      "1": "TOO MUCH"
+    },
+    "parent": "natcrime",
+    "value_counts": {
+      "0": 38282,
+      "1": 2598
+    },
+    "value_percents": {
+      "0": 93.6,
+      "1": 6.4
+    }
+  },
+  "natdrug_toomuch": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Government Spending: Too Much on Drug Addiction",
+    "selection_alias": "Believe Too Much Government Spending on Dealing with Drug Addiction",
+    "compute_alias": "Believe Too Much Government Spending on Dealing with Drug Addiction",
+    "recoded_levels": {
+      "0": ["TOO LITTLE", "ABOUT RIGHT"],
+      "1": "TOO MUCH"
+    },
+    "parent": "natdrug",
+    "value_counts": {
+      "0": 37066,
+      "1": 3451
+    },
+    "value_percents": {
+      "0": 91.5,
+      "1": 8.5
+    }
+  },
+  "nateduc_toomuch": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Government Spending: Too Much on Education",
+    "selection_alias": "Believe Too Much Government Spending on Improving Nation's Education System",
+    "compute_alias": "Believe Too Much Government Spending on Improving Nation's Education System",
+    "recoded_levels": {
+      "0": ["TOO LITTLE", "ABOUT RIGHT"],
+      "1": "TOO MUCH"
+    },
+    "parent": "nateduc",
+    "value_counts": {
+      "0": 38625,
+      "1": 2872
+    },
+    "value_percents": {
+      "0": 93.1,
+      "1": 6.9
+    }
+  },
+  "natenvir_toomuch": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Government Spending: Too Much on Environmental Protection",
+    "selection_alias": "Believe Too Much Government Spending on Improving and Protecting Environment",
+    "compute_alias": "Believe Too Much Government Spending on Improving and Protecting Environment",
+    "recoded_levels": {
+      "0": ["ABOUT RIGHT", "TOO LITTLE"],
+      "1": "TOO MUCH"
+    },
+    "parent": "natenvir",
+    "value_counts": {
+      "0": 37087,
+      "1": 3703
+    },
+    "value_percents": {
+      "0": 90.9,
+      "1": 9.1
+    }
+  },
+  "natfare_toomuch": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Government Spending: Too Much on Welfare",
+    "selection_alias": "Believe Too Much Government Spending on Welfare",
+    "compute_alias": "Believe Too Much Government Spending on Welfare",
+    "recoded_levels": {
+      "0": ["TOO LITTLE", "ABOUT RIGHT"],
+      "1": "TOO MUCH"
+    },
+    "parent": "natfare",
+    "value_counts": {
+      "0": 22158,
+      "1": 18667
+    },
+    "value_percents": {
+      "0": 54.3,
+      "1": 45.7
+    }
+  },
+  "natheal_toomuch": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Government Spending: Too Much on Improving Health",
+    "selection_alias": "Believe Too Much Government Spending on Government Spending on Improving and Protecting Nations Health",
+    "compute_alias": "Believe Too Much Government Spending on Government Spending on Improving and Protecting Nations Health",
+    "recoded_levels": {
+      "0": ["TOO LITTLE", "ABOUT RIGHT"],
+      "1": "TOO MUCH"
+    },
+    "parent": "natheal",
+    "value_counts": {
+      "0": 38499,
+      "1": 2741
+    },
+    "value_percents": {
+      "0": 93.4,
+      "1": 6.6
+    }
+  },
+  "natmass_toomuch": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Government Spending: Too Much on Mass Transportation",
+    "selection_alias": "Believe Too Much Government Spending on Mass Transportation",
+    "compute_alias": "Believe Too Much Government Spending on Mass Transportation",
+    "recoded_levels": {
+      "0": ["ABOUT RIGHT", "TOO LITTLE"],
+      "1": "TOO MUCH"
+    },
+    "parent": "natmass",
+    "value_counts": {
+      "0": 45296,
+      "1": 5005
+    },
+    "value_percents": {
+      "0": 90,
+      "1": 10
+    }
+  },
+  "natpark_toomuch": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Government Spending: Too Much on Parks and Recreation",
+    "selection_alias": "Believe Too Much Government Spending on Parks and Recreation",
+    "compute_alias": "Believe Too Much Government Spending on Parks and Recreation",
+    "recoded_levels": {
+      "0": ["ABOUT RIGHT", "TOO LITTLE"],
+      "1": "TOO MUCH"
+    },
+    "parent": "natpark",
+    "value_counts": {
+      "0": 49695,
+      "1": 3120
+    },
+    "value_percents": {
+      "0": 94.1,
+      "1": 5.9
+    }
+  },
+  "natrace_toomuch": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Government Spending: Too Much on Improving Black Lives",
+    "selection_alias": "Believe Too Much Government Spending on Improving the Conditions of Blacks",
+    "compute_alias": "Believe Too Much Government Spending on Improving the Conditions of Blacks",
+    "recoded_levels": {
+      "0": ["TOO LITTLE", "ABOUT RIGHT"],
+      "1": "TOO MUCH"
+    },
+    "parent": "natrace",
+    "value_counts": {
+      "0": 31756,
+      "1": 7290
+    },
+    "value_percents": {
+      "0": 81.3,
+      "1": 18.7
+    }
+  },
+  "natroad_toomuch": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Government Spending: Too Much on Highways and Bridges",
+    "selection_alias": "Believe Too Much Government Spending on Highways and Bridges",
+    "compute_alias": "Believe Too Much Government Spending on Highways and Bridges",
+    "recoded_levels": {
+      "0": ["TOO LITTLE", "ABOUT RIGHT"],
+      "1": "TOO MUCH"
+    },
+    "parent": "natroad",
+    "value_counts": {
+      "0": 50346,
+      "1": 5496
+    },
+    "value_percents": {
+      "0": 90.2,
+      "1": 9.8
+    }
+  },
+  "natsci_toomuch": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Government Spending: Too Much on Funding Scientific Research",
+    "selection_alias": "Believe Too Much Government Spending on Supporting Scientific Research",
+    "compute_alias": "Believe Too Much Government Spending on Supporting Scientific Research",
+    "recoded_levels": {
+      "0": ["ABOUT RIGHT", "TOO LITTLE"],
+      "1": "TOO MUCH"
+    },
+    "parent": "natsci",
+    "value_counts": {
+      "0": 25500,
+      "1": 3256
+    },
+    "value_percents": {
+      "0": 88.7,
+      "1": 11.3
+    }
+  },
+  "natsoc_toomuch": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Government Spending: Too Much on Social Security",
+    "selection_alias": "Believe Too Much Government Spending on Social Security",
+    "compute_alias": "Believe Too Much Government Spending on Social Security",
+    "recoded_levels": {
+      "0": ["ABOUT RIGHT", "TOO LITTLE"],
+      "1": "TOO MUCH"
+    },
+    "parent": "natsoc",
+    "value_counts": {
+      "0": 52102,
+      "1": 3282
+    },
+    "value_percents": {
+      "0": 94.1,
+      "1": 5.9
+    }
+  },
+  "natspac_toomuch": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Government Spending: Too Much on Space Exploration",
+    "selection_alias": "Believe Too Much Government Spending on Space Exploration Program",
+    "compute_alias": "Believe Too Much Government Spending on Space Exploration Program",
+    "recoded_levels": {
+      "0": ["ABOUT RIGHT", "TOO LITTLE"],
+      "1": "TOO MUCH"
+    },
+    "parent": "natspac",
+    "value_counts": {
+      "0": 22944,
+      "1": 16986
+    },
+    "value_percents": {
+      "0": 57.5,
+      "1": 42.5
+    }
+  },
+  "spkath_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Civil Liberties: Allow Anti-Religionist to Speak",
+    "selection_alias": "Support Allowing an Anti-Religionist to Speak",
+    "compute_alias": "Support Allowing an Anti-Religionist to Speak",
+    "recoded_levels": {
+      "0": "NOT ALLOWED",
+      "1": "YES, ALLOWED TO SPEAK"
+    },
+    "parent": "spkath",
+    "value_counts": {
+      "0": 12154,
+      "1": 32299
+    },
+    "value_percents": {
+      "0": 27.3,
+      "1": 72.7
+    }
+  },
+  "spkcom_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Civil Liberties: Allow Communist to Speak",
+    "selection_alias": "Believe a Communist Should be Allowed to Speak in the Community",
+    "compute_alias": "Believe a Communist Should be Allowed to Speak in the Community",
+    "recoded_levels": {
+      "0": "NOT ALLOWED",
+      "1": "YES, ALLOWED TO SPEAK"
+    },
+    "parent": "spkcom",
+    "value_counts": {
+      "0": 15426,
+      "1": 28281
+    },
+    "value_percents": {
+      "0": 35.3,
+      "1": 64.7
+    }
+  },
+  "spkhomo_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Civil Liberties: Allow Homosexual to Speak",
+    "selection_alias": "Believe a Homosexual Should be Allowed to Speak in the Community",
+    "compute_alias": "Believe a Homosexual Should be Allowed to Speak in the Community",
+    "recoded_levels": {
+      "0": "NOT ALLOWED",
+      "1": "YES, ALLOWED TO SPEAK"
+    },
+    "parent": "spkhomo",
+    "value_counts": {
+      "0": 8729,
+      "1": 31198
+    },
+    "value_percents": {
+      "0": 21.9,
+      "1": 78.1
+    }
+  },
+  "spkmil_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Civil Liberties: Allow Militarist to Speak",
+    "selection_alias": "Believe a Militarist Should be Allowed to Speak in the Community",
+    "compute_alias": "Believe a Militarist Should be Allowed to Speak in the Community",
+    "recoded_levels": {
+      "0": "NOT ALLOWED",
+      "1": "YES, ALLOWED TO SPEAK"
+    },
+    "parent": "spkmil",
+    "value_counts": {
+      "0": 13681,
+      "1": 23564
+    },
+    "value_percents": {
+      "0": 36.7,
+      "1": 63.3
+    }
+  },
+  "spkmslm_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Civil Liberties: Allow Anti-American Muslim to Speak",
+    "selection_alias": "Believe an Anti-US Muslim Clergyman Should be Allowed to Speak in the Community",
+    "compute_alias": "Believe an Anti-US Muslim Clergyman Should be Allowed to Speak in the Community",
+    "recoded_levels": {
+      "0": "NOT ALLOWED",
+      "1": "YES, ALLOWED TO SPEAK"
+    },
+    "parent": "spkmslm",
+    "value_counts": {
+      "0": 6932,
+      "1": 5604
+    },
+    "value_percents": {
+      "0": 55.3,
+      "1": 44.7
+    }
+  },
+  "spkrac_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Civil Liberties: Allow Racist to Speak",
+    "selection_alias": "Believe a Racist Should be Allowed to Speak in the Community",
+    "compute_alias": "Believe a Racist Should be Allowed to Speak in the Community",
+    "recoded_levels": {
+      "0": "NOT ALLOWED",
+      "1": "YES, ALLOWED TO SPEAK"
+    },
+    "parent": "spkrac",
+    "value_counts": {
+      "0": 15779,
+      "1": 23775
+    },
+    "value_percents": {
+      "0": 39.9,
+      "1": 60.1
+    }
+  },
+  "colath_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Civil Liberties: Allow Anti Religionist to Teach",
+    "selection_alias": "Believe an Anti-Religion Person Should be Allowed to Teach at College",
+    "compute_alias": "Believe an Anti-Religion Person Should be Allowed to Teach at College",
+    "recoded_levels": {
+      "0": "NOT ALLOWED",
+      "1": "YES, ALLOWED TO TEACH"
+    },
+    "parent": "colath",
+    "value_counts": {
+      "0": 20659,
+      "1": 26321
+    },
+    "value_percents": {
+      "0": 44,
+      "1": 56
+    }
+  },
+  "colhomo_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Civil Liberties: Allow Homosexual to Teach",
+    "selection_alias": "Believe a Homosexual Should be Allowed to Teach at College",
+    "compute_alias": "Believe a Homosexual Should be Allowed to Teach at College",
+    "recoded_levels": {
+      "0": "NOT ALLOWED",
+      "1": "YES, ALLOWED TO TEACH"
+    },
+    "parent": "colhomo",
+    "value_counts": {
+      "0": 11541,
+      "1": 29483
+    },
+    "value_percents": {
+      "0": 28.1,
+      "1": 71.9
+    }
+  },
+  "colmil_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Civil Liberties: Allow Militarist to Teach",
+    "selection_alias": "Believe a Militarist Should be Allowed to Teach at College",
+    "compute_alias": "Believe a Militarist Should be Allowed to Teach at College",
+    "recoded_levels": {
+      "0": "NOT ALLOWED",
+      "1": "YES, ALLOWED TO TEACH"
+    },
+    "parent": "colmil",
+    "value_counts": {
+      "0": 19498,
+      "1": 18444
+    },
+    "value_percents": {
+      "0": 51.4,
+      "1": 48.6
+    }
+  },
+  "colmslm_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Civil Liberties: Allow Anti-American Muslim to Teach",
+    "selection_alias": "Believe an Anti-US Muslim Clergyman Should be Allowed to Teach at College",
+    "compute_alias": "Believe an Anti-US Muslim Clergyman Should be Allowed to Teach at College",
+    "recoded_levels": {
+      "0": "NOT ALLOWED",
+      "1": "YES, ALLOWED TO TEACH"
+    },
+    "parent": "colmslm",
+    "value_counts": {
+      "0": 10857,
+      "1": 5156
+    },
+    "value_percents": {
+      "0": 67.8,
+      "1": 32.2
+    }
+  },
+  "colrac_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Civil Liberties: Allow Racist to Teach",
+    "selection_alias": "Believe a Racist Should be Allowed to Teach at College",
+    "compute_alias": "Believe a Racist Should be Allowed to Teach at College",
+    "recoded_levels": {
+      "0": "NOT ALLOWED",
+      "1": "YES, ALLOWED TO TEACH"
+    },
+    "parent": "colrac",
+    "value_counts": {
+      "0": 23927,
+      "1": 18629
+    },
+    "value_percents": {
+      "0": 56.2,
+      "1": 43.8
+    }
+  },
+  "libath_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Civil Liberties: Allow Anti-Religion Book in Library",
+    "selection_alias": "Oppose Removing Anti-Religion Book",
+    "compute_alias": "Oppose Removing Anti-Religion Book",
+    "recoded_levels": {
+      "0": "REMOVE",
+      "1": "NOT REMOVE"
+    },
+    "parent": "libath",
+    "value_counts": {
+      "0": 13131,
+      "1": 30679
+    },
+    "value_percents": {
+      "0": 30,
+      "1": 70
+    }
+  },
+  "libcom_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Civil Liberties: Allow Communist Book in Library",
+    "selection_alias": "Oppose Removing a Book Written by a Communist from a Public Library",
+    "compute_alias": "Oppose Removing a Book Written by a Communist from a Public Library",
+    "recoded_levels": {
+      "0": "REMOVE",
+      "1": "NOT REMOVE"
+    },
+    "parent": "libcom",
+    "value_counts": {
+      "0": 14586,
+      "1": 28776
+    },
+    "value_percents": {
+      "0": 33.6,
+      "1": 66.4
+    }
+  },
+  "libhomo_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Civil Liberties: Allow Homosexual Book in Library",
+    "selection_alias": "Oppose Removing a Book Written by a Homosexual from a Public Library",
+    "compute_alias": "Oppose Removing a Book Written by a Homosexual from a Public Library",
+    "recoded_levels": {
+      "0": "REMOVE",
+      "1": "NOT REMOVE"
+    },
+    "parent": "libhomo",
+    "value_counts": {
+      "0": 12247,
+      "1": 27639
+    },
+    "value_percents": {
+      "0": 30.7,
+      "1": 69.3
+    }
+  },
+  "libmil_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Civil Liberties: Allow Militarist Book in Library",
+    "selection_alias": "Oppose Removing a Book Written by a Militarist from a Public Library",
+    "compute_alias": "Oppose Removing a Book Written by a Militarist from a Public Library",
+    "recoded_levels": {
+      "0": "REMOVE",
+      "1": "NOT REMOVE"
+    },
+    "parent": "libmil",
+    "value_counts": {
+      "0": 12612,
+      "1": 24291
+    },
+    "value_percents": {
+      "0": 34.2,
+      "1": 65.8
+    }
+  },
+  "libmslm_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Civil Liberties: Allow Anti-American Muslim Book in Library",
+    "selection_alias": "Oppose Removing a Book Written by an Anti-US Muslim Clergyman from a Public Library",
+    "compute_alias": "Oppose Removing a Book Written by an Anti-US Muslim Clergyman from a Public Library",
+    "recoded_levels": {
+      "0": "REMOVE",
+      "1": "NOT REMOVE"
+    },
+    "parent": "libmslm",
+    "value_counts": {
+      "0": 6125,
+      "1": 6421
+    },
+    "value_percents": {
+      "0": 48.8,
+      "1": 51.2
+    }
+  },
+  "librac_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Civil Liberties: Allow Racist Book in Library",
+    "selection_alias": "Oppose Removing a Book Written by a Racist from a Public Library",
+    "compute_alias": "Oppose Removing a Book Written by a Racist from a Public Library",
+    "recoded_levels": {
+      "0": "REMOVE",
+      "1": "NOT REMOVE"
+    },
+    "parent": "librac",
+    "value_counts": {
+      "0": 13907,
+      "1": 25266
+    },
+    "value_percents": {
+      "0": 35.5,
+      "1": 64.5
+    }
+  },
+  "colcom_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Civil Liberties: Allow Communist to Teach",
+    "selection_alias": "Believe a Communist Should be Allowed to Teach at College",
+    "compute_alias": "Believe a Communist Should be Allowed to Teach at College",
+    "recoded_levels": {
+      "0": "YES, FIRED",
+      "1": "NOT FIRED"
+    },
+    "parent": "colcom",
+    "value_counts": {
+      "0": 18715,
+      "1": 23625
+    },
+    "value_percents": {
+      "0": 44.2,
+      "1": 55.8
+    }
+  },
+  "polabuse_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Police Use of Force: If Citizen Uses Obscenity",
+    "selection_alias": "Approve of Police Striking Citizen for Vulgar, Obscene Comments",
+    "compute_alias": "Approve of Police Striking Citizen for Vulgar, Obscene Comments",
+    "recoded_levels": {
+      "0": "NO",
+      "1": "YES"
+    },
+    "parent": "polabuse",
+    "value_counts": {
+      "0": 37027,
+      "1": 4544
+    },
+    "value_percents": {
+      "0": 89.1,
+      "1": 10.9
+    }
+  },
+  "polattak_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Police Use of Force: If Citizen Attacks Police",
+    "selection_alias": "Approve of Police Striking Citizen for Attacking Police with Fists",
+    "compute_alias": "Approve of Police Striking Citizen for Attacking Police with Fists",
+    "recoded_levels": {
+      "0": "NO",
+      "1": "YES"
+    },
+    "parent": "polattak",
+    "value_counts": {
+      "0": 3948,
+      "1": 37911
+    },
+    "value_percents": {
+      "0": 9.4,
+      "1": 90.6
+    }
+  },
+  "polescap_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Police Use of Force: If Citizen Attempts to Escape Custody",
+    "selection_alias": "Approve of Police Striking Citizen for Attempting to Escape Custody",
+    "compute_alias": "Approve of Police Striking Citizen for Attempting to Escape Custody",
+    "recoded_levels": {
+      "0": "NO",
+      "1": "YES"
+    },
+    "parent": "polescap",
+    "value_counts": {
+      "0": 12068,
+      "1": 32066
+    },
+    "value_percents": {
+      "0": 27.3,
+      "1": 72.7
+    }
+  },
+  "polhitok_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Police Use of Force: Allow in Some Situations",
+    "selection_alias": "Approve of Police Striking Citizen in Some Situations",
+    "compute_alias": "Approve of Police Striking Citizen in Some Situations",
+    "recoded_levels": {
+      "0": "NO",
+      "1": "YES"
+    },
+    "parent": "polhitok",
+    "value_counts": {
+      "0": 11712,
+      "1": 28982
+    },
+    "value_percents": {
+      "0": 28.8,
+      "1": 71.2
+    }
+  },
+  "polmurdr_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Police Use of Force: When Questioning a Murder Suspect",
+    "selection_alias": "Approve of Police Striking Citizen Being Questioned as a Murder Suspect",
+    "compute_alias": "Approve of Police Striking Citizen Being Questioned as a Murder Suspect",
+    "recoded_levels": {
+      "0": "NO",
+      "1": "YES"
+    },
+    "parent": "polmurdr",
+    "value_counts": {
+      "0": 39823,
+      "1": 5196
+    },
+    "value_percents": {
+      "0": 88.5,
+      "1": 11.5
+    }
+  },
+  "helpoth_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Teaching Children Values: Is It Important to Help Others",
+    "selection_alias": "Believe to Help Others is Most Important for Children to Learn",
+    "compute_alias": "Believe to Help Others is Most Important for Children to Learn",
+    "recoded_levels": {
+      "0": ["THIRD", "SECOND", "FOURTH", "FIFTH"],
+      "1": "FIRST"
+    },
+    "parent": "helpoth",
+    "value_counts": {
+      "0": 26804,
+      "1": 5020
+    },
+    "value_percents": {
+      "0": 84.2,
+      "1": 15.8
+    }
+  },
+  "obey_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Teaching Children Values: Is It Important to Obey",
+    "selection_alias": "Believe to Obey is Most Important for Children to Learn",
+    "compute_alias": "Believe to Obey is Most Important for Children to Learn",
+    "recoded_levels": {
+      "0": ["FOURTH", "FIFTH", "SECOND", "THIRD"],
+      "1": "FIRST"
+    },
+    "parent": "obey",
+    "value_counts": {
+      "0": 26873,
+      "1": 4934
+    },
+    "value_percents": {
+      "0": 84.5,
+      "1": 15.5
+    }
+  },
+  "popular_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Teaching Children Values: Is It Important to be Well Liked",
+    "selection_alias": "Believe to be Well Liked or Popular is Most Important for Children to Learn",
+    "compute_alias": "Believe to be Well Liked or Popular is Most Important for Children to Learn",
+    "recoded_levels": {
+      "0": ["FIFTH", "FOURTH", "THIRD", "SECOND"],
+      "1": "FIRST"
+    },
+    "parent": "popular",
+    "value_counts": {
+      "0": 31596,
+      "1": 211
+    },
+    "value_percents": {
+      "0": 99.3,
+      "1": 0.7
+    }
+  },
+  "thnkself_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Teaching Children Values: Is It Important to Think for Oneself",
+    "selection_alias": "Believe to Think for Oneself is Most Important for Children to Learn",
+    "compute_alias": "Believe to Think for Oneself is Most Important for Children to Learn",
+    "recoded_levels": {
+      "0": ["SECOND", "THIRD", "FOURTH", "FIFTH"],
+      "1": "FIRST"
+    },
+    "parent": "thnkself",
+    "value_counts": {
+      "0": 16474,
+      "1": 15333
+    },
+    "value_percents": {
+      "0": 51.8,
+      "1": 48.2
+    }
+  },
+  "workhard_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Teaching Children Values: Is It Important to Work Hard",
+    "selection_alias": "Believe to Work Hard is Most Important for Children to Learn",
+    "compute_alias": "Believe to Work Hard is Most Important for Children to Learn",
+    "recoded_levels": {
+      "0": ["FOURTH", "THIRD", "SECOND", "FIFTH"],
+      "1": "FIRST"
+    },
+    "parent": "workhard",
+    "value_counts": {
+      "0": 25493,
+      "1": 6314
+    },
+    "value_percents": {
+      "0": 80.1,
+      "1": 19.9
+    }
+  },
+  "helpsick_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Role of Government: Funding Medical Care",
+    "selection_alias": "Believe People Should Pay Medical Bills Themself",
+    "compute_alias": "Believe People Should Pay Medical Bills Themself",
+    "recoded_levels": {
+      "0": ["AGREE WITH BOTH", "GOVERNMENT SHOULD HELP", null],
+      "1": ["PEOPLE SHOULD CARE FOR THEMSELVES", null]
+    },
+    "parent": "helpsick",
+    "value_counts": {
+      "0": 32912,
+      "1": 6886
+    },
+    "value_percents": {
+      "0": 82.7,
+      "1": 17.3
+    }
+  },
+  "helpblk_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Role of Government: Help Improve Standard of Living of African-Americans",
+    "selection_alias": "Believe Government Should Not Help African Americans Improve Their Standard of Living",
+    "compute_alias": "Believe Government Should Not Help African Americans Improve Their Standard of Living",
+    "recoded_levels": {
+      "0": ["AGREE WITH BOTH", "GOVERNMENT SHOULD HELP", null],
+      "1": ["NO SPECIAL TREATMENT", null]
+    },
+    "parent": "helpblk",
+    "value_counts": {
+      "0": 21106,
+      "1": 18760
+    },
+    "value_percents": {
+      "0": 52.9,
+      "1": 47.1
+    }
+  },
+  "helppoor_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Role of Government: Helping the Poor",
+    "selection_alias": "Believe Poor Should Help Themselves",
+    "compute_alias": "Believe Poor Should Help Themselves",
+    "recoded_levels": {
+      "0": ["GOVERNMENT SHOULD HELP", "AGREE WITH BOTH", null],
+      "1": ["PEOPLE SHOULD CARE FOR THEMSELVES", null]
+    },
+    "parent": "helppoor",
+    "value_counts": {
+      "0": 29975,
+      "1": 9723
+    },
+    "value_percents": {
+      "0": 75.5,
+      "1": 24.5
+    }
+  },
+  "helpnot_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Role of Government: Solving Country's Problems",
+    "selection_alias": "Believe Government Does Too Much to Solve Country's Problems",
+    "compute_alias": "Believe Government Does Too Much to Solve Country's Problems",
+    "recoded_levels": {
+      "0": ["AGREE WITH BOTH", "GOVERNMENT SHOULD DO MORE", null],
+      "1": [null, "GOVERNMENT DOES TOO MUCH"]
+    },
+    "parent": "helpnot",
+    "value_counts": {
+      "0": 27017,
+      "1": 11864
+    },
+    "value_percents": {
+      "0": 69.5,
+      "1": 30.5
+    }
+  },
+  "goveqinc_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Role of Government: Reducing Income Differences",
+    "selection_alias": "Believe that Government Should Not Have Responsibility to Reduce Income Differences",
+    "compute_alias": "Believe that Government Should Not Have Responsibility to Reduce Income Differences",
+    "recoded_levels": {
+      "0": ["AGREE", "STRONGLY AGREE", "NEITHER AGREE NOR DISAGREE"],
+      "1": ["DISAGREE", "STRONGLY DISAGREE"]
+    },
+    "parent": "goveqinc",
+    "value_counts": {
+      "0": 7323,
+      "1": 5870
+    },
+    "value_percents": {
+      "0": 55.5,
+      "1": 44.5
+    }
+  },
+  "intlblks_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Perception of African-American Intelligence",
+    "selection_alias": "Believe African-Americans are Unintelligent",
+    "compute_alias": "Believe African-Americans are Unintelligent",
+    "recoded_levels": {
+      "0": [null, "7-INTELLIGENT"],
+      "1": [null, "1-UNINTELLIGENT"]
+    },
+    "parent": "intlblks",
+    "value_counts": {
+      "0": 20204,
+      "1": 3505
+    },
+    "value_percents": {
+      "0": 85.2,
+      "1": 14.8
+    }
+  },
+  "intlwhts_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Perception of White Intelligence",
+    "selection_alias": "Believe Whites are Unintelligent",
+    "compute_alias": "Believe Whites are Unintelligent",
+    "recoded_levels": {
+      "0": [null, "7-INTELLIGENT"],
+      "1": [null, "1-UNINTELLIGENT"]
+    },
+    "parent": "intlwhts",
+    "value_counts": {
+      "0": 21686,
+      "1": 2099
+    },
+    "value_percents": {
+      "0": 91.2,
+      "1": 8.8
+    }
+  },
+  "intlhsps_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Perception of Hispanic Intelligence",
+    "selection_alias": "Believe Hispanics are Unintelligent",
+    "compute_alias": "Believe Hispanics are Unintelligent",
+    "recoded_levels": {
+      "0": [null, "7-INTELLIGENT"],
+      "1": [null, "1-UNINTELLIGENT"]
+    },
+    "parent": "intlhsps",
+    "value_counts": {
+      "0": 7604,
+      "1": 1334
+    },
+    "value_percents": {
+      "0": 85.1,
+      "1": 14.9
+    }
+  },
+  "closeblk_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Feeling of Closeness to African-Americans",
+    "selection_alias": "Feel Very Close to African-Americans",
+    "compute_alias": "Feel Very Close to African-Americans",
+    "recoded_levels": {
+      "0": ["NEITHER ONE OR THE OTHER", "NOT AT ALL CLOSE", null],
+      "1": [null, "VERY CLOSE"]
+    },
+    "parent": "closeblk",
+    "value_counts": {
+      "0": 9035,
+      "1": 6841
+    },
+    "value_percents": {
+      "0": 56.9,
+      "1": 43.1
+    }
+  },
+  "workblks_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Perception of African-Americans as Hard-Working or Lazy",
+    "selection_alias": "Believe African-Americans are Lazy",
+    "compute_alias": "Believe African-Americans are Lazy",
+    "recoded_levels": {
+      "0": [null, "1 - HARD-WORKING"],
+      "1": [null, "7 - LAZY"]
+    },
+    "parent": "workblks",
+    "value_counts": {
+      "0": 17688,
+      "1": 7532
+    },
+    "value_percents": {
+      "0": 70.1,
+      "1": 29.9
+    }
+  },
+  "workwhts_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Perception of Whites as Hard-Working or Lazy?",
+    "selection_alias": "Believe Whites are Lazy",
+    "compute_alias": "Believe Whites are Lazy",
+    "recoded_levels": {
+      "0": [null, "1 - HARD-WORKING"],
+      "1": [null, "7 - LAZY"]
+    },
+    "parent": "workwhts",
+    "value_counts": {
+      "0": 22335,
+      "1": 3005
+    },
+    "value_percents": {
+      "0": 88.1,
+      "1": 11.9
+    }
+  },
+  "workhsps_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Perception of Hispanics as Hard-Working or Lazy",
+    "selection_alias": "Believe Hispanics are Lazy",
+    "compute_alias": "Believe Hispanics are Lazy",
+    "recoded_levels": {
+      "0": [null, "1 - HARD-WORKING"],
+      "1": [null, "7 - LAZY"]
+    },
+    "parent": "workhsps",
+    "value_counts": {
+      "0": 8634,
+      "1": 1702
+    },
+    "value_percents": {
+      "0": 83.5,
+      "1": 16.5
+    }
+  },
+  "racdif1_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion: Is Racial Inequality Due to Discrimination?",
+    "selection_alias": "Believe Black People Having Worse Outcomes than White People is not Due to Discrimination",
+    "compute_alias": "Believe Black People Having Worse Outcomes than White People is not Due to Discrimination",
+    "recoded_levels": {
+      "0": "YES",
+      "1": "NO"
+    },
+    "parent": "racdif1",
+    "value_counts": {
+      "0": 14340,
+      "1": 19497
+    },
+    "value_percents": {
+      "0": 42.4,
+      "1": 57.6
+    }
+  },
+  "racdif3_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion: Is Racial Inequality Due to Unequal Access to Education?",
+    "selection_alias": "Believe Black People Having Worse Outcomes than White People is not Due to Lack of Access to Education",
+    "compute_alias": "Believe Black People Having Worse Outcomes than White People is not Due to Lack of Access to Education",
+    "recoded_levels": {
+      "0": "YES",
+      "1": "NO"
+    },
+    "parent": "racdif3",
+    "value_counts": {
+      "0": 17103,
+      "1": 17186
+    },
+    "value_percents": {
+      "0": 49.9,
+      "1": 50.1
+    }
+  },
+  "racdif2_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion: Is Racial Inequality Due to Differences in Ability to Learn?",
+    "selection_alias": "Believe Black People Having Worse Outcomes than White People is Due to Less Inborn Ability to Learn",
+    "compute_alias": "Believe Black People Having Worse Outcomes than White People is Due to Less Inborn Ability to Learn",
+    "recoded_levels": {
+      "0": "NO",
+      "1": "YES"
+    },
+    "parent": "racdif2",
+    "value_counts": {
+      "0": 30145,
+      "1": 4181
+    },
+    "value_percents": {
+      "0": 87.8,
+      "1": 12.2
+    }
+  },
+  "racdif4_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion: Is Racial Inequality Due to Lack of Motivation?",
+    "selection_alias": "Believe Black People Having Worse Outcomes than White People is Due to a Lack of Motivation",
+    "compute_alias": "Believe Black People Having Worse Outcomes than White People is Due to a Lack of Motivation",
+    "recoded_levels": {
+      "0": "NO",
+      "1": "YES"
+    },
+    "parent": "racdif4",
+    "value_counts": {
+      "0": 17364,
+      "1": 16206
+    },
+    "value_percents": {
+      "0": 51.7,
+      "1": 48.3
+    }
+  },
+  "attend_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Prevalence of Weekly Church Attendance",
+    "selection_alias": "Attend Religious Services Weekly",
+    "compute_alias": "Attend Religious Services Weekly",
+    "recoded_levels": {
+      "0": ["ABOUT ONCE OR TWICE A YEAR", "ABOUT ONCE A MONTH", "NEVER", "SEVERAL TIMES A YEAR", "2-3 TIMES A MONTH", "LESS THAN ONCE A YEAR"],
+      "1": ["EVERY WEEK", "SEVERAL TIMES A WEEK", "NEARLY EVERY WEEK"]
+    },
+    "parent": "attend",
+    "value_counts": {
+      "0": 51260,
+      "1": 23706
+    },
+    "value_percents": {
+      "0": 68.4,
+      "1": 31.6
+    }
+  },
+  "sexfreq_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Prevalence of Regular Sexual Activity",
+    "selection_alias": "Having Sex more than Once a Month",
+    "compute_alias": "Having Sex more than Once a Month",
+    "recoded_levels": {
+      "0": ["ONCE A MONTH", "NOT AT ALL", "ONCE OR TWICE"],
+      "1": ["MORE THAN 3 TIMES A WEEK", "2 OR 3 TIMES A MONTH", "2 OR 3 TIMES A WEEK", "ABOUT ONCE A WEEK"]
+    },
+    "parent": "sexfreq",
+    "value_counts": {
+      "0": 15833,
+      "1": 20579
+    },
+    "value_percents": {
+      "0": 43.5,
+      "1": 56.5
+    }
+  },
+  "owngun_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Gun Ownership Rate",
+    "selection_alias": "Have Guns or Revolvers at Home",
+    "compute_alias": "Have Guns or Revolvers at Home",
+    "recoded_levels": {
+      "0": "NO",
+      "1": "YES"
+    },
+    "parent": "owngun",
+    "value_counts": {
+      "0": 28935,
+      "1": 18586
+    },
+    "value_percents": {
+      "0": 60.9,
+      "1": 39.1
+    }
+  },
+  "gunlaw_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Needing a Police Permit to Buy a Gun",
+    "selection_alias": "Support Requiring Police Permit to Buy a Gun",
+    "compute_alias": "Support Requiring Police Permit to Buy a Gun",
+    "recoded_levels": {
+      "0": "OPPOSE",
+      "1": "FAVOR"
+    },
+    "parent": "gunlaw",
+    "value_counts": {
+      "0": 12608,
+      "1": 37890
+    },
+    "value_percents": {
+      "0": 25,
+      "1": 75
+    }
+  },
+  "hunt_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Prevalence of Hunting Activity",
+    "selection_alias": "Hunt or Spouse Hunts",
+    "compute_alias": "Hunt or Spouse Hunts",
+    "recoded_levels": {
+      "0": "NO, NEITHER R NOR SPOUSE HUNTS",
+      "1": ["YES, BOTH DO", "YES, RESPONDENT DOES", "YES, SPOUSE DOES"]
+    },
+    "parent": "hunt",
+    "value_counts": {
+      "0": 35495,
+      "1": 8308
+    },
+    "value_percents": {
+      "0": 81,
+      "1": 19
+    }
+  },
+  "happy_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Prevalence of 'Feeling Happy'",
+    "selection_alias": "Feel Very Happy",
+    "compute_alias": "Feel Very Happy",
+    "recoded_levels": {
+      "0": ["NOT TOO HAPPY", "PRETTY HAPPY"],
+      "1": "VERY HAPPY"
+    },
+    "parent": "happy",
+    "value_counts": {
+      "0": 49800,
+      "1": 21069
+    },
+    "value_percents": {
+      "0": 70.3,
+      "1": 29.7
+    }
+  },
+  "satjob_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Job Satisfaction",
+    "selection_alias": "Are Very Satisfied with their Work",
+    "compute_alias": "Are Very Satisfied with their Work",
+    "recoded_levels": {
+      "0": ["A LITTLE DISSATISFIED", "MODERATELY SATISFIED", "VERY DISSATISFIED"],
+      "1": "VERY SATISFIED"
+    },
+    "parent": "satjob",
+    "value_counts": {
+      "0": 28420,
+      "1": 25711
+    },
+    "value_percents": {
+      "0": 52.5,
+      "1": 47.5
+    }
+  },
+  "life_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Perception of Life as Exciting or Dull",
+    "selection_alias": "Find Life Exciting",
+    "compute_alias": "Find Life Exciting",
+    "recoded_levels": {
+      "0": ["ROUTINE", "DULL"],
+      "1": "EXCITING"
+    },
+    "parent": "life",
+    "value_counts": {
+      "0": 25155,
+      "1": 21308
+    },
+    "value_percents": {
+      "0": 54.1,
+      "1": 45.9
+    }
+  },
+  "health_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Prevalence of 'Poor Health'",
+    "selection_alias": "Believe their Health is Poor",
+    "compute_alias": "Believe their Health is Poor",
+    "recoded_levels": {
+      "0": ["GOOD", "EXCELLENT"],
+      "1": ["FAIR", "POOR"]
+    },
+    "parent": "health",
+    "value_counts": {
+      "0": 43699,
+      "1": 14749
+    },
+    "value_percents": {
+      "0": 74.8,
+      "1": 25.2
+    }
+  },
+  "hapmar_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Happiness of Marriage",
+    "selection_alias": "Believe They Have a Very Happy Marriage",
+    "compute_alias": "Believe They Have a Very Happy Marriage",
+    "recoded_levels": {
+      "0": ["PRETTY HAPPY", "NOT TOO HAPPY"],
+      "1": "VERY HAPPY"
+    },
+    "parent": "hapmar",
+    "value_counts": {
+      "0": 13121,
+      "1": 22229
+    },
+    "value_percents": {
+      "0": 37.1,
+      "1": 62.9
+    }
+  },
+  "satfin_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Satisfaction with Financial Situation",
+    "selection_alias": "Are Satisfied with Their Financial Situation",
+    "compute_alias": "Are Satisfied with Their Financial Situation",
+    "recoded_levels": {
+      "0": ["NOT SATISFIED AT ALL", "MORE OR LESS SATISFIED"],
+      "1": "PRETTY WELL SATISFIED"
+    },
+    "parent": "satfin",
+    "value_counts": {
+      "0": 50513,
+      "1": 20500
+    },
+    "value_percents": {
+      "0": 71.1,
+      "1": 28.9
+    }
+  },
+  "trust_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Trust in People",
+    "selection_alias": "Believe People Can be Trusted",
+    "compute_alias": "Believe People Can be Trusted",
+    "recoded_levels": {
+      "0": ["DEPENDS", "CAN'T BE TOO CAREFUL"],
+      "1": "MOST PEOPLE CAN BE TRUSTED"
+    },
+    "parent": "trust",
+    "value_counts": {
+      "0": 27497,
+      "1": 15926
+    },
+    "value_percents": {
+      "0": 63.3,
+      "1": 36.7
+    }
+  },
+  "fair_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Belief that People are Fair",
+    "selection_alias": "Believe People are Fair",
+    "compute_alias": "Believe People are Fair",
+    "recoded_levels": {
+      "0": ["WOULD TAKE ADVANTAGE OF YOU", "DEPENDS"],
+      "1": "WOULD TRY TO BE FAIR"
+    },
+    "parent": "fair",
+    "value_counts": {
+      "0": 19383,
+      "1": 23646
+    },
+    "value_percents": {
+      "0": 45,
+      "1": 55
+    }
+  },
+  "helpful_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Belief that People are Helpful",
+    "selection_alias": "Believe People Mostly Try to be Helpful",
+    "compute_alias": "Believe People Mostly Try to be Helpful",
+    "recoded_levels": {
+      "0": ["LOOKING OUT FOR THEMSELVES", "DEPENDS"],
+      "1": "TRY TO BE HELPFUL"
+    },
+    "parent": "helpful",
+    "value_counts": {
+      "0": 22330,
+      "1": 20831
+    },
+    "value_percents": {
+      "0": 51.7,
+      "1": 48.3
+    }
+  },
+  "getahead_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on 'Do People Get Ahead by Hard Work or Luck?'",
+    "selection_alias": "Believe People Get Ahead by Own Hard Work",
+    "compute_alias": "Believe People Get Ahead by Own Hard Work",
+    "recoded_levels": {
+      "0": ["HARD WORK, LUCK EQUALLY IMPORTANT", "LUCK MOST IMPORTANT", "OTHER"],
+      "1": "HARD WORK MOST IMPORTANT"
+    },
+    "parent": "getahead",
+    "value_counts": {
+      "0": 14281,
+      "1": 28004
+    },
+    "value_percents": {
+      "0": 33.8,
+      "1": 66.2
+    }
+  },
+  "premarsx_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Sex Before Marriage",
+    "selection_alias": "Believe Sex Before Marriage is Always Wrong",
+    "compute_alias": "Believe Sex Before Marriage is Always Wrong",
+    "recoded_levels": {
+      "0": ["NOT WRONG AT ALL", "WRONG ONLY SOMETIMES", "ALMOST ALWAYS WRONG"],
+      "1": "ALWAYS WRONG"
+    },
+    "parent": "premarsx",
+    "value_counts": {
+      "0": 34407,
+      "1": 11290
+    },
+    "value_percents": {
+      "0": 75.3,
+      "1": 24.7
+    }
+  },
+  "xmarsex_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Sex Outside of Marriage",
+    "selection_alias": "Believe Extramarital Sex is Always Wrong",
+    "compute_alias": "Believe Extramarital Sex is Always Wrong",
+    "recoded_levels": {
+      "0": ["WRONG ONLY SOMETIMES", "ALMOST ALWAYS WRONG", "NOT WRONG AT ALL"],
+      "1": "ALWAYS WRONG"
+    },
+    "parent": "xmarsex",
+    "value_counts": {
+      "0": 11782,
+      "1": 34484
+    },
+    "value_percents": {
+      "0": 25.5,
+      "1": 74.5
+    }
+  },
+  "homosex_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Same Sex Relationships",
+    "selection_alias": "Believe Same-Sex Relationships are Always Wrong",
+    "compute_alias": "Believe Same-Sex Relationships are Always Wrong",
+    "recoded_levels": {
+      "0": ["NOT WRONG AT ALL", "ALMOST ALWAYS WRONG", "WRONG ONLY SOMETIMES"],
+      "1": "ALWAYS WRONG"
+    },
+    "parent": "homosex",
+    "value_counts": {
+      "0": 19100,
+      "1": 25544
+    },
+    "value_percents": {
+      "0": 42.8,
+      "1": 57.2
+    }
+  },
+  "teensex_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Sex Before Marriage Between Teenagers",
+    "selection_alias": "Believe Sex Before Marriage for Teenagers is Always Wrong",
+    "compute_alias": "Believe Sex Before Marriage for Teenagers is Always Wrong",
+    "recoded_levels": {
+      "0": ["NOT WRONG AT ALL", "WRONG ONLY SOMETIMES", "ALMOST ALWAYS WRONG"],
+      "1": "ALWAYS WRONG"
+    },
+    "parent": "teensex",
+    "value_counts": {
+      "0": 12315,
+      "1": 21586
+    },
+    "value_percents": {
+      "0": 36.3,
+      "1": 63.7
+    }
+  },
+  "pornlaw_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Pornography Laws",
+    "selection_alias": "Believe Pornography Should be Illegal to All",
+    "compute_alias": "Believe Pornography Should be Illegal to All",
+    "recoded_levels": {
+      "0": ["THERE SHOULD BE LAWS AGAINST THE DISTRIBUTION OF PORNOGRAPHY TO PERSONS UNDER 18", "THERE SHOULD BE NO LAWS FORBIDDING THE DISTRIBUTION OF PORNOGRAPHY"],
+      "1": "THERE SHOULD BE LAWS AGAINST THE DISTRIBUTION OF PORNOGRAPHY WHATEVER THE AGE"
+    },
+    "parent": "pornlaw",
+    "value_counts": {
+      "0": 29266,
+      "1": 16979
+    },
+    "value_percents": {
+      "0": 63.3,
+      "1": 36.7
+    }
+  },
+  "xmovie_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Prevalence of Watching X-Rated Movies",
+    "selection_alias": "Have Seen an X-Rated Movie in the Last Year",
+    "compute_alias": "Have Seen an X-Rated Movie in the Last Year",
+    "recoded_levels": {
+      "0": "NO",
+      "1": "YES"
+    },
+    "parent": "xmovie",
+    "value_counts": {
+      "0": 33218,
+      "1": 10641
+    },
+    "value_percents": {
+      "0": 75.7,
+      "1": 24.3
+    }
+  },
+  "pillok_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion Access to Birth Control for Teenagers",
+    "selection_alias": "Agree Birth Control Should be Available to Teenagers Even if Parents Do not Approve",
+    "compute_alias": "Agree Birth Control Should be Available to Teenagers Even if Parents Do not Approve",
+    "recoded_levels": {
+      "0": ["DISAGREE", "STRONGLY DISAGREE"],
+      "1": ["STRONGLY AGREE", "AGREE"]
+    },
+    "parent": "pillok",
+    "value_counts": {
+      "0": 12996,
+      "1": 19898
+    },
+    "value_percents": {
+      "0": 39.5,
+      "1": 60.5
+    }
+  },
+  "sexeduc_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Sex Education in Public School",
+    "selection_alias": "Support Sex Education in Public Schools",
+    "compute_alias": "Support Sex Education in Public Schools",
+    "recoded_levels": {
+      "0": ["OPPOSE", "DEPENDS ON AGE/GRADE (VOL.)"],
+      "1": "FAVOR"
+    },
+    "parent": "sexeduc",
+    "value_counts": {
+      "0": 5410,
+      "1": 37496
+    },
+    "value_percents": {
+      "0": 12.6,
+      "1": 87.4
+    }
+  },
+  "racmar_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Laws Against Inter-Racial Marriage",
+    "selection_alias": "Oppose Laws Against Marriages Between African-Americans and Whites",
+    "compute_alias": "Oppose Laws Against Marriages Between African-Americans and Whites",
+    "recoded_levels": {
+      "0": "YES",
+      "1": "NO"
+    },
+    "parent": "racmar",
+    "value_counts": {
+      "0": 6629,
+      "1": 22155
+    },
+    "value_percents": {
+      "0": 23,
+      "1": 77
+    }
+  },
+  "racpres_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Willingness to Vote for a Black President",
+    "selection_alias": "Would Vote for a Black President",
+    "compute_alias": "Would Vote for a Black President",
+    "recoded_levels": {
+      "0": "NO",
+      "1": "YES"
+    },
+    "parent": "racpres",
+    "value_counts": {
+      "0": 3140,
+      "1": 20072
+    },
+    "value_percents": {
+      "0": 13.5,
+      "1": 86.5
+    }
+  },
+  "affrmact_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Preferential Hiring of Blacks",
+    "selection_alias": "Strongly Oppose Preferential Hiring of Blacks",
+    "compute_alias": "Strongly Oppose Preferential Hiring of Blacks",
+    "recoded_levels": {
+      "0": ["STRONGLY FAVORS", "NOT STRONGLY FAVORS", "NOT STRONGLY OPPOSES"],
+      "1": "STRONGLY OPPOSES"
+    },
+    "parent": "affrmact",
+    "value_counts": {
+      "0": 12770,
+      "1": 13041
+    },
+    "value_percents": {
+      "0": 49.5,
+      "1": 50.5
+    }
+  },
+  "racopen_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Laws Against Discrimination in Housing",
+    "selection_alias": "Support Laws Which Allow Property Owners to Decide Who to Rent To, Over Laws to Prevent Discrimination in Housing",
+    "compute_alias": "Support Laws Which Allow Property Owners to Decide Who to Rent To, Over Laws to Prevent Discrimination in Housing",
+    "recoded_levels": {
+      "0": "SECOND LAW",
+      "1": "FIRST LAW"
+    },
+    "parent": "racopen",
+    "value_counts": {
+      "0": 20507,
+      "1": 13023
+    },
+    "value_percents": {
+      "0": 61.2,
+      "1": 38.8
+    }
+  },
+  "wrkwayup_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion: Should African-Americans Overcome Prejudice Without Government Support?",
+    "selection_alias": "Strongly Agree Blacks Should Overcome Prejudice Without Special Favors",
+    "compute_alias": "Strongly Agree Blacks Should Overcome Prejudice Without Special Favors",
+    "recoded_levels": {
+      "0": ["NEITHER AGREE NOR DISAGREE", "DISAGREE SOMEWHAT", "DISAGREE STRONGLY"],
+      "1": ["AGREE SOMEWHAT", "AGREE STRONGLY"]
+    },
+    "parent": "wrkwayup",
+    "value_counts": {
+      "0": 8731,
+      "1": 16111
+    },
+    "value_percents": {
+      "0": 35.1,
+      "1": 64.9
+    }
+  },
+  "liveblks_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Willingness to Live in a Half Black Neighborhood",
+    "selection_alias": "Oppose Living in a Half African-American Neighborhood",
+    "compute_alias": "Oppose Living in a Half African-American Neighborhood",
+    "recoded_levels": {
+      "0": ["NEITHER FAVOR NOR OPPOSE", "STRONGLY FAVOR", "FAVOR"],
+      "1": ["OPPOSE", "STRONGLY OPPOSE"]
+    },
+    "parent": "liveblks",
+    "value_counts": {
+      "0": 19252,
+      "1": 5063
+    },
+    "value_percents": {
+      "0": 79.2,
+      "1": 20.8
+    }
+  },
+  "divlaw_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Ease of Obtaining a Divorce",
+    "selection_alias": "Believe Divorce Should be More Difficult to Obtain",
+    "compute_alias": "Believe Divorce Should be More Difficult to Obtain",
+    "recoded_levels": {
+      "0": ["EASIER", "STAY AS IS"],
+      "1": "MORE DIFFICULT"
+    },
+    "parent": "divlaw",
+    "value_counts": {
+      "0": 20759,
+      "1": 18767
+    },
+    "value_percents": {
+      "0": 52.5,
+      "1": 47.5
+    }
+  },
+  "courts_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Court Treatment of Criminals",
+    "selection_alias": "Believe Courts are not Harsh Enough with Criminals",
+    "compute_alias": "Believe Courts are not Harsh Enough with Criminals",
+    "recoded_levels": {
+      "0": ["ABOUT RIGHT", "TOO HARSHLY"],
+      "1": "NOT HARSHLY ENOUGH"
+    },
+    "parent": "courts",
+    "value_counts": {
+      "0": 12812,
+      "1": 44103
+    },
+    "value_percents": {
+      "0": 22.5,
+      "1": 77.5
+    }
+  },
+  "grass_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Marijuana Legalization",
+    "selection_alias": "Support Marijuana Legalization",
+    "compute_alias": "Support Marijuana Legalization",
+    "recoded_levels": {
+      "0": "SHOULD NOT BE LEGAL",
+      "1": "SHOULD BE LEGAL"
+    },
+    "parent": "grass",
+    "value_counts": {
+      "0": 26270,
+      "1": 13266
+    },
+    "value_percents": {
+      "0": 66.4,
+      "1": 33.6
+    }
+  },
+  "cappun_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Death Penalty",
+    "selection_alias": "Favor the Death Penalty for Persons Convicted of Murder",
+    "compute_alias": "Favor the Death Penalty for Persons Convicted of Murder",
+    "recoded_levels": {
+      "0": "OPPOSE",
+      "1": "FAVOR"
+    },
+    "parent": "cappun",
+    "value_counts": {
+      "0": 19490,
+      "1": 43424
+    },
+    "value_percents": {
+      "0": 31,
+      "1": 69
+    }
+  },
+  "suicide1_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on 'Right to Die'",
+    "selection_alias": "Believe a Person Has the Right to End His or Her Own Life if this Person Has an Incurable Disease",
+    "compute_alias": "Believe a Person Has the Right to End His or Her Own Life if this Person Has an Incurable Disease",
+    "recoded_levels": {
+      "0": "NO",
+      "1": "YES"
+    },
+    "parent": "suicide1",
+    "value_counts": {
+      "0": 15889,
+      "1": 21703
+    },
+    "value_percents": {
+      "0": 42.3,
+      "1": 57.7
+    }
+  },
+  "fear_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Perceptions of Safety",
+    "selection_alias": "Are not Afraid to Walk Alone at Night in their Neighborhood",
+    "compute_alias": "Are not Afraid to Walk Alone at Night in their Neighborhood",
+    "recoded_levels": {
+      "0": "NO",
+      "1": "YES"
+    },
+    "parent": "fear",
+    "value_counts": {
+      "0": 29250,
+      "1": 18754
+    },
+    "value_percents": {
+      "0": 60.9,
+      "1": 39.1
+    }
+  },
+  "fefam_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Is It Better for Men to Work and Women to Stay Home?",
+    "selection_alias": "Agree it is Better for a Man to Work, and for a Woman to Tend to the Home",
+    "compute_alias": "Agree it is Better for a Man to Work, and for a Woman to Tend to the Home",
+    "recoded_levels": {
+      "0": ["STRONGLY DISAGREE", "DISAGREE"],
+      "1": ["AGREE", "STRONGLY AGREE"]
+    },
+    "parent": "fefam",
+    "value_counts": {
+      "0": 23985,
+      "1": 13308
+    },
+    "value_percents": {
+      "0": 64.3,
+      "1": 35.7
+    }
+  },
+  "fepresch_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Do Children Suffer if the Mother Works?",
+    "selection_alias": "Agree Preschool Kids Suffer if the Mother Works",
+    "compute_alias": "Agree Preschool Kids Suffer if the Mother Works",
+    "recoded_levels": {
+      "0": ["STRONGLY DISAGREE", "DISAGREE"],
+      "1": ["AGREE", "STRONGLY AGREE"]
+    },
+    "parent": "fepresch",
+    "value_counts": {
+      "0": 22538,
+      "1": 14720
+    },
+    "value_percents": {
+      "0": 60.5,
+      "1": 39.5
+    }
+  },
+  "fepol_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Are Women Suited for Politics?",
+    "selection_alias": "Agree Men are Better Suited Emotionally for Politics than Women",
+    "compute_alias": "Agree Men are Better Suited Emotionally for Politics than Women",
+    "recoded_levels": {
+      "0": "DISAGREE",
+      "1": "AGREE"
+    },
+    "parent": "fepol",
+    "value_counts": {
+      "0": 26441,
+      "1": 10146
+    },
+    "value_percents": {
+      "0": 72.3,
+      "1": 27.7
+    }
+  },
+  "meovrwrk_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Does Family Life Suffer if Men Focus on Work Too Much?",
+    "selection_alias": "Agree that Family Life Suffers When Men Focus on Work Too Much",
+    "compute_alias": "Agree that Family Life Suffers When Men Focus on Work Too Much",
+    "recoded_levels": {
+      "0": ["NEITHER AGREE NOR DISAGREE", "DISAGREE", "STRONGLY DISAGREE"],
+      "1": ["STRONGLY AGREE", "AGREE"]
+    },
+    "parent": "meovrwrk",
+    "value_counts": {
+      "0": 11530,
+      "1": 13249
+    },
+    "value_percents": {
+      "0": 46.5,
+      "1": 53.5
+    }
+  },
+  "reliten_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Strength of Belief in Own Religion",
+    "selection_alias": "Are a Strong Believer in Their Religion",
+    "compute_alias": "Are a Strong Believer in Their Religion",
+    "recoded_levels": {
+      "0": ["NOT VERY STRONG", "SOMEWHAT STRONG (VOL.)", "NO RELIGION"],
+      "1": "STRONG"
+    },
+    "parent": "reliten",
+    "value_counts": {
+      "0": 39150,
+      "1": 23782
+    },
+    "value_percents": {
+      "0": 62.2,
+      "1": 37.8
+    }
+  },
+  "bible_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Beliefs About the Bible",
+    "selection_alias": "Believe the Bible is the 'Word of God'",
+    "compute_alias": "Believe the Bible is the 'Word of God'",
+    "recoded_levels": {
+      "0": ["INSPIRED WORD", "ANCIENT BOOK", "OTHER (VOL)"],
+      "1": "WORD OF GOD"
+    },
+    "parent": "bible",
+    "value_counts": {
+      "0": 26084,
+      "1": 12915
+    },
+    "value_percents": {
+      "0": 66.9,
+      "1": 33.1
+    }
+  },
+  "god_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Belief in the Existence of God",
+    "selection_alias": "Believe Without Doubt that God Exists",
+    "compute_alias": "Believe Without Doubt that God Exists",
+    "recoded_levels": {
+      "0": ["DON'T KNOW, NO WAY TO FIND OUT", "BELIEVE WITH DOUBTS", "BELIEVE SOMETIMES", "HIGHER POWER", "DON'T BELIEVE"],
+      "1": "NO DOUBTS"
+    },
+    "parent": "god",
+    "value_counts": {
+      "0": 13196,
+      "1": 18569
+    },
+    "value_percents": {
+      "0": 41.5,
+      "1": 58.5
+    }
+  },
+  "postlife_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Belief in Life After Death",
+    "selection_alias": "Believe in Life After Death",
+    "compute_alias": "Believe in Life After Death",
+    "recoded_levels": {
+      "0": "NO",
+      "1": "YES"
+    },
+    "parent": "postlife",
+    "value_counts": {
+      "0": 9031,
+      "1": 36400
+    },
+    "value_percents": {
+      "0": 19.9,
+      "1": 80.1
+    }
+  },
+  "prayer_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Prayer in Public Schools",
+    "selection_alias": "Approve of Law that Prayer Cannot be Required in Public Schools",
+    "compute_alias": "Approve of Law that Prayer Cannot be Required in Public Schools",
+    "recoded_levels": {
+      "0": "DISAPPROVE",
+      "1": "APPROVE"
+    },
+    "parent": "prayer",
+    "value_counts": {
+      "0": 21177,
+      "1": 14606
+    },
+    "value_percents": {
+      "0": 59.2,
+      "1": 40.8
+    }
+  },
+  "relig_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Current Religion is Protestant",
+    "selection_alias": "Se Current Religion is Protestant",
+    "compute_alias": "Se Current Religion is Protestant",
+    "recoded_levels": {
+      "0": ["JEWISH", "CATHOLIC", "OTHER", "NONE", "INTER-NONDENOMINATIONAL", "CHRISTIAN", "MUSLIM/ISLAM", "BUDDHISM", "ORTHODOX-CHRISTIAN", "NATIVE AMERICAN", "HINDUISM", "OTHER EASTERN RELIGIONS"],
+      "1": "PROTESTANT"
+    },
+    "parent": "relig",
+    "value_counts": {
+      "0": 31829,
+      "1": 40124
+    },
+    "value_percents": {
+      "0": 44.2,
+      "1": 55.8
+    }
+  },
+  "sprtprsn_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Are You Spiritual?",
+    "selection_alias": "Consider Themselves Very Spiritual",
+    "compute_alias": "Consider Themselves Very Spiritual",
+    "recoded_levels": {
+      "0": ["NOT SPIRITUAL AT ALL", "MODERATELY SPIRITUAL", "SLIGHTLY SPIRITUAL"],
+      "1": "VERY SPIRITUAL"
+    },
+    "parent": "sprtprsn",
+    "value_counts": {
+      "0": 20596,
+      "1": 8049
+    },
+    "value_percents": {
+      "0": 71.9,
+      "1": 28.1
+    }
+  },
+  "fund_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Prevalence of Religious Fundamentalist Beliefs",
+    "selection_alias": "Identify as a Religious Fundamentalist",
+    "compute_alias": "Identify as a Religious Fundamentalist",
+    "recoded_levels": {
+      "0": ["LIBERAL", "MODERATE"],
+      "1": "FUNDAMENTALIST"
+    },
+    "parent": "fund",
+    "value_counts": {
+      "0": 49026,
+      "1": 20269
+    },
+    "value_percents": {
+      "0": 70.7,
+      "1": 29.3
+    }
+  },
+  "fund16_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Prevalence of Religious Fundamentalist Upbringing",
+    "selection_alias": "Were Raised as a Religious Fundamentalist",
+    "compute_alias": "Were Raised as a Religious Fundamentalist",
+    "recoded_levels": {
+      "0": ["MODERATE", "LIBERAL"],
+      "1": "FUNDAMENTALIST"
+    },
+    "parent": "fund16",
+    "value_counts": {
+      "0": 45708,
+      "1": 21137
+    },
+    "value_percents": {
+      "0": 68.4,
+      "1": 31.6
+    }
+  },
+  "relpersn_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Are you a Religious Person?",
+    "selection_alias": "Consider Themselves a Very Religious Person",
+    "compute_alias": "Consider Themselves a Very Religious Person",
+    "recoded_levels": {
+      "0": ["SLIGHTLY RELIGIOUS", "MODERATELY RELIGIOUS", "NOT RELIGIOUS AT ALL"],
+      "1": "VERY RELIGIOUS"
+    },
+    "parent": "relpersn",
+    "value_counts": {
+      "0": 24072,
+      "1": 4698
+    },
+    "value_percents": {
+      "0": 83.7,
+      "1": 16.3
+    }
+  },
+  "relig16_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Religion Raised in is Protestant",
+    "selection_alias": "Were Raised in the Protestant Religion",
+    "compute_alias": "Were Raised in the Protestant Religion",
+    "recoded_levels": {
+      "0": ["NONE", "CATHOLIC", "OTHER", "JEWISH", "CHRISTIAN", "INTER-NONDENOMINATIONAL", "HINDUISM", "BUDDHISM", "ORTHODOX-CHRISTIAN", "MUSLIM/ISLAM", "OTHER EASTERN RELIGIONS", "NATIVE AMERICAN"],
+      "1": "PROTESTANT"
+    },
+    "parent": "relig16",
+    "value_counts": {
+      "0": 28201,
+      "1": 40587
+    },
+    "value_percents": {
+      "0": 41,
+      "1": 59
+    }
+  },
+  "finalter_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Perception of Personal Financial Situation",
+    "selection_alias": "Believe their Financial Situation Has Gotten Better Recently",
+    "compute_alias": "Believe their Financial Situation Has Gotten Better Recently",
+    "recoded_levels": {
+      "0": ["STAYED SAME", "WORSE"],
+      "1": "BETTER"
+    },
+    "parent": "finalter",
+    "value_counts": {
+      "0": 44548,
+      "1": 26333
+    },
+    "value_percents": {
+      "0": 62.8,
+      "1": 37.2
+    }
+  },
+  "joblose_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Perception of Job Security",
+    "selection_alias": "Believe They are 'Not Likely' to Lose their Job in the Next 12 Months",
+    "compute_alias": "Believe They are 'Not Likely' to Lose their Job in the Next 12 Months",
+    "recoded_levels": {
+      "0": ["NOT TOO LIKELY", "VERY LIKELY", "FAIRLY LIKELY"],
+      "1": "NOT LIKELY"
+    },
+    "parent": "joblose",
+    "value_counts": {
+      "0": 9679,
+      "1": 16293
+    },
+    "value_percents": {
+      "0": 37.3,
+      "1": 62.7
+    }
+  },
+  "jobfind_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Perception of Ease of Finding a Job",
+    "selection_alias": "Believe it Would not be Easy to Find a Job Equivalent to their Current Job",
+    "compute_alias": "Believe it Would not be Easy to Find a Job Equivalent to their Current Job",
+    "recoded_levels": {
+      "0": ["VERY EASY", "SOMEWHAT EASY"],
+      "1": "NOT EASY"
+    },
+    "parent": "jobfind",
+    "value_counts": {
+      "0": 15456,
+      "1": 10404
+    },
+    "value_percents": {
+      "0": 59.8,
+      "1": 40.2
+    }
+  },
+  "finrela_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Perception of Household Income Relative to Others",
+    "selection_alias": "Believe their Family Income is Below Average Compared to Others",
+    "compute_alias": "Believe their Family Income is Below Average Compared to Others",
+    "recoded_levels": {
+      "0": ["AVERAGE", "ABOVE AVERAGE", "FAR ABOVE AVERAGE"],
+      "1": ["BELOW AVERAGE", "FAR BELOW AVERAGE"]
+    },
+    "parent": "finrela",
+    "value_counts": {
+      "0": 48934,
+      "1": 21646
+    },
+    "value_percents": {
+      "0": 69.3,
+      "1": 30.7
+    }
+  },
+  "kidssol_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Outlook on Children's Standard of Living",
+    "selection_alias": "Believe their Children's Standard of Living Will be Better",
+    "compute_alias": "Believe their Children's Standard of Living Will be Better",
+    "recoded_levels": {
+      "0": ["SOMEWHAT BETTER", "SOMEWHAT WORSE", "ABOUT THE SAME", "MUCH WORSE"],
+      "1": "MUCH BETTER"
+    },
+    "parent": "kidssol",
+    "value_counts": {
+      "0": 13843,
+      "1": 5587
+    },
+    "value_percents": {
+      "0": 71.2,
+      "1": 28.8
+    }
+  },
+  "parsol_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Perception of Standard of Living Compared to Parents",
+    "selection_alias": "Believe Own Standard of Living Better Compared to Parents",
+    "compute_alias": "Believe Own Standard of Living Better Compared to Parents",
+    "recoded_levels": {
+      "0": ["SOMEWHAT WORSE", "SOMEWHAT BETTER", "ABOUT THE SAME", "MUCH WORSE"],
+      "1": "MUCH BETTER"
+    },
+    "parent": "parsol",
+    "value_counts": {
+      "0": 18841,
+      "1": 8258
+    },
+    "value_percents": {
+      "0": 69.5,
+      "1": 30.5
+    }
+  },
+  "goodlife_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Outlook on Standard of Living",
+    "selection_alias": "Agree They Have a Good Chance of Improving their Standard of Living",
+    "compute_alias": "Agree They Have a Good Chance of Improving their Standard of Living",
+    "recoded_levels": {
+      "0": ["DISAGREE", "NEITHER AGREE NOR DISAGREE", "STRONGLY DISAGREE"],
+      "1": ["AGREE", "STRONGLY AGREE"]
+    },
+    "parent": "goodlife",
+    "value_counts": {
+      "0": 11497,
+      "1": 17325
+    },
+    "value_percents": {
+      "0": 39.9,
+      "1": 60.1
+    }
+  },
+  "tax_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Federal Income Tax",
+    "selection_alias": "Believe the Federal Income Tax is Too High",
+    "compute_alias": "Believe the Federal Income Tax is Too High",
+    "recoded_levels": {
+      "0": ["ABOUT RIGHT", "TOO LOW"],
+      "1": "TOO HIGH"
+    },
+    "parent": "tax",
+    "value_counts": {
+      "0": 16069,
+      "1": 26054
+    },
+    "value_percents": {
+      "0": 38.1,
+      "1": 61.9
+    }
+  },
+  "news_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Frequency of Reading the Newspaper",
+    "selection_alias": "Read the Newspaper Everyday",
+    "compute_alias": "Read the Newspaper Everyday",
+    "recoded_levels": {
+      "0": ["ONCE A WEEK", "LESS THAN ONCE A WEEK", "A FEW TIMES A WEEK", "NEVER"],
+      "1": "EVERY DAY"
+    },
+    "parent": "news",
+    "value_counts": {
+      "0": 28520,
+      "1": 19517
+    },
+    "value_percents": {
+      "0": 59.4,
+      "1": 40.6
+    }
+  },
+  "uswary_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Expectation of US in World War in 10 Years",
+    "selection_alias": "Expect the US to Fight Another World War in 10 Years",
+    "compute_alias": "Expect the US to Fight Another World War in 10 Years",
+    "recoded_levels": {
+      "0": "NO",
+      "1": "YES"
+    },
+    "parent": "uswary",
+    "value_counts": {
+      "0": 12188,
+      "1": 11437
+    },
+    "value_percents": {
+      "0": 51.6,
+      "1": 48.4
+    }
+  },
+  "spanking_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Opinion on Spanking Children",
+    "selection_alias": "Strongly Agree It is Sometimes Necessary to Discipline a Child with a Good, Hard Spanking",
+    "compute_alias": "Strongly Agree It is Sometimes Necessary to Discipline a Child with a Good, Hard Spanking",
+    "recoded_levels": {
+      "0": ["DISAGREE", "STRONGLY DISAGREE"],
+      "1": ["AGREE", "STRONGLY AGREE"]
+    },
+    "parent": "spanking",
+    "value_counts": {
+      "0": 10397,
+      "1": 23539
+    },
+    "value_percents": {
+      "0": 30.6,
+      "1": 69.4
+    }
+  }
+}

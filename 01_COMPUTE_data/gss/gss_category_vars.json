@@ -1,0 +1,107 @@
+{
+  "Social and Political Issues": {
+    "category_sub": {
+      "Abortion": {
+        "variables": ["abany_rec", "abdefect_rec", "abhlth_rec", "abnomore_rec", "abpoor_rec", "abrape_rec", "absingle_rec"]
+      },
+      "Civil Liberties": {
+        "category_sub_sub": {
+          "Teach": {
+            "variables": ["colath_rec", "colcom_rec", "colhomo_rec", "colmil_rec", "colmslm_rec", "colrac_rec"]
+          },
+          "Library Book": {
+            "variables": ["libath_rec", "libcom_rec", "libhomo_rec", "libmil_rec", "libmslm_rec", "librac_rec"]
+          },
+          "Speak": {
+            "variables": ["spkath_rec", "spkcom_rec", "spkhomo_rec", "spkmil_rec", "spkmslm_rec", "spkrac_rec"]
+          }
+        }
+      },
+      "Gender Equality & Marriage": {
+        "variables": ["divlaw_rec", "fefam_rec", "fepol_rec", "fepresch_rec", "meovrwrk_rec"]
+      },
+      "Guns": {
+        "variables": ["gunlaw_rec", "hunt_rec", "owngun_rec"]
+      }
+    },
+    "variables": "news_rec"
+  },
+  "Government and Institutions": {
+    "category_sub": {
+      "Confidence in Institutions": {
+        "category_sub_sub": {
+          "High Confidence": {
+            "variables": ["conarmy_high", "conbus_high", "conclerg_high", "coneduc_high", "confed_high", "confinan_high", "conjudge_high", "conlabor_high", "conlegis_high", "conmedic_high", "conpress_high", "consci_high", "contv_high"]
+          },
+          "Low Confidence": {
+            "variables": ["conarmy_low", "conbus_low", "conclerg_low", "coneduc_low", "confed_low", "confinan_low", "conjudge_low", "conlabor_low", "conlegis_low", "conmedic_low", "conpress_low", "consci_low", "contv_low"]
+          }
+        }
+      },
+      "Government Spending": {
+        "category_sub_sub": {
+          "Too Little Spending": {
+            "variables": ["nataid_toolittle", "natarms_toolittle", "natchld_toolittle", "natcity_toolittle", "natcrime_toolittle", "natdrug_toolittle", "nateduc_toolittle", "natenvir_toolittle", "natfare_toolittle", "natheal_toolittle", "natmass_toolittle", "natpark_toolittle", "natrace_toolittle", "natroad_toolittle", "natsci_toolittle", "natsoc_toolittle", "natspac_toolittle"]
+          },
+          "Too Much Spending": {
+            "variables": ["nataid_toomuch", "natarms_toomuch", "natchld_toomuch", "natcity_toomuch", "natcrime_toomuch", "natdrug_toomuch", "nateduc_toomuch", "natenvir_toomuch", "natfare_toomuch", "natheal_toomuch", "natmass_toomuch", "natpark_toomuch", "natrace_toomuch", "natroad_toomuch", "natsci_toomuch", "natsoc_toomuch", "natspac_toomuch"]
+          }
+        }
+      },
+      "Police Conduct": {
+        "variables": ["polabuse_rec", "polattak_rec", "polescap_rec", "polhitok_rec", "polmurdr_rec"]
+      },
+      "Legal and Judicial System": {
+        "variables": ["cappun_rec", "courts_rec", "grass_rec"]
+      },
+      "Role of Government": {
+        "variables": ["goveqinc_rec", "helpblk_rec", "helpnot_rec", "helppoor_rec", "helpsick_rec", "uswary_rec"]
+      }
+    }
+  },
+  "Personal Values And Religious Beliefs": {
+    "category_sub": {
+      "Parenting": {
+        "variables": ["helpoth_rec", "obey_rec", "popular_rec", "thnkself_rec", "workhard_rec", "spanking_rec"]
+      },
+      "Religious Beliefs": {
+        "variables": ["attend_rec", "bible_rec", "fund_rec", "fund16_rec", "god_rec", "postlife_rec", "prayer_rec", "relig_rec", "relig16_rec", "reliten_rec", "relpersn_rec", "sprtprsn_rec"]
+      },
+      "Sexual Morality": {
+        "variables": ["homosex_rec", "pillok_rec", "pornlaw_rec", "premarsx_rec", "sexeduc_rec", "teensex_rec", "xmarsex_rec", "xmovie_rec", "sexfreq_rec"]
+      },
+      "Social Trust": {
+        "variables": ["fair_rec", "fear_rec", "helpful_rec", "trust_rec"]
+      },
+      "Sanctity of Life": {
+        "variables": "suicide1_rec"
+      }
+    }
+  },
+  "Financial Situation and Employment": {
+    "category_sub": {
+      "Financial Well-Being": {
+        "variables": ["finalter_rec", "finrela_rec", "goodlife_rec", "kidssol_rec", "parsol_rec", "satfin_rec"]
+      },
+      "Employment": {
+        "variables": ["getahead_rec", "jobfind_rec", "joblose_rec", "tax_rec"]
+      }
+    }
+  },
+  "Life Satisfaction and Health": {
+    "variables": ["hapmar_rec", "happy_rec", "health_rec", "satjob_rec", "life_rec"]
+  },
+  "Race and Discrimination": {
+    "category_sub": {
+      "Policy and Law": {
+        "variables": ["affrmact_rec", "racmar_rec", "racopen_rec", "wrkwayup_rec"]
+      },
+      "Prejudice and Stereotypes": {
+        "variables": ["closeblk_rec", "intlblks_rec", "intlwhts_rec", "intlhsps_rec", "liveblks_rec", "racpres_rec", "workblks_rec", "workwhts_rec", "workhsps_rec"]
+      },
+      "Causes of Inequality": {
+        "variables": ["racdif1_rec", "racdif2_rec", "racdif3_rec", "racdif4_rec"]
+      }
+    }
+  }
+}

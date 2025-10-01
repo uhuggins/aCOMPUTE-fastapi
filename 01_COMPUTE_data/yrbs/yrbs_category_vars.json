@@ -1,0 +1,114 @@
+{
+  "Unintentional Injuries and Violence": {
+    "category_sub": {
+      "Driving Safety": {
+        "variables": ["qn8_rec", "qn9_rec", "qn10_rec", "qn11_rec"]
+      },
+      "Weapons": {
+        "variables": ["qn12_rec", "qn13_rec"]
+      },
+      "Physical Safety": {
+        "variables": ["qn14_rec", "qn15_rec", "qn16_rec", "qn17_rec", "qn18_rec"]
+      },
+      "Sexual Violence": {
+        "variables": ["qn19_rec", "qn20_rec", "qn21_rec", "qn22_rec"]
+      },
+      "Bullying": {
+        "variables": ["qn24_rec", "qn25_rec"]
+      }
+    }
+  },
+  "Adverse Childhood Experiences": {
+    "variables": ["qn23_rec", "qnbasicneedsace_rec", "qnemoabuseace_rec", "qnincarparentace_rec", "qnintviolenceace_rec", "qnlivedwabuseace_rec", "qnlivedwillace_rec", "qnphyabuseace_rec", "qnsexabuseace_rec", "qnunfairlydisc_rec"]
+  },
+  "Mental Health": {
+    "variables": ["qn26_rec", "qn27_rec", "qn28_rec", "qn29_rec", "qn30_rec", "qn84_rec", "qnclose2people_rec"]
+  },
+  "Tobacco Use": {
+    "category_sub": {
+      "Cigarette Use": {
+        "variables": ["qn31_rec", "qn32_rec", "qn33_rec", "qn34_rec", "qnfrcig_rec", "qndaycig_rec"]
+      },
+      "Vape Use": {
+        "variables": ["qn35_rec", "qn36_rec", "qn37_rec", "qnfrevp_rec", "qndayevp_rec"]
+      },
+      "Smokeless Tobacco": {
+        "variables": ["qn38_rec", "qnfrskl_rec", "qndayskl_rec"]
+      },
+      "Cigar Use": {
+        "variables": ["qn39_rec", "qnfrcgr_rec", "qndaycgr_rec"]
+      },
+      "Quitting": {
+        "variables": "qn40_rec"
+      },
+      "Combined Use": {
+        "variables": ["qntb2_rec", "qntb3_rec", "qntb4_rec", "qntb5_rec"]
+      }
+    }
+  },
+  "Alcohol and Other Drug Use": {
+    "category_sub": {
+      "Alcohol": {
+        "variables": ["qn41_rec", "qn42_rec", "qn43_rec", "qn44_rec", "qn45_rec"]
+      },
+      "Marijuana": {
+        "variables": ["qn46_rec", "qn47_rec", "qn48_rec"]
+      },
+      "Prescription Drugs": {
+        "variables": ["qn49_rec", "qncurrentopioid_rec"]
+      },
+      "Other Drugs": {
+        "variables": ["qn50_rec", "qn51_rec", "qn52_rec", "qn53_rec", "qn54_rec", "qn55_rec", "qnhallucdrug_rec", "qnillict_rec"]
+      }
+    }
+  },
+  "Sexual Behaviors": {
+    "category_sub": {
+      "Sexual Activity": {
+        "variables": ["qn56_rec", "qn57_rec", "qn58_rec", "qn59_rec", "qn60_rec", "qnconsentsexcont_rec"]
+      },
+      "Sexual Health": {
+        "variables": ["qn61_rec", "qn81_rec", "qn82_rec"]
+      },
+      "Contraception Use": {
+        "variables": ["qn62_rec", "qniudimp_rec", "qnothhpl_rec", "qnbcnone_rec"]
+      }
+    }
+  },
+  "Obesity and Weight": {
+    "variables": ["qn66_rec", "qn67_rec", "qnobese_rec", "qnowt_rec"]
+  },
+  "Dietary Behaviors": {
+    "category_sub": {
+      "Fruit and Juice": {
+        "variables": ["qn68_rec", "qn69_rec", "qnfr0_rec", "qnfr1_rec", "qnfr2_rec"]
+      },
+      "Vegetable Consumption": {
+        "variables": ["qn70_rec", "qn71_rec", "qn72_rec", "qn73_rec", "qnveg0_rec", "qnveg1_rec", "qnveg2_rec", "qnveg3_rec"]
+      },
+      "Soda": {
+        "variables": ["qn74_rec", "qnsoda1_rec", "qnsoda2_rec"]
+      },
+      "Breakfast": {
+        "variables": ["qn75_rec", "qnbk7day_rec"]
+      },
+      "Sports Drinks": {
+        "variables": ["qnsportsdrink_rec", "qnspdrk1_rec", "qnspdrk2_rec"]
+      },
+      "Water": {
+        "variables": ["qnwater_rec", "qnwater1_rec", "qnwater2_rec", "qnwater3_rec"]
+      }
+    }
+  },
+  "Physical Activity": {
+    "variables": ["qn76_rec", "qn77_rec", "qn78_rec", "qnpa0day_rec", "qnpa7day_rec", "qndlype_rec", "qnmusclestrength_rec"],
+    "category_sub": {
+      "Injury": {
+        "variables": "qn79_rec"
+      }
+    }
+  },
+  "Other Health Topics": {
+    "variables": ["qn80_rec", "qn83_rec", "qn85_rec", "qn86_rec", "qn87_rec", "qnnodnt_rec", "qnparentalmonitoring_rec", "qnsunburn_rec", "qntransgender_rec"]
+  }
+}

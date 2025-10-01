@@ -1,0 +1,25 @@
+{
+  "ChurchAttendance": "Rarely",
+  "Religion": "Protestant",
+  "ReligiousStrength": "Not Strong",
+  "PolParty": "Democrat",
+  "PolPartyC": [
+    {}
+  ],
+  "Ideology": "Liberal",
+  "IdeologyC": [
+    {}
+  ],
+  "Income": "Bottom 20%",
+  "Political_Era": "Truman",
+  "Work_Status": "Employed",
+  "Education": "L/T High School",
+  "College": "No College",
+  "Kids": "0",
+  "Marital_Status": "Never Married",
+  "Race": "White",
+  "Gender": "Female",
+  "Census_Region": "East",
+  "Age": "18-34",
+  "Subj_class": "Working Class"
+}

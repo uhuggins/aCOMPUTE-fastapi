@@ -1,0 +1,15 @@
+{
+  "sex_rec": "Male",
+  "race_rec": "White",
+  "region_rec": "Northeast",
+  "area_growup_rec": "Rural",
+  "slf_intel_rec": "Below Average",
+  "politics_rec": "Republican",
+  "ideology_rec": "Conservative",
+  "rel_service_rec": "Never",
+  "rel_imp_rec": "Not Important",
+  "parent_present_rec": "Both Parents",
+  "sibling_present_rec": "No Siblings",
+  "father_edu_rec": "No HS",
+  "mother_edu_rec": "No HS"
+}

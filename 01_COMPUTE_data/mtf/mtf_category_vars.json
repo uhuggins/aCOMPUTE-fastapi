@@ -1,0 +1,53 @@
+{
+  "Daily Life": {
+    "category_sub": {
+      "Driving Safety": {
+        "variables": ["accident_rec", "ticket_rec"]
+      },
+      "Social Life": {
+        "variables": ["date_rec", "go_out_rec"]
+      },
+      "Work": {
+        "variables": ["earn_other_rec", "earn_work_rec", "work_rec"]
+      }
+    }
+  },
+  "Drug Use": {
+    "category_sub": {
+      "Alcohol": {
+        "variables": ["alcohol_rec", "drunk_rec"]
+      },
+      "Cough Medicine": {
+        "variables": "coughmed_rec"
+      },
+      "Hard Drugs": {
+        "variables": ["coke_rec", "crack_rec", "heroin_rec", "ice_rec", "ketamine_rec", "meth_rec", "narc_rec"]
+      },
+      "Marijuana": {
+        "variables": ["marijuana_rec", "marijuana_synth_rec"]
+      },
+      "Prescription Drugs": {
+        "variables": ["adderall_rec", "creatine_rec", "oxy_rec", "ritalin_rec", "sed_rec", "steroid_rec", "tranq_rec", "vicodin_rec"]
+      },
+      "Recreational Drugs": {
+        "variables": ["amps_rec", "inhalants_rec", "lsd_rec", "molly_rec", "salvia_rec", "shrooms_rec"]
+      },
+      "Steroids": {
+        "variables": "andro_rec"
+      },
+      "Tobacco": {
+        "variables": "cigarette_rec"
+      }
+    }
+  },
+  "Education": {
+    "category_sub": {
+      "Post High School Plan": {
+        "variables": ["plan_2yrclg_rec", "plan_armdfc_rec", "plan_attend4yr_rec", "plan_gradschool_rec", "plan_voctec_rec", "want_2yrclg_rec", "want_4yrclg_rec", "want_armdfc_rec", "want_grad_rec", "want_none_rec", "want_voctec_rec"]
+      },
+      "School": {
+        "variables": ["school_cut_rec", "school_ill_rec", "school_skipclass_rec"]
+      }
+    }
+  }
+}

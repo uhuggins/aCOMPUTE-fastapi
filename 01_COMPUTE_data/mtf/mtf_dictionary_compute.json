@@ -1,0 +1,1459 @@
+{
+  "year": {
+    "type": "numeric",
+    "raw_recode": "system",
+    "label_original": "",
+    "selection_alias": "Year"
+  },
+  "formid": {
+    "type": "categorical",
+    "raw_recode": "system",
+    "label_original": "962    :FORM ID",
+    "selection_alias": "962    :form Id"
+  },
+  "caseid": {
+    "type": "numeric",
+    "raw_recode": "system",
+    "label_original": "",
+    "selection_alias": "Caseid"
+  },
+  "weight": {
+    "type": "numeric",
+    "raw_recode": "system",
+    "label_original": "",
+    "selection_alias": "Weight"
+  },
+  "parent_present_rec": {
+    "type": "categorical",
+    "raw_recode": "recoded",
+    "outcome_demo": "demo",
+    "label_original": "",
+    "title": "Parents Present",
+    "selection_alias": "Parents Present",
+    "compute_alias": "Parents Present",
+    "order": ["Both Parents", "Father Only", "Mother Only", "No Parents"],
+    "value_counts": {
+      "Both Parents": 479232,
+      "Father Only": 26552,
+      "Mother Only": 128658,
+      "No Parents": 39567
+    },
+    "value_percents": {
+      "Both Parents": 71.1,
+      "Father Only": 3.9,
+      "Mother Only": 19.1,
+      "No Parents": 5.9
+    }
+  },
+  "sibling_present_rec": {
+    "type": "categorical",
+    "raw_recode": "recoded",
+    "outcome_demo": "demo",
+    "label_original": "",
+    "title": "Siblings",
+    "selection_alias": "Siblings",
+    "compute_alias": "Siblings",
+    "recoded_levels": {
+      "No": ["NT MARKD", "NT MARKD:(0)", "NO"],
+      "Yes": ["MARKED", "MARKED:(1)", "YES"]
+    },
+    "parent": "sibling_present",
+    "order": ["No", "Yes"],
+    "value_counts": {
+      "No": 202877,
+      "Yes": 471132
+    },
+    "value_percents": {
+      "No": 30.1,
+      "Yes": 69.9
+    }
+  },
+  "area_growup_rec": {
+    "type": "categorical",
+    "raw_recode": "recoded",
+    "outcome_demo": "demo",
+    "label_original": "",
+    "title": "Population Density",
+    "selection_alias": "Population Density",
+    "compute_alias": "Population Density",
+    "recoded_levels": {
+      "Large City": ["VRYLG CY", "LRG CITY", "VRYLG CY:(8)", "LRG CITY:(6)", "LG CITY:(6)", "VRYLG CITY:(8)", "LGE CITY:(6)", "V-LGE CITY:(8)", "IN A LARGE CITY (100,000 - 500,000)", "IN A VERY LARGE CITY (OVER 500,000)", "IN A LARGE CITY", "IN A VERY LARGE CITY", "IN A LARGE CITY (100,000 - 50", "IN A VERY LARGE CITY (OVER 50"],
+      "Rural": ["FARM", "COUNTRY", "FARM:(1)", "COUNTRY:(2)", "A FARM:(1)", "ON A FARM", "IN THE COUNTRY, NOT ON A FARM"],
+      "Small/Medium City": ["SML TOWN", "MED CITY", "SML TOWN:(3)", "MED CITY:(4)", "SM TOWN:(3)", "SM CITY:(3)", "IN A MEDIUM-SIZED CITY (50,000 - 100,000)", "IN A SMALL CITY OR TOWN (UNDER 50,000 PEOPLE)", "IN A SMALL CITY OR TOWN", "IN A MEDIUM-SIZED CITY", "IN A MEDIUM-SIZED CITY (50,000-100,000)", "IN A MEDIUM-SIZED CITY (50,00"],
+      "Suburban": ["SUBURB 8", "SUBURB 4", "SUBURB 6", "SUBURB 4:(5)", "SUBURB 6:(7)", "SUBURB 8:(9)", "SUBURB4:(5)", "SUB LGE:(7)", "SUB MED:(5)", "SUB V-LGE:(9)", "IN A SUBURB OF A VERY LARGE CITY", "IN A SUBURB OF A MEDIUM-SIZED CITY", "IN A SUBURB OF A LARGE CITY", "IN A SUBURB OF A VERY LARGE", "IN A SUBURB OF A MEDIUM-SIZED", "IN SUBURB OF A VERY LARGE C", "IN SUBURB OF A LARGE CITY", "IN SUBURB OF A MEDIUM-SIZED"]
+    },
+    "parent": "area_growup",
+    "order": ["Rural", "Small/Medium City", "Suburban", "Large City"],
+    "value_counts": {
+      "Large City": 108519,
+      "Rural": 98005,
+      "Small/Medium City": 268432,
+      "Suburban": 149783
+    },
+    "value_percents": {
+      "Large City": 17.4,
+      "Rural": 15.7,
+      "Small/Medium City": 43,
+      "Suburban": 24
+    }
+  },
+  "region_rec": {
+    "type": "categorical",
+    "raw_recode": "recoded",
+    "outcome_demo": "demo",
+    "label_original": "",
+    "title": "Region",
+    "selection_alias": "Region",
+    "compute_alias": "Region",
+    "recoded_levels": {
+      "NC": ["NC", "NC (2)", "NC:(2)", "NORTHCENTRL:(2)", "NORTH CENTRL:(2)", "NORTH CENTRAL:(2)", "MIDWEST:(2)", "NORTH CENTRAL"],
+      "NE": ["NE", "NE (1)", "NE:(1)", "NORTHEAST:(1)", "NORTHEAST"],
+      "S": ["SOUTH", "S (3)", "S:(3)", "S", "SOUTH:(3)"],
+      "W": ["WEST", "W (4)", "W:(4)", "W", "WEST:(4)"]
+    },
+    "parent": "region",
+    "order": ["NE", "NC", "S", "W"],
+    "value_counts": {
+      "NC": 179383,
+      "NE": 154069,
+      "S": 230043,
+      "W": 138921
+    },
+    "value_percents": {
+      "NC": 25.5,
+      "NE": 21.9,
+      "S": 32.8,
+      "W": 19.8
+    }
+  },
+  "race_rec": {
+    "type": "categorical",
+    "raw_recode": "recoded",
+    "outcome_demo": "demo",
+    "label_original": "",
+    "title": "Race",
+    "selection_alias": "Race",
+    "compute_alias": "Race",
+    "recoded_levels": {
+      "Black": ["BLACK", "BLACK:(2)", "BLACK:(1)", "BLACK OR AFRO-AMERICAN", "BLACK OR AFRICAN-AMERICAN", "BLACK OR AFRICAN AMERICAN"],
+      "Hispanic": "HISPANIC:(3)",
+      "Non-white": "NON-WHITE",
+      "White": ["WHITE", "WHITE:(6)", "WHITE:(2)", "WHITE OR CAUCASIAN", "WHITE (CAUCASIAN)"]
+    },
+    "parent": "race",
+    "order": ["White", "Black", "Hispanic", "Non-white"],
+    "value_counts": {
+      "Black": 61323,
+      "Hispanic": 37310,
+      "Non-white": 23152,
+      "White": 451324
+    },
+    "value_percents": {
+      "Black": 10.7,
+      "Hispanic": 6.5,
+      "Non-white": 4,
+      "White": 78.8
+    }
+  },
+  "sex_rec": {
+    "type": "categorical",
+    "raw_recode": "recoded",
+    "outcome_demo": "demo",
+    "label_original": "",
+    "title": "Gender",
+    "selection_alias": "Gender",
+    "compute_alias": "Gender",
+    "recoded_levels": {
+      "Female": ["FEMALE", "FEMALE:(2)"],
+      "Male": ["MALE", "MALE:(1)"]
+    },
+    "parent": "sex",
+    "order": ["Male", "Female"],
+    "value_counts": {
+      "Female": 339559,
+      "Male": 322452
+    },
+    "value_percents": {
+      "Female": 51.3,
+      "Male": 48.7
+    }
+  },
+  "ideology_rec": {
+    "type": "categorical",
+    "raw_recode": "recoded",
+    "outcome_demo": "demo",
+    "label_original": "",
+    "title": "Ideology",
+    "selection_alias": "Ideology",
+    "compute_alias": "Ideology",
+    "recoded_levels": {
+      "Conservative": ["CONSERV", "VRY CONS", "CONSERV:(2)", "VRY CONS:(1)", "CONSERVATIVE", "VERY CONSERVATIVE"],
+      "Liberal": ["LIBERAL", "VRY LIB", "LIBERAL:(4)", "VRY LIB:(5)", "VERY LIBERAL"],
+      "Moderate": ["MODERATE", "MODERATE:(3)"],
+      "None": ["NONEDK", "NONE/DK:(8)", "NONE ABOVE/DK:(8)", "NONE OF THE ABOVE, OR DON'T KNOW", "NONE OF THE ABOVE", "NONE OF THE ABOVE, OR", "NONE OF THE ABOVE, OR DON'T K"]
+    },
+    "parent": "ideology",
+    "order": ["Conservative", "Moderate", "Liberal", "None"],
+    "value_counts": {
+      "Conservative": 113299,
+      "Liberal": 135458,
+      "Moderate": 179450,
+      "None": 196005
+    },
+    "value_percents": {
+      "Conservative": 18.2,
+      "Liberal": 21.7,
+      "Moderate": 28.7,
+      "None": 31.4
+    }
+  },
+  "politics_rec": {
+    "type": "categorical",
+    "raw_recode": "recoded",
+    "outcome_demo": "demo",
+    "label_original": "",
+    "title": "Politics",
+    "selection_alias": "Politics",
+    "compute_alias": "Politics",
+    "recoded_levels": {
+      "Democrat": ["MILD DEM", "STRG DEM", "STRG DEM:(4)", "MILD DEM:(3)", "MILDLY DEMOCRAT", "STRONGLY DEMOCRAT"],
+      "Independent": ["INDEPNDT", "NO PREF", "DK", "NO PREF:(6)", "INDEPNDT:(5)", "DK:(8)", "DK/HVNT DECID:(8)", "NO PREFERENCE, INDEPENDENT", "DON'T KNOW, HAVEN'T DECIDED", "AMERICAN INDEPENDENT PARTY", "OTHER"],
+      "Republican": ["MILD GOP", "STRG GOP", "STRG GOP:(1)", "MILD GOP:(2)", "STRONGLY REPUBLICAN", "MILDLY REPUBLICAN"]
+    },
+    "parent": "politics",
+    "order": ["Republican", "Democrat", "Independent"],
+    "value_counts": {
+      "Democrat": 157520,
+      "Independent": 320577,
+      "Republican": 151922
+    },
+    "value_percents": {
+      "Democrat": 25,
+      "Independent": 50.9,
+      "Republican": 24.1
+    }
+  },
+  "rel_imp_rec": {
+    "type": "categorical",
+    "raw_recode": "recoded",
+    "outcome_demo": "demo",
+    "label_original": "",
+    "title": "Religion Importance",
+    "selection_alias": "Religion Importance",
+    "compute_alias": "Religion Importance",
+    "recoded_levels": {
+      "A little important": ["LITL IMP", "LITL IMP:(2)", "A LITTLE IMPORTANT"],
+      "Not important": ["NOT IMPT", "NOT IMPT:(1)", "NOT IMPORTANT"],
+      "Pretty important": ["PRTY IMP", "PRTY IMP:(3)", "PRETTY IMPORTANT"],
+      "Very important": ["VERY IMP", "VERY IMP:(4)", "VERY IMPORTANT"]
+    },
+    "parent": "rel_imp",
+    "order": ["Not important", "A little important", "Pretty important", "Very important"],
+    "value_counts": {
+      "A little important": 156930,
+      "Not important": 96995,
+      "Pretty important": 176572,
+      "Very important": 168200
+    },
+    "value_percents": {
+      "A little important": 26.2,
+      "Not important": 16.2,
+      "Pretty important": 29.5,
+      "Very important": 28.1
+    }
+  },
+  "rel_service_rec": {
+    "type": "categorical",
+    "raw_recode": "recoded",
+    "outcome_demo": "demo",
+    "label_original": "",
+    "title": "Religious Attendance",
+    "selection_alias": "Religious Attendance",
+    "compute_alias": "Religious Attendance",
+    "recoded_levels": {
+      "Never": ["NEVER", "NEVER:(1)"],
+      "Rarely": ["RARELY", "RARELY:(2)"],
+      "Sometimes": ["1-2XMO", "1-2X/MO:(3)", "1-2X/MO", "ONCE OR TWICE A MONTH"],
+      "Weekly+": ["1WK OR+", "1/WK OR+:(4)", "1/WK OR+", "ABOUT ONCE A WEEK OR MORE"]
+    },
+    "parent": "rel_service",
+    "order": ["Never", "Rarely", "Sometimes", "Weekly+"],
+    "value_counts": {
+      "Never": 91659,
+      "Rarely": 212112,
+      "Sometimes": 98731,
+      "Weekly+": 196806
+    },
+    "value_percents": {
+      "Never": 15.3,
+      "Rarely": 35.4,
+      "Sometimes": 16.5,
+      "Weekly+": 32.8
+    }
+  },
+  "slf_intel_rec": {
+    "type": "categorical",
+    "raw_recode": "recoded",
+    "outcome_demo": "demo",
+    "label_original": "",
+    "title": "Self-Rated Intelligence",
+    "selection_alias": "Self-Rated Intelligence",
+    "compute_alias": "Self-Rated Intelligence",
+    "recoded_levels": {
+      "Above average": ["ABOVE AVERAGE", "FAR ABOVE AVERAGE", "SLIGHTLY ABOVE AVERAGE"],
+      "Average": "AVERAGE",
+      "Below average": ["SLIGHTLY BELOW AVERAGE", "BELOW AVERAGE", "FAR BELOW AVERAGE"],
+      "Missing": "MISSING"
+    },
+    "parent": "slf_intel",
+    "order": ["Below average", "Average", "Above average", "Missing"],
+    "value_counts": {
+      "Above average": 403071,
+      "Average": 214989,
+      "Below average": 41907,
+      "Missing": 22294
+    },
+    "value_percents": {
+      "Above average": 59.1,
+      "Average": 31.5,
+      "Below average": 6.1,
+      "Missing": 3.3
+    }
+  },
+  "father_edu_rec": {
+    "type": "categorical",
+    "raw_recode": "recoded",
+    "outcome_demo": "demo",
+    "label_original": "",
+    "title": "Father Education",
+    "selection_alias": "Father Education",
+    "compute_alias": "Father Education",
+    "recoded_levels": {
+      "College": ["CLG GRAD", "GRAD SCH", "CLG GRAD:(5)", "GRAD SCH:(6)", "COMPLETED COLLEGE", "GRADUATE OR PROFESSIONAL SCHOOL AFTER COLLEGE", "GRADUATE OR PROFESSIONAL", "GRADUATE OR PROFESSIONAL SCHOOL", "GRADUATE OR PROFESSIONAL SCHO"],
+      "High School": ["HS GRAD", "HS GRAD:(3)", "COMPLETED HIGH SCHOOL"],
+      "No HS": ["SOME HS", "GRDE SCH", "GRDE SCH:(1)", "SOME HS:(2)", "COMPLETED GRADE SCHOOL OR LESS", "SOME HIGH SCHOOL", "COMPLETED GRADE SCHOOL OR LES"],
+      "Some College": ["SOME CLG", "SOME CLG:(4)", "SOME COLLEGE"]
+    },
+    "parent": "father_edu",
+    "order": ["No HS", "High School", "Some College", "College"],
+    "value_counts": {
+      "College": 224397,
+      "High School": 182877,
+      "No HS": 109098,
+      "Some College": 106890
+    },
+    "value_percents": {
+      "College": 36,
+      "High School": 29.3,
+      "No HS": 17.5,
+      "Some College": 17.2
+    }
+  },
+  "mother_edu_rec": {
+    "type": "categorical",
+    "raw_recode": "recoded",
+    "outcome_demo": "demo",
+    "label_original": "",
+    "title": "Mother Education",
+    "selection_alias": "Mother Education",
+    "compute_alias": "Mother Education",
+    "recoded_levels": {
+      "College": ["CLG GRAD", "GRAD SCH", "GRAD SCH:(6)", "CLG GRAD:(5)", "COMPLETED COLLEGE", "GRADUATE OR PROFESSIONAL SCHOOL AFTER COLLEGE", "GRADUATE OR PROFESSIONAL", "GRADUATE OR PROFESSIONAL SCHOOL", "GRADUATE OR PROFESSIONAL SCHO"],
+      "High School": ["HS GRAD", "HS GRAD:(3)", "COMPLETED HIGH SCHOOL"],
+      "No HS": ["GRDE SCH", "SOME HS", "GRDE SCH:(1)", "SOME HS:(2)", "COMPLETED GRADE SCHOOL OR LESS", "SOME HIGH SCHOOL", "COMPLETED GRADE SCHOOL OR LES"],
+      "Some College": ["SOME CLG", "SOME CLG:(4)", "SOME COLLEGE"]
+    },
+    "parent": "mother_edu",
+    "order": ["No HS", "High School", "Some College", "College"],
+    "value_counts": {
+      "College": 218085,
+      "High School": 207071,
+      "No HS": 92543,
+      "Some College": 126838
+    },
+    "value_percents": {
+      "College": 33.8,
+      "High School": 32.1,
+      "No HS": 14.4,
+      "Some College": 19.7
+    }
+  },
+  "alcohol_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Alcohol Use Among High Schoolers",
+    "selection_alias": "Ever Consumed an Alcoholic Beverage",
+    "compute_alias": "Ever Consumed an Alcoholic Beverage",
+    "recoded_levels": {
+      "0": ["0 OCCAS", "0 OCCAS:(1)", "O OCCAS:(1)", "0 OCCASIONS", "0 OCCASIONS - INCL. (1) IN B03"],
+      "1": ["40+OCCAS", "10-19X", "3-5X", "20-39X", "6-9X", "1-2X", "40+OCCAS:(7)", "10-19X:(5)", "3-5X:(3)", "6-9X:(4)", "1-2X:(2)", "20-39X:(6)", "20-39", "6-9", "40 OR MORE", "3-5", "10-19", "1-2"]
+    },
+    "parent": "alcohol",
+    "value_counts": {
+      "0": 126527,
+      "1": 531387
+    },
+    "value_percents": {
+      "0": 19.2,
+      "1": 80.8
+    }
+  },
+  "marijuana_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Marijuana Use Among High Schoolers",
+    "selection_alias": "Used Marijuana in the Past Year",
+    "compute_alias": "Used Marijuana in the Past Year",
+    "recoded_levels": {
+      "0": ["0 OCCAS", "0 OCCAS:(1)", "O OCCAS:(1)", "0 OCCASIONS"],
+      "1": ["40+OCCAS", "3-5X", "1-2X", "20-39X", "10-19X", "6-9X", "10-19X:(5)", "20-39X:(6)", "1-2X:(2)", "40+OCCAS:(7)", "3-5X:(3)", "6-9X:(4)", "3-5", "20-39", "10-19", "40 OR MORE", "1-2", "6-9"]
+    },
+    "parent": "marijuana",
+    "value_counts": {
+      "0": 349637,
+      "1": 323167
+    },
+    "value_percents": {
+      "0": 52,
+      "1": 48
+    }
+  },
+  "lsd_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "LSD Use Among High Schoolers",
+    "selection_alias": "Ever Used LSD ('acid')",
+    "compute_alias": "Ever Used LSD ('acid')",
+    "recoded_levels": {
+      "0": ["0 OCCAS", "0 OCCAS:(1)", "O OCCAS:(1)", "0 OCCASIONS"],
+      "1": ["10-19X", "40+OCCAS", "1-2X", "3-5X", "6-9X", "20-39X", "1-2X:(2)", "20-39X:(6)", "6-9X:(4)", "10-19X:(5)", "3-5X:(3)", "40+OCCAS:(7)", "20-39", "6-9", "1-2", "40 OR MORE", "10-19", "3-5"]
+    },
+    "parent": "lsd",
+    "value_counts": {
+      "0": 609473,
+      "1": 52290
+    },
+    "value_percents": {
+      "0": 92.1,
+      "1": 7.9
+    }
+  },
+  "shrooms_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Hallucinogen Use Among High Schoolers",
+    "selection_alias": "Ever Used Hallucinogens Other than LSD (Usch as Peyote, \"Mushrooms\" or PCP)",
+    "compute_alias": "Ever Used Hallucinogens Other than LSD (Usch as Peyote, \"Mushrooms\" or PCP)",
+    "recoded_levels": {
+      "0": ["0 OCCAS", "0 OCCAS:(1)", "O OCCAS:(1)", "0 OCCASIONS"],
+      "1": ["1-2X", "20-39X", "40+OCCAS", "10-19X", "3-5X", "6-9X", "10-19X:(5)", "1-2X:(2)", "3-5X:(3)", "20-39X:(6)", "6-9X:(4)", "40+OCCAS:(7)", "3-5", "20-39", "1-2", "6-9", "40 OR MORE", "10-19"]
+    },
+    "parent": "shrooms",
+    "value_counts": {
+      "0": 613226,
+      "1": 46654
+    },
+    "value_percents": {
+      "0": 92.9,
+      "1": 7.1
+    }
+  },
+  "drunk_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Have been Drunk",
+    "selection_alias": "Ever Been Drunk from Drinking Alcoholic Beverages",
+    "compute_alias": "Ever Been Drunk from Drinking Alcoholic Beverages",
+    "recoded_levels": {
+      "0": ["0 OCCAS:(1)", "O OCCAS:(1)"],
+      "1": ["40+OCCAS:(7)", "1-2X:(2)", "10-19X:(5)", "20-39X:(6)", "6-9X:(4)", "3-5X:(3)"]
+    },
+    "parent": "drunk",
+    "value_counts": {
+      "0": 33942,
+      "1": 35022
+    },
+    "value_percents": {
+      "0": 49.2,
+      "1": 50.8
+    }
+  },
+  "coke_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Cocaine Use Among High Schoolers",
+    "selection_alias": "Ever Taken Cocaine",
+    "compute_alias": "Ever Taken Cocaine",
+    "recoded_levels": {
+      "0": ["0 OCCAS", "0 OCCAS:(1)", "O OCCAS:(1)", "0 OCCASIONS"],
+      "1": ["1-2X", "10-19X", "40+OCCAS", "3-5X", "6-9X", "20-39X", "1-2X:(2)", "3-5X:(3)", "10-19X:(5)", "40+OCCAS:(7)", "6-9X:(4)", "20-39X:(6)", "3-5", "10-19", "1-2", "40 OR MORE", "6-9", "20-39"]
+    },
+    "parent": "coke",
+    "value_counts": {
+      "0": 610785,
+      "1": 62722
+    },
+    "value_percents": {
+      "0": 90.7,
+      "1": 9.3
+    }
+  },
+  "amps_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Amphetamine Use wihout Doctor's Prescription Among High Schoolers",
+    "selection_alias": "Ever Taken Amphetamines Wihtout a Doctor's Prescription",
+    "compute_alias": "Ever Taken Amphetamines Wihtout a Doctor's Prescription",
+    "recoded_levels": {
+      "0": ["0 OCCAS", "0 OCCAS:(1)", "O OCCAS:(1)", "0 OCCASIONS"],
+      "1": ["20-39X", "1-2X", "40+OCCAS", "6-9X", "10-19X", "3-5X", "1-2X:(2)", "40+OCCAS:(7)", "6-9X:(4)", "3-5X:(3)", "20-39X:(6)", "10-19X:(5)", "20-39", "10-19", "1-2", "6-9", "3-5", "40 OR MORE"]
+    },
+    "parent": "amps",
+    "value_counts": {
+      "0": 560681,
+      "1": 114597
+    },
+    "value_percents": {
+      "0": 83,
+      "1": 17
+    }
+  },
+  "ice_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Crystal Meth (Ice) Use Among High Schoolers",
+    "selection_alias": "Ever Used Crystal Meth 'ice'",
+    "compute_alias": "Ever Used Crystal Meth 'ice'",
+    "recoded_levels": {
+      "0": ["0 OCCAS", "0 OCCAS (1)", "O OCCAS:(1)", "0 OCCASIONS"],
+      "1": ["3-5X", "1-2X", "40+OCCAS", "6-9X", "10-19X", "20-39X", "1-2X (2)", "6-9X (4)", "20-39X (6)", "3-5X (3)", "40+OCCAS (7)", "10-19X (5)", "1-2X:(2)", "6-9X:(4)", "20-39X:(6)", "3-5X:(3)", "10-19X:(5)", "40+OCCAS:(7)", "1-2", "3-5", "6-9", "10-19", "40 OR MORE", "20-39"]
+    },
+    "parent": "ice",
+    "value_counts": {
+      "0": 318057,
+      "1": 21490
+    },
+    "value_percents": {
+      "0": 93.7,
+      "1": 6.3
+    }
+  },
+  "sed_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Sedative Use without doctor's Prescription Among High Schoolers",
+    "selection_alias": "Ever Taken Sedatives without a Doctor's Prescription",
+    "compute_alias": "Ever Taken Sedatives without a Doctor's Prescription",
+    "recoded_levels": {
+      "0": ["0 OCCAS", "0 OCCAS:(1)", "O OCCAS:(1)", "0 OCCASIONS"],
+      "1": ["1-2X", "10-19X", "40+OCCAS", "3-5X", "6-9X", "20-39X", "1-2X:(2)", "20-39X:(6)", "6-9X:(4)", "40+OCCAS:(7)", "3-5X:(3)", "10-19X:(5)", "40 OR MORE", "3-5", "1-2", "10-19", "20-39", "6-9"]
+    },
+    "parent": "sed",
+    "value_counts": {
+      "0": 618157,
+      "1": 56032
+    },
+    "value_percents": {
+      "0": 91.7,
+      "1": 8.3
+    }
+  },
+  "tranq_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Tranquilizer Use without doctor's Prescription Among High Schoolers",
+    "selection_alias": "Ever Taken Tranquilizers without a Doctor's Prescription",
+    "compute_alias": "Ever Taken Tranquilizers without a Doctor's Prescription",
+    "recoded_levels": {
+      "0": ["0 OCCAS", "0 OCCAS:(1)", "O OCCAS:(1)", "0 OCCASIONS"],
+      "1": ["3-5X", "10-19X", "20-39X", "1-2X", "6-9X", "40+OCCAS", "1-2X:(2)", "3-5X:(3)", "6-9X:(4)", "20-39X:(6)", "10-19X:(5)", "40+OCCAS:(7)", "1-2", "3-5", "10-19", "40 OR MORE", "20-39", "6-9"]
+    },
+    "parent": "tranq",
+    "value_counts": {
+      "0": 607578,
+      "1": 66201
+    },
+    "value_percents": {
+      "0": 90.2,
+      "1": 9.8
+    }
+  },
+  "heroin_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Heroin Use Among High Schoolers",
+    "selection_alias": "Ever Used Heroin",
+    "compute_alias": "Ever Used Heroin",
+    "recoded_levels": {
+      "0": ["0 OCCAS", "0 OCCAS:(1)", "O OCCAS:(1)", "0 OCCASIONS"],
+      "1": ["40+OCCAS", "3-5X", "20-39X", "10-19X", "1-2X", "6-9X", "1-2X:(2)", "3-5X:(3)", "6-9X:(4)", "40+OCCAS:(7)", "10-19X:(5)", "20-39X:(6)", "40 OR MORE", "1-2", "10-19", "6-9", "3-5", "20-39"]
+    },
+    "parent": "heroin",
+    "value_counts": {
+      "0": 665029,
+      "1": 8767
+    },
+    "value_percents": {
+      "0": 98.7,
+      "1": 1.3
+    }
+  },
+  "narc_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Narcotics Use without doctor's Prescription Among High Schoolers",
+    "selection_alias": "Ever Used Narcotics (Other than Heroin) without a Doctor's Prescription",
+    "compute_alias": "Ever Used Narcotics (Other than Heroin) without a Doctor's Prescription",
+    "recoded_levels": {
+      "0": ["0 OCCAS", "0 OCCAS:(1)", "O OCCAS:(1)", "0 OCCASIONS"],
+      "1": ["1-2X", "10-19X", "3-5X", "6-9X", "20-39X", "40+OCCAS", "1-2X:(2)", "10-19X:(5)", "20-39X:(6)", "6-9X:(4)", "40+OCCAS:(7)", "3-5X:(3)", "1-2", "10-19", "40 OR MORE", "3-5", "20-39", "6-9"]
+    },
+    "parent": "narc",
+    "value_counts": {
+      "0": 606376,
+      "1": 63762
+    },
+    "value_percents": {
+      "0": 90.5,
+      "1": 9.5
+    }
+  },
+  "inhalants_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Inhalant (Sniffing Glue, Aerosols) Use Among High Schoolers",
+    "selection_alias": "Ever Used Inhalants (Sniffed Glue, Inhaled Gases) to Get High",
+    "compute_alias": "Ever Used Inhalants (Sniffed Glue, Inhaled Gases) to Get High",
+    "recoded_levels": {
+      "0": ["0 OCCAS", "0 OCCAS:(1)", "O OCCAS:(1)", "0 OCCASIONS"],
+      "1": ["40+OCCAS", "3-5X", "6-9X", "1-2X", "20-39X", "10-19X", "10-19X:(5)", "1-2X:(2)", "6-9X:(4)", "40+OCCAS:(7)", "3-5X:(3)", "20-39X:(6)", "3-5", "1-2", "6-9", "10-19", "40 OR MORE", "20-39"]
+    },
+    "parent": "inhalants",
+    "value_counts": {
+      "0": 395944,
+      "1": 58417
+    },
+    "value_percents": {
+      "0": 87.1,
+      "1": 12.9
+    }
+  },
+  "molly_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "MDMA (Molly, Ecstasy) Use Among High Schoolers",
+    "selection_alias": "Ever Used MDMA ('Molly', 'ecstasy')",
+    "compute_alias": "Ever Used MDMA ('Molly', 'ecstasy')",
+    "recoded_levels": {
+      "0": ["0 OCCAS:(1)", "O OCCAS:(1)"],
+      "1": ["1-2X:(2)", "10-19X:(5)", "3-5X:(3)", "40+OCCAS:(7)", "20-39X:(6)", "6-9X:(4)"]
+    },
+    "parent": "molly",
+    "value_counts": {
+      "0": 85950,
+      "1": 4996
+    },
+    "value_percents": {
+      "0": 94.5,
+      "1": 5.5
+    }
+  },
+  "crack_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Crack Use Among High Schoolers",
+    "selection_alias": "Ever Used Crack Cocaine",
+    "compute_alias": "Ever Used Crack Cocaine",
+    "recoded_levels": {
+      "0": ["0 OCCAS:(1)", "O OCCAS:(1)"],
+      "1": ["3-5X:(3)", "1-2X:(2)", "6-9X:(4)", "40+OCCAS:(7)", "10-19X:(5)", "20-39X:(6)"]
+    },
+    "parent": "crack",
+    "value_counts": {
+      "0": 211457,
+      "1": 4489
+    },
+    "value_percents": {
+      "0": 97.9,
+      "1": 2.1
+    }
+  },
+  "meth_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Methamphetamine Use Among High Schoolers",
+    "selection_alias": "Ever Used Methamphetamine",
+    "compute_alias": "Ever Used Methamphetamine",
+    "recoded_levels": {
+      "0": ["0 OCCAS:(1)", "O OCCAS:(1)"],
+      "1": ["6-9X:(4)", "1-2X:(2)", "3-5X:(3)", "40+OCCAS:(7)", "20-39X:(6)", "10-19X:(5)"]
+    },
+    "parent": "meth",
+    "value_counts": {
+      "0": 68667,
+      "1": 1349
+    },
+    "value_percents": {
+      "0": 98.1,
+      "1": 1.9
+    }
+  },
+  "ritalin_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Ritalin Use Without a Doctors Prescription Among High Schoolers",
+    "selection_alias": "Used Ritalin without a Doctors Prescription in the Past Year",
+    "compute_alias": "Used Ritalin without a Doctors Prescription in the Past Year",
+    "recoded_levels": {
+      "0": ["0 OCCAS:(1)", "O OCCAS:(1)"],
+      "1": ["1-2X:(2)", "10-19X:(5)", "6-9X:(4)", "3-5X:(3)", "40+OCCAS:(7)", "20-39X:(6)"]
+    },
+    "parent": "ritalin",
+    "value_counts": {
+      "0": 67608,
+      "1": 1685
+    },
+    "value_percents": {
+      "0": 97.6,
+      "1": 2.4
+    }
+  },
+  "ketamine_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Ketamine Use Among High Schoolers",
+    "selection_alias": "Ever Used Ketamine",
+    "compute_alias": "Ever Used Ketamine",
+    "recoded_levels": {
+      "0": ["0 OCCAS:(1)", "O OCCAS:(1)"],
+      "1": ["3-5X:(3)", "1-2X:(2)", "6-9X:(4)", "10-19X:(5)", "40+OCCAS:(7)", "20-39X:(6)"]
+    },
+    "parent": "ketamine",
+    "value_counts": {
+      "0": 78017,
+      "1": 1118
+    },
+    "value_percents": {
+      "0": 98.6,
+      "1": 1.4
+    }
+  },
+  "oxy_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Oxycontin Use without a doctor's prescription Among High Schoolers",
+    "selection_alias": "Used Oxycontin without a Doctors Prescription in the Past Year",
+    "compute_alias": "Used Oxycontin without a Doctors Prescription in the Past Year",
+    "recoded_levels": {
+      "0": ["0 OCCAS:(1)", "O OCCAS:(1)"],
+      "1": ["6-9X:(4)", "1-2X:(2)", "10-19X:(5)", "40+OCCAS:(7)", "3-5X:(3)", "20-39X:(6)"]
+    },
+    "parent": "oxy",
+    "value_counts": {
+      "0": 96895,
+      "1": 3727
+    },
+    "value_percents": {
+      "0": 96.3,
+      "1": 3.7
+    }
+  },
+  "vicodin_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Vicodin Use Without Doctor's Prescription Among High Schoolers",
+    "selection_alias": "Ever Taken Vicodin without a Doctor's Prescription in the Past Year",
+    "compute_alias": "Ever Taken Vicodin without a Doctor's Prescription in the Past Year",
+    "recoded_levels": {
+      "0": ["0 OCCAS:(1)", "O OCCAS:(1)"],
+      "1": ["1-2X:(2)", "3-5X:(3)", "40+OCCAS:(7)", "6-9X:(4)", "20-39X:(6)", "10-19X:(5)"]
+    },
+    "parent": "vicodin",
+    "value_counts": {
+      "0": 94644,
+      "1": 5900
+    },
+    "value_percents": {
+      "0": 94.1,
+      "1": 5.9
+    }
+  },
+  "steroid_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Anabolic Steroid Use without doctor's Prescription Among High Schoolers",
+    "selection_alias": "Ever Used Anabolic Steroids without a Doctor's Prescription",
+    "compute_alias": "Ever Used Anabolic Steroids without a Doctor's Prescription",
+    "recoded_levels": {
+      "0": ["0 OCCAS:(1)", "O OCCAS:(1)"],
+      "1": ["10-19X:(5)", "1-2X:(2)", "6-9X:(4)", "3-5X:(3)", "40+OCCAS:(7)", "20-39X:(6)"]
+    },
+    "parent": "steroid",
+    "value_counts": {
+      "0": 92450,
+      "1": 1805
+    },
+    "value_percents": {
+      "0": 98.1,
+      "1": 1.9
+    }
+  },
+  "andro_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Non-Prescription Steroid \"Andro\" Use Among High Schoolers",
+    "selection_alias": "Ever Taken Non-Prescription Steroids \"Andro\" in the Past Year",
+    "compute_alias": "Ever Taken Non-Prescription Steroids \"Andro\" in the Past Year",
+    "recoded_levels": {
+      "0": ["0 OCCAS:(1)", "O OCCAS:(1)"],
+      "1": ["1-2X:(2)", "6-9X:(4)", "40+OCCAS:(7)", "10-19X:(5)", "20-39X:(6)", "3-5X:(3)"]
+    },
+    "parent": "andro",
+    "value_counts": {
+      "0": 57921,
+      "1": 621
+    },
+    "value_percents": {
+      "0": 98.9,
+      "1": 1.1
+    }
+  },
+  "creatine_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Creatine Use Among High Schoolers",
+    "selection_alias": "Used Creatine in the Past Year",
+    "compute_alias": "Used Creatine in the Past Year",
+    "recoded_levels": {
+      "0": ["0 OCCAS:(1)", "O OCCAS:(1)"],
+      "1": ["40+OCCAS:(7)", "20-39X:(6)", "6-9X:(4)", "3-5X:(3)", "1-2X:(2)", "10-19X:(5)"]
+    },
+    "parent": "creatine",
+    "value_counts": {
+      "0": 63227,
+      "1": 6151
+    },
+    "value_percents": {
+      "0": 91.1,
+      "1": 8.9
+    }
+  },
+  "coughmed_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Cough Medicine Use Among High Schoolers",
+    "selection_alias": "Used Cough or Cold Medicine to Get High in the Past Year",
+    "compute_alias": "Used Cough or Cold Medicine to Get High in the Past Year",
+    "recoded_levels": {
+      "0": ["0 OCCAS:(1)", "O OCCAS:(1)"],
+      "1": ["10-19X:(5)", "1-2X:(2)", "40+OCCAS:(7)", "3-5X:(3)", "6-9X:(4)", "20-39X:(6)"]
+    },
+    "parent": "coughmed",
+    "value_counts": {
+      "0": 61771,
+      "1": 2991
+    },
+    "value_percents": {
+      "0": 95.4,
+      "1": 4.6
+    }
+  },
+  "adderall_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Adderall Use Without Doctor's Prescription Among High Schoolers",
+    "selection_alias": "Taken Adderall without a Doctor's Presctiption in the Last Year",
+    "compute_alias": "Taken Adderall without a Doctor's Presctiption in the Last Year",
+    "recoded_levels": {
+      "0": "O OCCAS:(1)",
+      "1": ["1-2X:(2)", "20-39X:(6)", "6-9X:(4)", "3-5X:(3)", "40+OCCAS:(7)", "10-19X:(5)"]
+    },
+    "parent": "adderall",
+    "value_counts": {
+      "0": 45676,
+      "1": 3040
+    },
+    "value_percents": {
+      "0": 93.8,
+      "1": 6.2
+    }
+  },
+  "salvia_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Salvia Use Among High Schoolers",
+    "selection_alias": "Used Salvia in the Past Year",
+    "compute_alias": "Used Salvia in the Past Year",
+    "recoded_levels": {
+      "0": "O OCCAS:(1)",
+      "1": ["3-5X:(3)", "40+OCCAS:(7)", "1-2X:(2)", "10-19X:(5)", "20-39X:(6)", "6-9X:(4)"]
+    },
+    "parent": "salvia",
+    "value_counts": {
+      "0": 38463,
+      "1": 1313
+    },
+    "value_percents": {
+      "0": 96.7,
+      "1": 3.3
+    }
+  },
+  "marijuana_synth_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Synthetic Marijuana Use Among High Schoolers",
+    "selection_alias": "Ever Used Synthetic Marijuana",
+    "compute_alias": "Ever Used Synthetic Marijuana",
+    "recoded_levels": {
+      "0": "O OCCAS:(1)",
+      "1": ["6-9X:(4)", "1-2X:(2)", "3-5X:(3)", "40+OCCAS:(7)", "20-39X:(6)", "10-19X:(5)"]
+    },
+    "parent": "marijuana_synth",
+    "value_counts": {
+      "0": 33710,
+      "1": 1925
+    },
+    "value_percents": {
+      "0": 94.6,
+      "1": 5.4
+    }
+  },
+  "cigarette_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Smoking Among High Schoolers",
+    "selection_alias": "Ever Smoked a Cigarette",
+    "compute_alias": "Ever Smoked a Cigarette",
+    "recoded_levels": {
+      "0": ["NEVER", "NEVER:(1)"],
+      "1": ["1-2X", "OCCASNLY", "REG PAST", "REG NOW", "REG NOW:(5)", "OCCASNLY:(3)", "REG PAST:(4)", "1-2X:(2)", "REGULARLY NOW", "ONCE OR TWICE", "OCCASIONALLY BUT NOT REGULARLY", "REGULARLY IN THE PAST", "OCCASIONALLY BUT NOT REGULARL"]
+    },
+    "parent": "cigarette",
+    "value_counts": {
+      "0": 301862,
+      "1": 380483
+    },
+    "value_percents": {
+      "0": 44.2,
+      "1": 55.8
+    }
+  },
+  "school_ill_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Missed School due to Illness",
+    "selection_alias": "Missed School Because of Illness at Least Once in the Past Month",
+    "compute_alias": "Missed School Because of Illness at Least Once in the Past Month",
+    "recoded_levels": {
+      "0": "NONE",
+      "1": ["2 DAYS", "1 DAY", "6-10 DAYS", "11+ DAYS", "3 DAYS", "4-5 DAYS"]
+    },
+    "parent": "school_ill",
+    "value_counts": {
+      "0": 374401,
+      "1": 274623
+    },
+    "value_percents": {
+      "0": 57.7,
+      "1": 42.3
+    }
+  },
+  "school_cut_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Missed School due to Skipping",
+    "selection_alias": "Skipped School at Least Once in the Last Month",
+    "compute_alias": "Skipped School at Least Once in the Last Month",
+    "recoded_levels": {
+      "0": ["NONE", "NONE:(1)"],
+      "1": ["1 DAY", "4-5 DAYS", "2 DAYS", "11+ DAYS", "3 DAYS", "6-10 DA", "2 DAYS:(3)", "1 DAY:(2)", "3 DAYS:(4)", "11+ DAYS:(7)", "4-5 DAYS:(5)", "6-10 DA:(6)", "11 OR MORE", "6-10 DAYS"]
+    },
+    "parent": "school_cut",
+    "value_counts": {
+      "0": 438742,
+      "1": 195846
+    },
+    "value_percents": {
+      "0": 69.1,
+      "1": 30.9
+    }
+  },
+  "school_skipclass_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Skipped Class",
+    "selection_alias": "Gone to School but Skipped a Class in the Past Month",
+    "compute_alias": "Gone to School but Skipped a Class in the Past Month",
+    "recoded_levels": {
+      "0": ["NONE", "NONE:(1)", "NOT AT ALL"],
+      "1": ["6-10", "1-2", "3-5", "21+", "11-20", "1-2:(2)", "6-10:(4)", "3-5:(3)", "11-20:(5)", "21+:(6)", "MORE THAN 20 TIMES", "1 OR 2 TIMES", "3-5 TIMES", "11-20 TIMES", "6-10 TIMES"]
+    },
+    "parent": "school_skipclass",
+    "value_counts": {
+      "0": 433825,
+      "1": 228607
+    },
+    "value_percents": {
+      "0": 65.5,
+      "1": 34.5
+    }
+  },
+  "plan_voctec_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Post High School Plans: Vocational School",
+    "selection_alias": "Plan to Attend Vocational or Technical School",
+    "compute_alias": "Plan to Attend Vocational or Technical School",
+    "recoded_levels": {
+      "0": ["DEF WONT", "PRB WONT", "DEF WONT:(1)", "PRB WONT:(2)", "DEFINITELY WON'T", "PROBABLY WON'T"],
+      "1": ["PRB WILL", "DEF WILL", "PRB WILL:(3)", "DEF WILL:(4)", "PROBABLY WILL", "DEFINITELY WILL"]
+    },
+    "parent": "plan_voctec",
+    "value_counts": {
+      "0": 490548,
+      "1": 141281
+    },
+    "value_percents": {
+      "0": 77.6,
+      "1": 22.4
+    }
+  },
+  "plan_armdfc_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Post High School Plans: Military",
+    "selection_alias": "Plan to Serve in the Military after High School",
+    "compute_alias": "Plan to Serve in the Military after High School",
+    "recoded_levels": {
+      "0": ["PRB WONT", "DEF WONT", "DEF WONT:(1)", "PRB WONT:(2)", "DEFINITELY WON'T", "PROBABLY WON'T"],
+      "1": ["PRB WILL", "DEF WILL", "DEF WILL:(4)", "PRB WILL:(3)", "PROBABLY WILL", "DEFINITELY WILL"]
+    },
+    "parent": "plan_armdfc",
+    "value_counts": {
+      "0": 543560,
+      "1": 77523
+    },
+    "value_percents": {
+      "0": 87.5,
+      "1": 12.5
+    }
+  },
+  "plan_2yrclg_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Post High School Plans: Two Year College",
+    "selection_alias": "Plan to Graduate from a Two Year College Program after High School",
+    "compute_alias": "Plan to Graduate from a Two Year College Program after High School",
+    "recoded_levels": {
+      "0": ["DEF WONT", "PRB WONT", "PRB WONT:(2)", "DEF WONT:(1)", "DEFINITELY WON'T", "PROBABLY WON'T"],
+      "1": ["DEF WILL", "PRB WILL", "DEF WILL:(4)", "PRB WILL:(3)", "PROBABLY WILL", "DEFINITELY WILL"]
+    },
+    "parent": "plan_2yrclg",
+    "value_counts": {
+      "0": 388309,
+      "1": 242024
+    },
+    "value_percents": {
+      "0": 61.6,
+      "1": 38.4
+    }
+  },
+  "plan_attend4yr_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Post High School Plans: College",
+    "selection_alias": "Plan to Graduate from College (Four Year Program)",
+    "compute_alias": "Plan to Graduate from College (Four Year Program)",
+    "recoded_levels": {
+      "0": ["PRB WONT", "DEF WONT", "DEF WONT:(1)", "PRB WONT:(2)", "DEFINITELY WON'T", "PROBABLY WON'T"],
+      "1": ["DEF WILL", "PRB WILL", "DEF WILL:(4)", "PRB WILL:(3)", "PROBABLY WILL", "DEFINITELY WILL"]
+    },
+    "parent": "plan_attend4yr",
+    "value_counts": {
+      "0": 166605,
+      "1": 476011
+    },
+    "value_percents": {
+      "0": 25.9,
+      "1": 74.1
+    }
+  },
+  "plan_gradschool_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Post High School Plans: Graduate School Post College",
+    "selection_alias": "Plan to Attend Graduate or Professional School after College",
+    "compute_alias": "Plan to Attend Graduate or Professional School after College",
+    "recoded_levels": {
+      "0": ["PRB WONT", "DEF WONT", "PRB WONT:(2)", "DEF WONT:(1)", "DEFINITELY WON'T", "PROBABLY WON'T"],
+      "1": ["PRB WILL", "DEF WILL", "DEF WILL:(4)", "PRB WILL:(3)", "PROBABLY WILL", "DEFINITELY WILL"]
+    },
+    "parent": "plan_gradschool",
+    "value_counts": {
+      "0": 321651,
+      "1": 309782
+    },
+    "value_percents": {
+      "0": 50.9,
+      "1": 49.1
+    }
+  },
+  "want_voctec_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Post High School Wants: Two Year College",
+    "selection_alias": "Would Want to Attend a Technical or Vocational School",
+    "compute_alias": "Would Want to Attend a Technical or Vocational School",
+    "recoded_levels": {
+      "0": ["NT MARKD", "NT MARKD:(0)", "NO"],
+      "1": ["MARKED", "MARKED:(1)", "YES"]
+    },
+    "parent": "want_voctec",
+    "value_counts": {
+      "0": 529171,
+      "1": 120820
+    },
+    "value_percents": {
+      "0": 81.4,
+      "1": 18.6
+    }
+  },
+  "want_armdfc_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Post High School Wants: Military",
+    "selection_alias": "Would Want to Serve in the Military (Armed Forces)",
+    "compute_alias": "Would Want to Serve in the Military (Armed Forces)",
+    "recoded_levels": {
+      "0": ["NT MARKD", "NT MARKD:(0)", "NO"],
+      "1": ["MARKED", "MARKED:(1)", "YES"]
+    },
+    "parent": "want_armdfc",
+    "value_counts": {
+      "0": 560305,
+      "1": 89686
+    },
+    "value_percents": {
+      "0": 86.2,
+      "1": 13.8
+    }
+  },
+  "want_2yrclg_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Post High School Wants: Two Year College",
+    "selection_alias": "Would Want to Graduate from a Two-Year College Program",
+    "compute_alias": "Would Want to Graduate from a Two-Year College Program",
+    "recoded_levels": {
+      "0": ["NT MARKD", "NT MARKD:(0)", "NO"],
+      "1": ["MARKED", "MARKED:(1)", "YES"]
+    },
+    "parent": "want_2yrclg",
+    "value_counts": {
+      "0": 486987,
+      "1": 163004
+    },
+    "value_percents": {
+      "0": 74.9,
+      "1": 25.1
+    }
+  },
+  "want_4yrclg_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Post High School Wants: College",
+    "selection_alias": "Would Want to Graduate from College (Four Year Program)",
+    "compute_alias": "Would Want to Graduate from College (Four Year Program)",
+    "recoded_levels": {
+      "0": ["NT MARKD", "NT MARKD:(0)", "NO"],
+      "1": ["MARKED", "MARKED:(1)", "YES"]
+    },
+    "parent": "want_4yrclg",
+    "value_counts": {
+      "0": 174033,
+      "1": 475958
+    },
+    "value_percents": {
+      "0": 26.8,
+      "1": 73.2
+    }
+  },
+  "want_grad_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Post High School Wants: Graduate School Post College",
+    "selection_alias": "Would Want to Attend Graduate Pr Professional School after College",
+    "compute_alias": "Would Want to Attend Graduate Pr Professional School after College",
+    "recoded_levels": {
+      "0": ["NT MARKD", "NT MARKD:(0)", "NO"],
+      "1": ["MARKED", "MARKED:(1)", "YES"]
+    },
+    "parent": "want_grad",
+    "value_counts": {
+      "0": 319357,
+      "1": 330634
+    },
+    "value_percents": {
+      "0": 49.1,
+      "1": 50.9
+    }
+  },
+  "want_none_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Post High School Wants: No College, Vocational School or Military",
+    "selection_alias": "Would not Want to Attend College, Vocational School or Serve in the Military",
+    "compute_alias": "Would not Want to Attend College, Vocational School or Serve in the Military",
+    "recoded_levels": {
+      "0": ["NT MARKD", "NT MARKD:(0)", "NO"],
+      "1": ["MARKED", "MARKED:(1)", "YES"]
+    },
+    "parent": "want_none",
+    "value_counts": {
+      "0": 607546,
+      "1": 42445
+    },
+    "value_percents": {
+      "0": 93.5,
+      "1": 6.5
+    }
+  },
+  "work_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "High Schoolers Working At a Job During School Year",
+    "selection_alias": "Work in a Paid or Unpaid Job During the School Year",
+    "compute_alias": "Work in a Paid or Unpaid Job During the School Year",
+    "recoded_levels": {
+      "0": ["NONE", "NONE:(1)"],
+      "1": ["5 OR <", "16-20 HR", "30+ HRS", "21-25 HR", "11-15 HR", "6-10 HRS", "26-30 HR", "16-20 HR:(5)", "30+ HRS:(8)", "21-25 HR:(6)", "6-10 HRS:(3)", "26-30 HR:(7)", "11-15 HR:(4)", "5 OR <:(2)", "16 TO 20 HOURS", "6 TO 10 HOURS", "MORE THAN 30 HOURS", "11 TO 15 HOURS", "5 OR LESS HOURS", "21 TO 25 HOURS", "26 TO 30 HOURS", "21-25 HRS:(6)", "11-15 HRS:(4)", "16-20 HRS:(5)", "26-30 HRS:(7)"]
+    },
+    "parent": "work",
+    "value_counts": {
+      "0": 183275,
+      "1": 468462
+    },
+    "value_percents": {
+      "0": 28.1,
+      "1": 71.9
+    }
+  },
+  "earn_work_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "High Schoolers Earning Money Working",
+    "selection_alias": "Earn Money from a Job or Other Work",
+    "compute_alias": "Earn Money from a Job or Other Work",
+    "recoded_levels": {
+      "0": ["NONE", "NONE:(1)"],
+      "1": ["$21-35", "$51-75", "$36-50", "$126+", "$76-125", "$6-10", "$1-5", "$11-20", "$51-75:(7)", "$126+:(9)", "$76-125:(8)", "$36-50:(6)", "$11-20:(4)", "$6-10:(3)", "$1-5:(2)", "$21-35:(5)", "$176+:(10)", "$126-175:(9)", "$51 +"]
+    },
+    "parent": "earn_work",
+    "value_counts": {
+      "0": 198897,
+      "1": 434190
+    },
+    "value_percents": {
+      "0": 31.4,
+      "1": 68.6
+    }
+  },
+  "earn_other_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "High Schoolers Receiving Money",
+    "selection_alias": "Receive Money, Such as an Allowance",
+    "compute_alias": "Receive Money, Such as an Allowance",
+    "recoded_levels": {
+      "0": ["NONE", "NONE:(1)"],
+      "1": ["$6-10", "$11-20", "$21-35", "$1-5", "$126+", "$36-50", "$76-125", "$51-75", "$11-20:(4)", "$21-35:(5)", "$6-10:(3)", "$76-125:(8)", "$51-75:(7)", "$126+:(9)", "$36-50:(6)", "$1-5:(2)", "$176+:(10)", "$126-175:(9)", "$51 +"]
+    },
+    "parent": "earn_other",
+    "value_counts": {
+      "0": 244410,
+      "1": 373840
+    },
+    "value_percents": {
+      "0": 39.5,
+      "1": 60.5
+    }
+  },
+  "go_out_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Social Recreation Activity in High Schoolers",
+    "selection_alias": "Go Out for Fun and Recreation more than Once a Week",
+    "compute_alias": "Go Out for Fun and Recreation more than Once a Week",
+    "recoded_levels": {
+      "0": ["<1", "< 1:(1)", "< 1", "LESS THAN ONE"],
+      "1": ["TWO", "4-5", "THREE", "6-7", "ONE", "6-7:(6)", "ONE:(2)", "TWO:(3)", "THREE:(4)", "4-5:(5)", "SIX OR SEVEN", "FOUR OR FIVE"]
+    },
+    "parent": "go_out",
+    "value_counts": {
+      "0": 69809,
+      "1": 580012
+    },
+    "value_percents": {
+      "0": 10.7,
+      "1": 89.3
+    }
+  },
+  "date_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Dating Behavior in High Schoolers",
+    "selection_alias": "Gone on a Date",
+    "compute_alias": "Gone on a Date",
+    "recoded_levels": {
+      "0": ["NEVER", "NEVER:(1)"],
+      "1": ["1MO OR<", "2-3WK", "2-3MO", "1WK", "3+WK", "3+/WK:(6)", "2-3/WK:(5)", "1/WK:(4)", "1/MO OR<:(2)", "2-3/MO:(3)", "2-3/MO", "1/WK", "2-3/WK", "3+/WK", "1/MO OR<", "ONCE/MO:(2)", "3+ WEEK:(6)", "2-3X MO:(3)", "2-3X WK:(5)", "ONCE WK:(4)", "OVER 3 TIMES A WEEK", "ONCE A MONTH OR LESS", "2 OR 3 TIMES A WEEK", "2 OR 3 TIMES A MONTH", "ONCE A WEEK"]
+    },
+    "parent": "date",
+    "value_counts": {
+      "0": 154123,
+      "1": 490180
+    },
+    "value_percents": {
+      "0": 23.9,
+      "1": 76.1
+    }
+  },
+  "ticket_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Incidence of Car Tickets in High Schoolers",
+    "selection_alias": "Received a Ticket, or Stopped and Warned for Moving Violations While Driving",
+    "compute_alias": "Received a Ticket, or Stopped and Warned for Moving Violations While Driving",
+    "recoded_levels": {
+      "0": ["NONE", "NONE:(0)", "NONE -- GO TO Q.C30", "NONE--GO TO Q.C30"],
+      "1": ["ONE", "THREE", "4+", "TWO", "ONE:(1)", "TWO:(2)", "4+:(4)", "THREE:(3)", "TWICE:(2)", "3 TIMES:(3)", "ONCE:(1)", "4+ TIMES:(4)", "ONCE", "TWICE", "FOUR OR MORE TIMES", "THREE TIMES"]
+    },
+    "parent": "ticket",
+    "value_counts": {
+      "0": 471649,
+      "1": 166116
+    },
+    "value_percents": {
+      "0": 74,
+      "1": 26
+    }
+  },
+  "accident_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "",
+    "title": "Incidence of Car Accidents in High Schoolers",
+    "selection_alias": "Been in at Least One Accident While Driving a Vehicle in the Past Year",
+    "compute_alias": "Been in at Least One Accident While Driving a Vehicle in the Past Year",
+    "recoded_levels": {
+      "0": ["NONE", "NONE:(0)", "NONE -- GO TO Q.C32", "NONE--GO TO Q.C32"],
+      "1": ["ONE", "TWO", "THREE", "4+", "ONE:(1)", "THREE:(3)", "TWO:(2)", "4+:(4)", "TWICE:(2)", "ONCE:(1)", "3 TIMES:(3)", "4+ TIMES:(4)", "TWICE", "ONCE", "FOUR OR MORE", "THREE TIMES"]
+    },
+    "parent": "accident",
+    "value_counts": {
+      "0": 490777,
+      "1": 140821
+    },
+    "value_percents": {
+      "0": 77.7,
+      "1": 22.3
+    }
+  }
+}

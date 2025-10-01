@@ -1,0 +1,3492 @@
+{
+  "uuid": {
+    "type": "numeric",
+    "raw_recode": "system",
+    "label_original": "",
+    "year_min": 1991,
+    "year_max": 2023,
+    "year_count": 17,
+    "selection_alias": "Uuid"
+  },
+  "year": {
+    "type": "numeric",
+    "raw_recode": "system",
+    "label_original": "4-digit Year of survey",
+    "order": ["1991", "1993", "1995", "1997", "1999", "2001", "2003", "2005", "2007", "2009", "2011", "2013", "2015", "2017", "2019", "2021", "2023"],
+    "year_min": 1991,
+    "year_max": 2023,
+    "year_count": 17,
+    "selection_alias": "4-Digit Year of Survey"
+  },
+  "weight": {
+    "type": "numeric",
+    "raw_recode": "system",
+    "label_original": "Analysis weight",
+    "year_min": 1991,
+    "year_max": 2023,
+    "year_count": 17,
+    "selection_alias": "Analysis Weight"
+  },
+  "stratum": {
+    "type": "numeric",
+    "raw_recode": "system",
+    "label_original": "Analysis stratum",
+    "year_min": 1991,
+    "year_max": 2023,
+    "year_count": 17,
+    "selection_alias": "Analysis Stratum"
+  },
+  "psu": {
+    "type": "numeric",
+    "raw_recode": "system",
+    "label_original": "Analysis primary sampling unit",
+    "year_min": 1991,
+    "year_max": 2023,
+    "year_count": 17,
+    "selection_alias": "Analysis Primary Sampling Unit"
+  },
+  "age_5_rec": {
+    "type": "categorical",
+    "raw_recode": "recoded",
+    "outcome_demo": "demo",
+    "label_original": "Age",
+    "values": {
+      "1": "14 AND UNDER",
+      "2": "15 YEARS",
+      "3": "16 YEARS",
+      "4": "17 YEARS",
+      "5": "18 AND ABOVE"
+    },
+    "order_raw": ["14 and under", "15 years", "16 years", "17 years", "18 and above"],
+    "order": ["14 and under", "15 years", "16 years", "17 years", "18 years +"],
+    "year_min": 1991,
+    "year_max": 2023,
+    "year_count": 17,
+    "title": "Age",
+    "selection_alias": "Age",
+    "compute_alias": "Age",
+    "recoded_levels": {
+      "14 and under": ["12 YEARS OLD OR YOUNGER", "13 YEARS OLD", "14 YEARS OLD"],
+      "15 years": "15 YEARS OLD",
+      "16 years": "16 YEARS OLD",
+      "17 years": "17 YEARS OLD",
+      "18 years +": "18 YEARS OLD OR OLDER"
+    },
+    "parent": "age",
+    "value_counts": {
+      "14 and under": 28179,
+      "15 years": 59337,
+      "16 years": 64931,
+      "17 years": 63844,
+      "18 years +": 37477
+    },
+    "value_percents": {
+      "14 and under": 11.1,
+      "15 years": 23.4,
+      "16 years": 25.6,
+      "17 years": 25.2,
+      "18 years +": 14.8
+    }
+  },
+  "grade_rec": {
+    "type": "categorical",
+    "raw_recode": "recoded",
+    "outcome_demo": "demo",
+    "label_original": "1=9th...4=12th grade",
+    "values": {
+      "1": "9TH",
+      "2": "10TH",
+      "3": "11TH",
+      "4": "12TH"
+    },
+    "order_raw": ["9th", "10th", "11th", "12th"],
+    "order": ["9th", "10th", "11th", "12th"],
+    "year_min": 1991,
+    "year_max": 2023,
+    "year_count": 17,
+    "title": "Grade Level",
+    "selection_alias": "Grade Level",
+    "compute_alias": "Grade Level",
+    "recoded_levels": {
+      "9th": "9TH",
+      "10th": "10TH",
+      "11th": "11TH",
+      "12th": "12TH"
+    },
+    "parent": "grade",
+    "value_counts": {
+      "9th": 64313,
+      "10th": 63480,
+      "11th": 63253,
+      "12th": 61913
+    },
+    "value_percents": {
+      "9th": 25.4,
+      "10th": 25.1,
+      "11th": 25,
+      "12th": 24.5
+    }
+  },
+  "sex_rec": {
+    "type": "categorical",
+    "raw_recode": "recoded",
+    "outcome_demo": "demo",
+    "label_original": "1=female, 2=male",
+    "values": {
+      "1": "FEMALE",
+      "2": "MALE"
+    },
+    "order_raw": ["Female", "Male"],
+    "order": ["Female", "Male"],
+    "year_min": 1991,
+    "year_max": 2023,
+    "year_count": 17,
+    "title": "Gender",
+    "selection_alias": "Gender",
+    "compute_alias": "Gender",
+    "recoded_levels": {
+      "Female": "FEMALE",
+      "Male": "MALE"
+    },
+    "parent": "sex",
+    "value_counts": {
+      "Female": 127576,
+      "Male": 125768
+    },
+    "value_percents": {
+      "Female": 50.4,
+      "Male": 49.6
+    }
+  },
+  "race4_rec": {
+    "type": "categorical",
+    "raw_recode": "recoded",
+    "outcome_demo": "demo",
+    "label_original": "Race",
+    "values": {
+      "1": "WHITE",
+      "2": "BLACK OR AFRICAN AMERICAN",
+      "3": "HISPANIC/LATINO",
+      "4": "ALL OTHER RACES"
+    },
+    "order_raw": ["White", "Black or African American", "Hispanic/Latino", "All other races"],
+    "order": ["White", "Black", "Hispanic", "Other"],
+    "year_min": 1991,
+    "year_max": 2023,
+    "year_count": 17,
+    "title": "Race",
+    "selection_alias": "Race",
+    "compute_alias": "Race",
+    "recoded_levels": {
+      "White": "WHITE",
+      "Black": "BLACK OR AFRICAN AMERICAN",
+      "Hispanic": "HISPANIC/LATINO",
+      "Other": "ALL OTHER RACES"
+    },
+    "parent": "race4",
+    "value_counts": {
+      "White": 109351,
+      "Black": 50516,
+      "Hispanic": 64956,
+      "Other": 25764
+    },
+    "value_percents": {
+      "White": 43.6,
+      "Black": 20.2,
+      "Hispanic": 25.9,
+      "Other": 10.3
+    }
+  },
+  "sexpref_rec": {
+    "type": "categorical",
+    "raw_recode": "recoded",
+    "outcome_demo": "demo",
+    "label_original": "Collapsed sexual identity",
+    "values": {
+      "1": "HETEROSEXUAL",
+      "2": "LGBTQ+"
+    },
+    "order_raw": ["Heterosexual", "LGBTQ+"],
+    "order": ["Heterosexual", "LGBTQ"],
+    "year_min": 2021,
+    "year_max": 2023,
+    "year_count": 2,
+    "title": "Sexual Preference",
+    "selection_alias": "Sexual Preference",
+    "compute_alias": "Sexual Preference",
+    "recoded_levels": {
+      "Heterosexual": "HETEROSEXUAL",
+      "LGBTQ": ["SEXUAL MINORITY", "OTHER/QUESTIONING"]
+    },
+    "parent": "sexid2",
+    "value_counts": {
+      "Heterosexual": 25710,
+      "LGBTQ": 8196
+    },
+    "value_percents": {
+      "Heterosexual": 75.8,
+      "LGBTQ": 24.2
+    }
+  },
+  "qnobese_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Had obesity",
+    "year_min": 1999,
+    "year_max": 2023,
+    "year_count": 13,
+    "title": "Obesity Among US High School Students",
+    "selection_alias": "Have Obesity",
+    "compute_alias": "Have Obesity",
+    "parent": "q1; q2; q6; q7",
+    "value_counts": {
+      "0": 156691,
+      "1": 25768
+    },
+    "value_percents": {
+      "0": 85.9,
+      "1": 14.1
+    }
+  },
+  "qnowt_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Were overweight",
+    "year_min": 1999,
+    "year_max": 2023,
+    "year_count": 13,
+    "title": "Overweight Among US High School Students",
+    "selection_alias": "Are Overweight",
+    "compute_alias": "Are Overweight",
+    "parent": "q1; q2; q6; q7",
+    "value_counts": {
+      "0": 153683,
+      "1": 28776
+    },
+    "value_percents": {
+      "0": 84.2,
+      "1": 15.8
+    }
+  },
+  "qn8_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Did not always wear a seat belt",
+    "year_min": 1991,
+    "year_max": 2023,
+    "year_count": 17,
+    "title": "Seat Belt Use Among US High School Students",
+    "selection_alias": "Did not Always Wear a Seat Belt",
+    "compute_alias": "Did not Always Wear a Seat Belt",
+    "recoded_levels": {
+      "0": "ALWAYS",
+      "1": ["RARELY", "MOST OF THE TIME", "NEVER", "SOMETIMES"]
+    },
+    "parent": "q8",
+    "value_counts": {
+      "0": 106030,
+      "1": 130995
+    },
+    "value_percents": {
+      "0": 44.7,
+      "1": 55.3
+    }
+  },
+  "qn9_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Rode with a driver who had been drinking alcohol",
+    "year_min": 1991,
+    "year_max": 2023,
+    "year_count": 17,
+    "title": "Riding with a Drinking Driver Among US High School Students",
+    "selection_alias": "Rode with a Driver Who Had Been Drinking Alcohol",
+    "compute_alias": "Rode with a Driver Who Had Been Drinking Alcohol",
+    "recoded_levels": {
+      "0": "0 TIMES",
+      "1": ["4 OR 5 TIMES", "6 OR MORE TIMES", "1 TIME", "2 OR 3 TIMES"]
+    },
+    "parent": "q9",
+    "value_counts": {
+      "0": 180525,
+      "1": 70679
+    },
+    "value_percents": {
+      "0": 71.9,
+      "1": 28.1
+    }
+  },
+  "qn10_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Drove a car or other vehicle when they had been drinking alcohol",
+    "year_min": 2013,
+    "year_max": 2023,
+    "year_count": 6,
+    "title": "Drinking and Driving Among US High School Students",
+    "selection_alias": "Drove a Car or Other Vehicle when They Had Been Drinking Alcohol",
+    "compute_alias": "Drove a Car or Other Vehicle when They Had Been Drinking Alcohol",
+    "recoded_levels": {
+      "0": "DID NOT DRIVE WHEN DRINKING",
+      "1": ["6 OR MORE TIMES", "1 TIME", "2 OR 3 TIMES", "4 OR 5 TIMES"]
+    },
+    "parent": "q10",
+    "value_counts": {
+      "0": 45781,
+      "1": 3263
+    },
+    "value_percents": {
+      "0": 93.3,
+      "1": 6.7
+    }
+  },
+  "qn11_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Texted or e-mailed while driving a car or other vehicle",
+    "year_min": 2013,
+    "year_max": 2023,
+    "year_count": 6,
+    "title": "Texting and Driving Among US High School Students",
+    "selection_alias": "Texted or e-Mailed While Driving a Car or Other Vehicle",
+    "compute_alias": "Texted or e-Mailed While Driving a Car or Other Vehicle",
+    "recoded_levels": {
+      "0": "DID NOT TEXT WHILE DRIVING",
+      "1": ["ALL 30 DAYS", "3 TO 5 DAYS", "6 TO 9 DAYS", "1 OR 2 DAYS", "10 TO 19 DAYS", "20 TO 29 DAYS"]
+    },
+    "parent": "q11",
+    "value_counts": {
+      "0": 29996,
+      "1": 19032
+    },
+    "value_percents": {
+      "0": 61.2,
+      "1": 38.8
+    }
+  },
+  "qn12_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Carried a weapon on school property",
+    "year_min": 1993,
+    "year_max": 2023,
+    "year_count": 16,
+    "title": "Weapon Carrying at School Among US High School Students",
+    "selection_alias": "Carried a Weapon on School Property",
+    "compute_alias": "Carried a Weapon on School Property",
+    "recoded_levels": {
+      "0": "0 DAYS",
+      "1": ["1 DAY", "2 OR 3 DAYS", "4 OR 5 DAYS", "6 OR MORE DAYS"]
+    },
+    "parent": "q12",
+    "value_counts": {
+      "0": 219843,
+      "1": 14077
+    },
+    "value_percents": {
+      "0": 94,
+      "1": 6
+    }
+  },
+  "qn13_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Carried a gun",
+    "year_min": 2017,
+    "year_max": 2023,
+    "year_count": 4,
+    "title": "Gun Carrying Among US High School Students",
+    "selection_alias": "Carried a Gun",
+    "compute_alias": "Carried a Gun",
+    "recoded_levels": {
+      "0": "0 DAYS",
+      "1": ["6 OR MORE DAYS", "1 DAY", "2 OR 3 DAYS", "4 OR 5 DAYS"]
+    },
+    "parent": "q13",
+    "value_counts": {
+      "0": 47174,
+      "1": 2330
+    },
+    "value_percents": {
+      "0": 95.3,
+      "1": 4.7
+    }
+  },
+  "qn14_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Did not go to school because they felt unsafe at school or on their way to or from school",
+    "year_min": 1993,
+    "year_max": 2023,
+    "year_count": 16,
+    "title": "Safety Concerns at School Among US High School Students",
+    "selection_alias": "Did not Go to School Because They Felt Unsafe at School or on the Way to School",
+    "compute_alias": "Did not Go to School Because They Felt Unsafe at School or on the Way to School",
+    "recoded_levels": {
+      "0": "0 DAYS",
+      "1": ["1 DAY", "4 OR 5 DAYS", "6 OR MORE DAYS", "2 OR 3 DAYS"]
+    },
+    "parent": "q14",
+    "value_counts": {
+      "0": 220410,
+      "1": 17504
+    },
+    "value_percents": {
+      "0": 92.6,
+      "1": 7.4
+    }
+  },
+  "qn15_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Were threatened or injured with a weapon on school property",
+    "year_min": 1993,
+    "year_max": 2023,
+    "year_count": 16,
+    "title": "Threatened at School Among US High School Students",
+    "selection_alias": "Threatened or Injured with a Weapon on School Property",
+    "compute_alias": "Threatened or Injured with a Weapon on School Property",
+    "recoded_levels": {
+      "0": "0 TIMES",
+      "1": ["12 OR MORE TIMES", "1 TIME", "2 OR 3 TIMES", "8 OR 9 TIMES", "4 OR 5 TIMES", "6 OR 7 TIMES", "10 OR 11 TIMES"]
+    },
+    "parent": "q15",
+    "value_counts": {
+      "0": 219610,
+      "1": 18807
+    },
+    "value_percents": {
+      "0": 92.1,
+      "1": 7.9
+    }
+  },
+  "qn16_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Were in a physical fight",
+    "year_min": 1991,
+    "year_max": 2023,
+    "year_count": 17,
+    "title": "Physical Fighting Among US High School Students",
+    "selection_alias": "Was in a Physical Fight",
+    "compute_alias": "Was in a Physical Fight",
+    "recoded_levels": {
+      "0": "0 TIMES",
+      "1": ["2 OR 3 TIMES", "12 OR MORE TIMES", "1 TIME", "4 OR 5 TIMES", "6 OR 7 TIMES", "8 OR 9 TIMES", "10 OR 11 TIMES"]
+    },
+    "parent": "q16",
+    "value_counts": {
+      "0": 155216,
+      "1": 72918
+    },
+    "value_percents": {
+      "0": 68,
+      "1": 32
+    }
+  },
+  "qn17_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Were in a physical fight on school property",
+    "year_min": 1993,
+    "year_max": 2023,
+    "year_count": 16,
+    "title": "Physical Fighting at School Among US High School Students",
+    "selection_alias": "Was in a Physical Fight on School Property",
+    "compute_alias": "Was in a Physical Fight on School Property",
+    "recoded_levels": {
+      "0": "0 TIMES",
+      "1": ["2 OR 3 TIMES", "4 OR 5 TIMES", "8 OR 9 TIMES", "1 TIME", "12 OR MORE TIMES", "6 OR 7 TIMES", "10 OR 11 TIMES"]
+    },
+    "parent": "q17",
+    "value_counts": {
+      "0": 207545,
+      "1": 27531
+    },
+    "value_percents": {
+      "0": 88.3,
+      "1": 11.7
+    }
+  },
+  "qn18_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Ever saw someone get physically attacked, beaten, stabbed, or shot in their neighborhood",
+    "year_min": 2021,
+    "year_max": 2023,
+    "year_count": 2,
+    "title": "Saw Physical Violence in Neighborhood Among US High School Students",
+    "selection_alias": "Ever Saw Someone Get Physically Attacked, Beaten, Stabbed, or Shot in their Neighborhood",
+    "compute_alias": "Ever Saw Someone Get Physically Attacked, Beaten, Stabbed, or Shot in their Neighborhood",
+    "recoded_levels": {
+      "0": "NO",
+      "1": "YES"
+    },
+    "parent": "q18",
+    "value_counts": {
+      "0": 22323,
+      "1": 6090
+    },
+    "value_percents": {
+      "0": 78.6,
+      "1": 21.4
+    }
+  },
+  "qn19_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Were ever physically forced to have sexual intercourse",
+    "year_min": 2001,
+    "year_max": 2023,
+    "year_count": 12,
+    "title": "Forced Sexual Intercourse Among US High School Students",
+    "selection_alias": "Ever Physically Forced to Have Sexual Intercourse",
+    "compute_alias": "Ever Physically Forced to Have Sexual Intercourse",
+    "recoded_levels": {
+      "0": "NO",
+      "1": "YES"
+    },
+    "parent": "q19",
+    "value_counts": {
+      "0": 156420,
+      "1": 14099
+    },
+    "value_percents": {
+      "0": 91.7,
+      "1": 8.3
+    }
+  },
+  "qn20_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Experienced sexual violence",
+    "year_min": 2017,
+    "year_max": 2023,
+    "year_count": 4,
+    "title": "Sexual Violence Among US High School Students",
+    "selection_alias": "Experienced Sexual Violence",
+    "compute_alias": "Experienced Sexual Violence",
+    "recoded_levels": {
+      "0": "0 TIMES",
+      "1": ["2 OR 3 TIMES", "1 TIME", "6 OR MORE TIMES", "4 OR 5 TIMES"]
+    },
+    "parent": "q20",
+    "value_counts": {
+      "0": 47573,
+      "1": 5899
+    },
+    "value_percents": {
+      "0": 89,
+      "1": 11
+    }
+  },
+  "qn21_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Experienced sexual dating violence",
+    "year_min": 2013,
+    "year_max": 2023,
+    "year_count": 6,
+    "title": "Sexual Dating Violence Among US High School Students",
+    "selection_alias": "Experienced Sexual Dating Violence",
+    "compute_alias": "Experienced Sexual Dating Violence",
+    "recoded_levels": {
+      "0": "0 TIMES",
+      "1": ["6 OR MORE TIMES", "1 TIME", "2 OR 3 TIMES", "4 OR 5 TIMES"]
+    },
+    "parent": "q21",
+    "value_counts": {
+      "0": 52497,
+      "1": 4951
+    },
+    "value_percents": {
+      "0": 91.4,
+      "1": 8.6
+    }
+  },
+  "qn22_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Experienced physical dating violence",
+    "year_min": 2013,
+    "year_max": 2023,
+    "year_count": 6,
+    "title": "Physical Dating Violence Among US High School Students",
+    "selection_alias": "Experienced Physical Dating Violence",
+    "compute_alias": "Experienced Physical Dating Violence",
+    "recoded_levels": {
+      "0": "0 TIMES",
+      "1": ["6 OR MORE TIMES", "1 TIME", "4 OR 5 TIMES", "2 OR 3 TIMES"]
+    },
+    "parent": "q22",
+    "value_counts": {
+      "0": 54216,
+      "1": 5819
+    },
+    "value_percents": {
+      "0": 90.3,
+      "1": 9.7
+    }
+  },
+  "qn23_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Felt that they were ever treated badly or unfairly in school because of their race or ethnicity",
+    "year_min": 2023,
+    "year_max": 2023,
+    "year_count": 1,
+    "title": "Experienced Racial Discrimination At School Among US High School Students",
+    "selection_alias": "Experienced Racial Discrimination at School",
+    "compute_alias": "Experienced Racial Discrimination at School",
+    "recoded_levels": {
+      "0": "NEVER",
+      "1": ["RARELY", "ALWAYS", "SOMETIMES", "MOST OF THE TIME"]
+    },
+    "parent": "q23",
+    "value_counts": {
+      "0": 12530,
+      "1": 5756
+    },
+    "value_percents": {
+      "0": 68.5,
+      "1": 31.5
+    }
+  },
+  "qn24_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Were bullied on school property",
+    "year_min": 2009,
+    "year_max": 2023,
+    "year_count": 8,
+    "title": "Bullying at School Among US High School Students",
+    "selection_alias": "Bullied on School Property",
+    "compute_alias": "Bullied on School Property",
+    "recoded_levels": {
+      "0": "NO",
+      "1": "YES"
+    },
+    "parent": "q24",
+    "value_counts": {
+      "0": 100754,
+      "1": 23198
+    },
+    "value_percents": {
+      "0": 81.3,
+      "1": 18.7
+    }
+  },
+  "qn25_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Were electronically bullied",
+    "year_min": 2011,
+    "year_max": 2023,
+    "year_count": 7,
+    "title": "Electronic Bullying Among US High School Students",
+    "selection_alias": "Electronically Bullied",
+    "compute_alias": "Electronically Bullied",
+    "recoded_levels": {
+      "0": "NO",
+      "1": "YES"
+    },
+    "parent": "q25",
+    "value_counts": {
+      "0": 91202,
+      "1": 16651
+    },
+    "value_percents": {
+      "0": 84.6,
+      "1": 15.4
+    }
+  },
+  "qn26_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Felt sad or hopeless",
+    "year_min": 1999,
+    "year_max": 2023,
+    "year_count": 13,
+    "title": "Sad or Hopeless Among US High School Students",
+    "selection_alias": "Felt Sad or Hopeless",
+    "compute_alias": "Felt Sad or Hopeless",
+    "recoded_levels": {
+      "0": "NO",
+      "1": "YES"
+    },
+    "parent": "q26",
+    "value_counts": {
+      "0": 132926,
+      "1": 63702
+    },
+    "value_percents": {
+      "0": 67.6,
+      "1": 32.4
+    }
+  },
+  "qn27_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Seriously considered attempting suicide",
+    "year_min": 1991,
+    "year_max": 2023,
+    "year_count": 17,
+    "title": "Considered Suicide Among US High School Students",
+    "selection_alias": "Seriously Considered Attempting Suicide",
+    "compute_alias": "Seriously Considered Attempting Suicide",
+    "recoded_levels": {
+      "0": "NO",
+      "1": "YES"
+    },
+    "parent": "q27",
+    "value_counts": {
+      "0": 203407,
+      "1": 47700
+    },
+    "value_percents": {
+      "0": 81,
+      "1": 19
+    }
+  },
+  "qn28_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Made a plan about how they would attempt suicide",
+    "year_min": 1991,
+    "year_max": 2023,
+    "year_count": 17,
+    "title": "Made a Suicide Plan Among US High School Students",
+    "selection_alias": "Made a Plan About How They Would Attempt Suicide",
+    "compute_alias": "Made a Plan About How They Would Attempt Suicide",
+    "recoded_levels": {
+      "0": "NO",
+      "1": "YES"
+    },
+    "parent": "q28",
+    "value_counts": {
+      "0": 210875,
+      "1": 37321
+    },
+    "value_percents": {
+      "0": 85,
+      "1": 15
+    }
+  },
+  "qn29_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Actually attempted suicide",
+    "year_min": 1991,
+    "year_max": 2023,
+    "year_count": 17,
+    "title": "Attempted Suicide Among US High School Students",
+    "selection_alias": "Actually Attempted Suicide",
+    "compute_alias": "Actually Attempted Suicide",
+    "recoded_levels": {
+      "0": "0 TIMES",
+      "1": ["6 OR MORE TIMES", "1 TIME", "2 OR 3 TIMES", "4 OR 5 TIMES"]
+    },
+    "parent": "q29",
+    "value_counts": {
+      "0": 202869,
+      "1": 20245
+    },
+    "value_percents": {
+      "0": 90.9,
+      "1": 9.1
+    }
+  },
+  "qn30_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Had a suicide attempt that resulted in an injury, poisoning, or overdose that had to be treated by a doctor or nurse",
+    "year_min": 1991,
+    "year_max": 2023,
+    "year_count": 17,
+    "title": "Injurious Suicide Attempt Among US High School Students",
+    "selection_alias": "Had a Suicide Attempt that Resulted in an Injury, Poisoning, or Overdose that Required Medical Attention",
+    "compute_alias": "Had a Suicide Attempt that Resulted in an Injury, Poisoning, or Overdose that Required Medical Attention",
+    "recoded_levels": {
+      "0": ["DID NOT ATTEMPT SUICIDE", "NO"],
+      "1": "YES"
+    },
+    "parent": "q30",
+    "value_counts": {
+      "0": 205184,
+      "1": 5637
+    },
+    "value_percents": {
+      "0": 97.3,
+      "1": 2.7
+    }
+  },
+  "qn31_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Ever smoked a cigarette",
+    "year_min": 1991,
+    "year_max": 2023,
+    "year_count": 17,
+    "title": "Ever Cigarette Use Among US High School Students",
+    "selection_alias": "Ever Tried Cigarette Smoking",
+    "compute_alias": "Ever Tried Cigarette Smoking",
+    "recoded_levels": {
+      "0": "NO",
+      "1": "YES"
+    },
+    "parent": "q31",
+    "value_counts": {
+      "0": 117568,
+      "1": 115833
+    },
+    "value_percents": {
+      "0": 50.4,
+      "1": 49.6
+    }
+  },
+  "qn32_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Smoked a cigarette before age 13 years",
+    "year_min": 2017,
+    "year_max": 2023,
+    "year_count": 4,
+    "title": "Initiation of Cigarette Smoking Among US High School Students",
+    "selection_alias": "First Tried Cigarette Smoking Before Age 13 Years",
+    "compute_alias": "First Tried Cigarette Smoking Before Age 13 Years",
+    "recoded_levels": {
+      "0": ["NEVER SMOKED A CIGARETTE", "13 OR 14 YEARS OLD", "15 OR 16 YEARS OLD", "17 YEARS OLD OR OLDER"],
+      "1": ["11 OR 12 YEARS OLD", "8 YEARS OLD OR YOUNGER", "9 OR 10 YEARS OLD"]
+    },
+    "parent": "q32",
+    "value_counts": {
+      "0": 52395,
+      "1": 4323
+    },
+    "value_percents": {
+      "0": 92.4,
+      "1": 7.6
+    }
+  },
+  "qn33_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Currently smoked cigarettes",
+    "year_min": 1991,
+    "year_max": 2023,
+    "year_count": 17,
+    "title": "Current Cigarette Use Among US High School Students",
+    "selection_alias": "Currently Smoke Cigarettes",
+    "compute_alias": "Currently Smoke Cigarettes",
+    "recoded_levels": {
+      "0": "0 DAYS",
+      "1": ["1 OR 2 DAYS", "ALL 30 DAYS", "6 TO 9 DAYS", "20 TO 29 DAYS", "3 TO 5 DAYS", "10 TO 19 DAYS"]
+    },
+    "parent": "q33",
+    "value_counts": {
+      "0": 199069,
+      "1": 44577
+    },
+    "value_percents": {
+      "0": 81.7,
+      "1": 18.3
+    }
+  },
+  "qn34_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Smoked more than 10 cigarettes per day",
+    "year_min": 1991,
+    "year_max": 2023,
+    "year_count": 17,
+    "title": "Smoked > 10 Cigarettes per Day Among US High School Students",
+    "selection_alias": "Smoked more than 10 Cigarettes per Day",
+    "compute_alias": "Smoked more than 10 Cigarettes per Day",
+    "recoded_levels": {
+      "0": ["2 TO 5 CIGARETTES", "1 CIGARETTE", "LESS THAN 1 CIGARETTE", "6 TO 10 CIGARETTES"],
+      "1": ["11 TO 20 CIGARETTES", "MORE THAN 20 CIGARETTES"]
+    },
+    "parent": "q34",
+    "value_counts": {
+      "0": 38585,
+      "1": 4472
+    },
+    "value_percents": {
+      "0": 89.6,
+      "1": 10.4
+    }
+  },
+  "qn35_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Ever used an electronic vapor product",
+    "year_min": 2015,
+    "year_max": 2023,
+    "year_count": 5,
+    "title": "Electronic Vapor Product Use Among US High School Students",
+    "selection_alias": "Ever Used an Electronic Vapor Product",
+    "compute_alias": "Ever Used an Electronic Vapor Product",
+    "recoded_levels": {
+      "0": "NO",
+      "1": "YES"
+    },
+    "parent": "q35",
+    "value_counts": {
+      "0": 46648,
+      "1": 32571
+    },
+    "value_percents": {
+      "0": 58.9,
+      "1": 41.1
+    }
+  },
+  "qn36_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Currently used an electronic vapor product",
+    "year_min": 2015,
+    "year_max": 2023,
+    "year_count": 5,
+    "title": "Current Electronic Vapor Product Use Among US High School Students",
+    "selection_alias": "Currently Use an Electronic Vapor Product",
+    "compute_alias": "Currently Use an Electronic Vapor Product",
+    "recoded_levels": {
+      "0": "0 DAYS",
+      "1": ["1 OR 2 DAYS", "3 TO 5 DAYS", "6 TO 9 DAYS", "20 TO 29 DAYS", "ALL 30 DAYS", "10 TO 19 DAYS"]
+    },
+    "parent": "q36",
+    "value_counts": {
+      "0": 60115,
+      "1": 15982
+    },
+    "value_percents": {
+      "0": 79,
+      "1": 21
+    }
+  },
+  "qn37_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Usually got their electronic vapor products by buying them themselves in a convenience store, supermarket, discount store, or gas station",
+    "year_min": 2021,
+    "year_max": 2023,
+    "year_count": 2,
+    "title": "Purchased Electronic Vapor Products from Store Among US High School Students",
+    "selection_alias": "Usually Got their Electronic Vapor Products by Buying Them Themselves at a Store",
+    "compute_alias": "Usually Got their Electronic Vapor Products by Buying Them Themselves at a Store",
+    "recoded_levels": {
+      "0": ["SOME OTHER WAY", "FRIEND OR FAMILY", "TOOK FROM A STORE", "VAPE SHOP OR TOBACCO SHOP", "INTERNET", "MALL KIOSK OR STAND"],
+      "1": "STORE OR GAS STATION"
+    },
+    "parent": "q37",
+    "value_counts": {
+      "0": 4791,
+      "1": 314
+    },
+    "value_percents": {
+      "0": 93.8,
+      "1": 6.2
+    }
+  },
+  "qn38_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Currently used smokeless tobacco",
+    "year_min": 2017,
+    "year_max": 2023,
+    "year_count": 4,
+    "title": "Current Smokeless Tobacco Use Among US High School Students",
+    "selection_alias": "Currently Use Smokeless Tobacco",
+    "compute_alias": "Currently Use Smokeless Tobacco",
+    "recoded_levels": {
+      "0": "0 DAYS",
+      "1": ["10 TO 19 DAYS", "ALL 30 DAYS", "1 OR 2 DAYS", "20 TO 29 DAYS", "3 TO 5 DAYS", "6 TO 9 DAYS"]
+    },
+    "parent": "q38",
+    "value_counts": {
+      "0": 60246,
+      "1": 2192
+    },
+    "value_percents": {
+      "0": 96.5,
+      "1": 3.5
+    }
+  },
+  "qn39_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Currently smoked cigars",
+    "year_min": 1999,
+    "year_max": 2023,
+    "year_count": 13,
+    "title": "Current Cigar Use Among US High School Students",
+    "selection_alias": "Currently Smoke Cigars",
+    "compute_alias": "Currently Smoke Cigars",
+    "recoded_levels": {
+      "0": "0 DAYS",
+      "1": ["3 TO 5 DAYS", "6 TO 9 DAYS", "1 OR 2 DAYS", "20 TO 29 DAYS", "ALL 30 DAYS", "10 TO 19 DAYS"]
+    },
+    "parent": "q39",
+    "value_counts": {
+      "0": 170313,
+      "1": 21069
+    },
+    "value_percents": {
+      "0": 89,
+      "1": 11
+    }
+  },
+  "qn40_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Tried to quit using all tobacco products",
+    "year_min": 2017,
+    "year_max": 2023,
+    "year_count": 4,
+    "title": "Attempts to Quit Tobacco Use Among US High School Students",
+    "selection_alias": "Tried to Quit using all Tobacco Products",
+    "compute_alias": "Tried to Quit using all Tobacco Products",
+    "recoded_levels": {
+      "0": "NO",
+      "1": "YES"
+    },
+    "parent": "q40",
+    "value_counts": {
+      "0": 6225,
+      "1": 6172
+    },
+    "value_percents": {
+      "0": 50.2,
+      "1": 49.8
+    }
+  },
+  "qn41_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Had their first drink of alcohol before age 13 years",
+    "year_min": 1991,
+    "year_max": 2023,
+    "year_count": 17,
+    "title": "Initiation of Alcohol Use Before Age 13 Among US High School Students",
+    "selection_alias": "Had their First Drink of Alcohol Before Age 13 Years",
+    "compute_alias": "Had their First Drink of Alcohol Before Age 13 Years",
+    "recoded_levels": {
+      "0": ["13 OR 14 YEARS OLD", "NEVER DRANK ALCOHOL", "15 OR 16 YEARS OLD", "17 YEARS OLD OR OLDER"],
+      "1": ["8 YEARS OLD OR YOUNGER", "11 OR 12 YEARS OLD", "9 OR 10 YEARS OLD"]
+    },
+    "parent": "q41",
+    "value_counts": {
+      "0": 183247,
+      "1": 56781
+    },
+    "value_percents": {
+      "0": 76.3,
+      "1": 23.7
+    }
+  },
+  "qn42_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Currently drank alcohol",
+    "year_min": 1991,
+    "year_max": 2023,
+    "year_count": 17,
+    "title": "Current Alcohol Use Among US High School Students",
+    "selection_alias": "Currently Drink Alcohol",
+    "compute_alias": "Currently Drink Alcohol",
+    "recoded_levels": {
+      "0": "0 DAYS",
+      "1": ["1 OR 2 DAYS", "3 TO 5 DAYS", "ALL 30 DAYS", "6 TO 9 DAYS", "10 TO 19 DAYS", "20 TO 29 DAYS"]
+    },
+    "parent": "q42",
+    "value_counts": {
+      "0": 143960,
+      "1": 92739
+    },
+    "value_percents": {
+      "0": 60.8,
+      "1": 39.2
+    }
+  },
+  "qn43_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Currently were binge drinking",
+    "year_min": 2017,
+    "year_max": 2023,
+    "year_count": 4,
+    "title": "Current Binge Drinking Among US High School Students",
+    "selection_alias": "Currently Binge Drink Alcohol",
+    "compute_alias": "Currently Binge Drink Alcohol",
+    "recoded_levels": {
+      "0": "0 DAYS",
+      "1": ["3 TO 5 DAYS", "6 TO 9 DAYS", "2 DAYS", "1 DAY", "20 OR MORE DAYS", "10 TO 19 DAYS"]
+    },
+    "parent": "q43",
+    "value_counts": {
+      "0": 47461,
+      "1": 6271
+    },
+    "value_percents": {
+      "0": 88.3,
+      "1": 11.7
+    }
+  },
+  "qn44_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Reported that the largest number of drinks they had in a row was 10 or more",
+    "year_min": 2013,
+    "year_max": 2023,
+    "year_count": 6,
+    "title": "Drank > 10 Alcoholic Drinks in a Row Among US High School Students",
+    "selection_alias": "Reported that the Largest Number of Drinks They Had in a Row Was 10 or more",
+    "compute_alias": "Reported that the Largest Number of Drinks They Had in a Row Was 10 or more",
+    "recoded_levels": {
+      "0": ["DID NOT DRINK IN PAST 30 DAYS", "4 DRINKS", "1 OR 2 DRINKS", "3 DRINKS", "8 OR 9 DRINKS", "5 DRINKS", "6 OR 7 DRINKS"],
+      "1": "10 OR MORE DRINKS"
+    },
+    "parent": "q44",
+    "value_counts": {
+      "0": 67145,
+      "1": 2560
+    },
+    "value_percents": {
+      "0": 96.3,
+      "1": 3.7
+    }
+  },
+  "qn45_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Usually got the alcohol they drank by someone giving it to them",
+    "year_min": 2007,
+    "year_max": 2023,
+    "year_count": 9,
+    "title": "Source of Alcohol Among US High School Students",
+    "selection_alias": "Usually Got the Alcohol They Drank by Someone Giving it to Them",
+    "compute_alias": "Usually Got the Alcohol They Drank by Someone Giving it to Them",
+    "recoded_levels": {
+      "0": ["BOUGHT IN RESTAURANT", "TOOK FROM STORE/FAMILY", "I GAVE SOMEONE MONEY TO BUY", "SOME OTHER WAY", "BOUGHT IN STORE", "BOUGHT AT PUBLIC EVENT"],
+      "1": "SOMEONE GAVE IT TO ME"
+    },
+    "parent": "q45",
+    "value_counts": {
+      "0": 21396,
+      "1": 15125
+    },
+    "value_percents": {
+      "0": 58.6,
+      "1": 41.4
+    }
+  },
+  "qn46_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Ever used marijuana",
+    "year_min": 1991,
+    "year_max": 2023,
+    "year_count": 17,
+    "title": "Marijuana Use Among US High School Students",
+    "selection_alias": "Ever Used Marijuana",
+    "compute_alias": "Ever Used Marijuana",
+    "recoded_levels": {
+      "0": "0 TIMES",
+      "1": ["20 TO 39 TIMES", "100 OR MORE TIMES", "3 TO 9 TIMES", "10 TO 19 TIMES", "1 OR 2 TIMES", "40 TO 99 TIMES"]
+    },
+    "parent": "q46",
+    "value_counts": {
+      "0": 147978,
+      "1": 93248
+    },
+    "value_percents": {
+      "0": 61.3,
+      "1": 38.7
+    }
+  },
+  "qn47_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Tried marijuana for the first time before age 13 years",
+    "year_min": 1991,
+    "year_max": 2023,
+    "year_count": 17,
+    "title": "Initiation of Marijuana Use Before Age 13 Among US High School Students",
+    "selection_alias": "Tried Marijuana for the First Time Before Age 13 Years",
+    "compute_alias": "Tried Marijuana for the First Time Before Age 13 Years",
+    "recoded_levels": {
+      "0": ["NEVER TRIED MARIJUANA", "13 OR 14 YEARS OLD", "15 OR 16 YEARS OLD", "17 YEARS OLD OR OLDER"],
+      "1": ["9 OR 10 YEARS OLD", "8 YEARS OLD OR YOUNGER", "11 OR 12 YEARS OLD"]
+    },
+    "parent": "q47",
+    "value_counts": {
+      "0": 228243,
+      "1": 20671
+    },
+    "value_percents": {
+      "0": 91.7,
+      "1": 8.3
+    }
+  },
+  "qn48_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Currently used marijuana",
+    "year_min": 1991,
+    "year_max": 2023,
+    "year_count": 17,
+    "title": "Current Marijuana Use Among US High School Students",
+    "selection_alias": "Currently Use Marijuana",
+    "compute_alias": "Currently Use Marijuana",
+    "recoded_levels": {
+      "0": "0 TIMES",
+      "1": ["20 TO 39 TIMES", "10 TO 19 TIMES", "40 OR MORE TIMES", "3 TO 9 TIMES", "1 OR 2 TIMES"]
+    },
+    "parent": "q48",
+    "value_counts": {
+      "0": 196934,
+      "1": 52364
+    },
+    "value_percents": {
+      "0": 79,
+      "1": 21
+    }
+  },
+  "qn49_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Ever took prescription pain medicine without a doctor's prescription or differently than how a doctor told them to use it",
+    "year_min": 2017,
+    "year_max": 2023,
+    "year_count": 4,
+    "title": "Prescription Pain Medicine Use Among US High School Students",
+    "selection_alias": "Ever Took Prescription Pain Medicine without a Doctor's Prescription",
+    "compute_alias": "Ever Took Prescription Pain Medicine without a Doctor's Prescription",
+    "recoded_levels": {
+      "0": "0 TIMES",
+      "1": ["3 TO 9 TIMES", "1 OR 2 TIMES", "40 OR MORE TIMES", "10 TO 19 TIMES", "20 TO 39 TIMES"]
+    },
+    "parent": "q49",
+    "value_counts": {
+      "0": 55418,
+      "1": 8460
+    },
+    "value_percents": {
+      "0": 86.8,
+      "1": 13.2
+    }
+  },
+  "qn50_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Ever used cocaine",
+    "year_min": 1991,
+    "year_max": 2023,
+    "year_count": 17,
+    "title": "Cocaine Use Among US High School Students",
+    "selection_alias": "Ever Used Cocaine",
+    "compute_alias": "Ever Used Cocaine",
+    "recoded_levels": {
+      "0": "0 TIMES",
+      "1": ["1 OR 2 TIMES", "40 OR MORE TIMES", "20 TO 39 TIMES", "10 TO 19 TIMES", "3 TO 9 TIMES"]
+    },
+    "parent": "q50",
+    "value_counts": {
+      "0": 226641,
+      "1": 16316
+    },
+    "value_percents": {
+      "0": 93.3,
+      "1": 6.7
+    }
+  },
+  "qn51_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Ever used inhalants",
+    "year_min": 1995,
+    "year_max": 2023,
+    "year_count": 15,
+    "title": "Inhalant Use Among US High School Students",
+    "selection_alias": "Ever Used Inhalants",
+    "compute_alias": "Ever Used Inhalants",
+    "recoded_levels": {
+      "0": "0 TIMES",
+      "1": ["1 OR 2 TIMES", "40 OR MORE TIMES", "3 TO 9 TIMES", "10 TO 19 TIMES", "20 TO 39 TIMES"]
+    },
+    "parent": "q51",
+    "value_counts": {
+      "0": 182047,
+      "1": 21774
+    },
+    "value_percents": {
+      "0": 89.3,
+      "1": 10.7
+    }
+  },
+  "qn52_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Ever used heroin",
+    "year_min": 1999,
+    "year_max": 2023,
+    "year_count": 13,
+    "title": "Heroin Use Among US High School Students",
+    "selection_alias": "Ever Used Heroin",
+    "compute_alias": "Ever Used Heroin",
+    "recoded_levels": {
+      "0": "0 TIMES",
+      "1": ["1 OR 2 TIMES", "10 TO 19 TIMES", "40 OR MORE TIMES", "20 TO 39 TIMES", "3 TO 9 TIMES"]
+    },
+    "parent": "q52",
+    "value_counts": {
+      "0": 188562,
+      "1": 4488
+    },
+    "value_percents": {
+      "0": 97.7,
+      "1": 2.3
+    }
+  },
+  "qn53_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Ever used methamphetamines",
+    "year_min": 1999,
+    "year_max": 2023,
+    "year_count": 13,
+    "title": "Methamphetamine Use Among US High School Students",
+    "selection_alias": "Ever Used Methamphetamines",
+    "compute_alias": "Ever Used Methamphetamines",
+    "recoded_levels": {
+      "0": "0 TIMES",
+      "1": ["3 TO 9 TIMES", "20 TO 39 TIMES", "40 OR MORE TIMES", "1 OR 2 TIMES", "10 TO 19 TIMES"]
+    },
+    "parent": "q53",
+    "value_counts": {
+      "0": 185502,
+      "1": 8355
+    },
+    "value_percents": {
+      "0": 95.7,
+      "1": 4.3
+    }
+  },
+  "qn54_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Ever used ecstasy",
+    "year_min": 2001,
+    "year_max": 2023,
+    "year_count": 12,
+    "title": "Ecstasy Use Among US High School Students",
+    "selection_alias": "Ever Used Ecstasy",
+    "compute_alias": "Ever Used Ecstasy",
+    "recoded_levels": {
+      "0": "0 TIMES",
+      "1": ["3 TO 9 TIMES", "40 OR MORE TIMES", "1 OR 2 TIMES", "20 TO 39 TIMES", "10 TO 19 TIMES"]
+    },
+    "parent": "q54",
+    "value_counts": {
+      "0": 158444,
+      "1": 10546
+    },
+    "value_percents": {
+      "0": 93.8,
+      "1": 6.2
+    }
+  },
+  "qn55_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Ever injected any illegal drug",
+    "year_min": 1995,
+    "year_max": 2023,
+    "year_count": 15,
+    "title": "Illegal Injected Drug Use Among US High School Students",
+    "selection_alias": "Ever Injected any Illegal Drug",
+    "compute_alias": "Ever Injected any Illegal Drug",
+    "recoded_levels": {
+      "0": "0 TIMES",
+      "1": ["2 OR MORE TIMES", "1 TIME"]
+    },
+    "parent": "q55",
+    "value_counts": {
+      "0": 205970,
+      "1": 4184
+    },
+    "value_percents": {
+      "0": 98,
+      "1": 2
+    }
+  },
+  "qn56_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Ever had sexual intercourse",
+    "year_min": 1991,
+    "year_max": 2023,
+    "year_count": 17,
+    "title": "Sexual Intercourse Among US High School Students",
+    "selection_alias": "Ever Had Sexual Intercourse",
+    "compute_alias": "Ever Had Sexual Intercourse",
+    "recoded_levels": {
+      "0": "NO",
+      "1": "YES"
+    },
+    "parent": "q56",
+    "value_counts": {
+      "0": 117842,
+      "1": 110808
+    },
+    "value_percents": {
+      "0": 51.5,
+      "1": 48.5
+    }
+  },
+  "qn57_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Had sexual intercourse for the first time before age 13 years",
+    "year_min": 1991,
+    "year_max": 2023,
+    "year_count": 17,
+    "title": "Sex Before Age 13 Among US High School Students",
+    "selection_alias": "Had Sexual Intercourse for the First Time Before Age 13 Years",
+    "compute_alias": "Had Sexual Intercourse for the First Time Before Age 13 Years",
+    "recoded_levels": {
+      "0": ["14 YEARS OLD", "NEVER HAD SEX", "13 YEARS OLD", "15 YEARS OLD", "16 YEARS OLD", "17 YEARS OLD OR OLDER"],
+      "1": ["11 YEARS OLD OR YOUNGER", "12 YEARS OLD"]
+    },
+    "parent": "q57",
+    "value_counts": {
+      "0": 217586,
+      "1": 17506
+    },
+    "value_percents": {
+      "0": 92.6,
+      "1": 7.4
+    }
+  },
+  "qn58_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Had sexual intercourse with four or more persons during their life",
+    "year_min": 1991,
+    "year_max": 2023,
+    "year_count": 17,
+    "title": "Number of Sex Partners Among US High School Students",
+    "selection_alias": "Had Sexual Intercourse with Four or more Persons During their Life",
+    "compute_alias": "Had Sexual Intercourse with Four or more Persons During their Life",
+    "recoded_levels": {
+      "0": ["1 PERSON", "3 PEOPLE", "NEVER HAD SEX", "2 PEOPLE"],
+      "1": ["6 OR MORE PEOPLE", "4 PEOPLE", "5 PEOPLE"]
+    },
+    "parent": "q58",
+    "value_counts": {
+      "0": 197453,
+      "1": 36095
+    },
+    "value_percents": {
+      "0": 84.5,
+      "1": 15.5
+    }
+  },
+  "qn59_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Were currently sexually active",
+    "year_min": 1991,
+    "year_max": 2023,
+    "year_count": 17,
+    "title": "Current Sexual Activity Among US High School Students",
+    "selection_alias": "Currently Sexually Active",
+    "compute_alias": "Currently Sexually Active",
+    "recoded_levels": {
+      "0": ["NONE DURING PAST 3 MONTHS", "NEVER HAD SEX"],
+      "1": ["2 PEOPLE", "6 OR MORE PEOPLE", "1 PERSON", "3 PEOPLE", "5 PEOPLE", "4 PEOPLE"]
+    },
+    "parent": "q59",
+    "value_counts": {
+      "0": 153338,
+      "1": 80974
+    },
+    "value_percents": {
+      "0": 65.4,
+      "1": 34.6
+    }
+  },
+  "qn60_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Drank alcohol or used drugs before last sexual intercourse",
+    "year_min": 1991,
+    "year_max": 2023,
+    "year_count": 17,
+    "title": "Alcohol or Drug Use Before Sex Among US High School Students",
+    "selection_alias": "Drank Alcohol or Used Drugs Before Last Sexual Intercourse",
+    "compute_alias": "Drank Alcohol or Used Drugs Before Last Sexual Intercourse",
+    "recoded_levels": {
+      "0": "NO",
+      "1": "YES"
+    },
+    "parent": "q60",
+    "value_counts": {
+      "0": 62101,
+      "1": 17291
+    },
+    "value_percents": {
+      "0": 78.2,
+      "1": 21.8
+    }
+  },
+  "qn61_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Used a condom during last sexual intercourse",
+    "year_min": 1991,
+    "year_max": 2023,
+    "year_count": 17,
+    "title": "Condom Use Among US High School Students",
+    "selection_alias": "Used a Condom During Last Sexual Intercourse",
+    "compute_alias": "Used a Condom During Last Sexual Intercourse",
+    "recoded_levels": {
+      "0": "NO",
+      "1": "YES"
+    },
+    "parent": "q61",
+    "value_counts": {
+      "0": 34441,
+      "1": 44970
+    },
+    "value_percents": {
+      "0": 43.4,
+      "1": 56.6
+    }
+  },
+  "qn62_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Used birth control pills before last sexual intercourse with opposite-sex partner",
+    "year_min": 2021,
+    "year_max": 2023,
+    "year_count": 2,
+    "title": "Birth Control Pill Use Among US High School Students",
+    "selection_alias": "Used Birth Control Pills Before Last Sexual Intercourse",
+    "compute_alias": "Used Birth Control Pills Before Last Sexual Intercourse",
+    "recoded_levels": {
+      "0": ["CONDOMS", "SHOT/PATCH/BIRTH CONTROL RING", "NO BIRTH CONTROL", "WITHDRAWAL OR SOMETHING ELSE", "NOT SURE", "IUD OR IMPLANT"],
+      "1": "BIRTH CONTROL PILLS"
+    },
+    "parent": "q62",
+    "value_counts": {
+      "0": 5177,
+      "1": 1380
+    },
+    "value_percents": {
+      "0": 79,
+      "1": 21
+    }
+  },
+  "qn66_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Described themselves as slightly or very overweight",
+    "year_min": 1991,
+    "year_max": 2023,
+    "year_count": 17,
+    "title": "Perception of Weight Among US High School Students",
+    "selection_alias": "Described Themselves as Slightly or Very Overweight",
+    "compute_alias": "Described Themselves as Slightly or Very Overweight",
+    "recoded_levels": {
+      "0": ["ABOUT THE RIGHT WEIGHT", "VERY UNDERWEIGHT", "SLIGHTLY UNDERWEIGHT"],
+      "1": ["SLIGHTLY OVERWEIGHT", "VERY OVERWEIGHT"]
+    },
+    "parent": "q66",
+    "value_counts": {
+      "0": 164257,
+      "1": 72133
+    },
+    "value_percents": {
+      "0": 69.5,
+      "1": 30.5
+    }
+  },
+  "qn67_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Were trying to lose weight",
+    "year_min": 1991,
+    "year_max": 2023,
+    "year_count": 17,
+    "title": "Weight Loss Goals Among US High School Students",
+    "selection_alias": "Trying to Lose Weight",
+    "compute_alias": "Trying to Lose Weight",
+    "recoded_levels": {
+      "0": ["GAIN WEIGHT", "STAY THE SAME WEIGHT", "NOT TRYING TO DO ANYTHING"],
+      "1": "LOSE WEIGHT"
+    },
+    "parent": "q67",
+    "value_counts": {
+      "0": 127865,
+      "1": 102540
+    },
+    "value_percents": {
+      "0": 55.5,
+      "1": 44.5
+    }
+  },
+  "qn68_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Did not drink fruit juice",
+    "year_min": 1999,
+    "year_max": 2023,
+    "year_count": 13,
+    "title": "No Fruit Juice Drinking Among US High School Students",
+    "selection_alias": "Did not Drink Fruit Juice",
+    "compute_alias": "Did not Drink Fruit Juice",
+    "recoded_levels": {
+      "0": ["1 TO 3 TIMES", "2 TIMES PER DAY", "4 OR MORE TIMES PER DAY", "4 TO 6 TIMES", "1 TIME PER DAY", "3 TIMES PER DAY"],
+      "1": "DID NOT DRINK FRUIT JUICE"
+    },
+    "parent": "q68",
+    "value_counts": {
+      "0": 143581,
+      "1": 43369
+    },
+    "value_percents": {
+      "0": 76.8,
+      "1": 23.2
+    }
+  },
+  "qn69_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Did not eat fruit",
+    "year_min": 1999,
+    "year_max": 2023,
+    "year_count": 13,
+    "title": "No Fruit Eating Among US High School Students",
+    "selection_alias": "Did not Eat Fruit",
+    "compute_alias": "Did not Eat Fruit",
+    "recoded_levels": {
+      "0": ["1 TO 3 TIMES", "2 TIMES PER DAY", "4 TO 6 TIMES", "3 TIMES PER DAY", "4 OR MORE TIMES PER DAY", "1 TIME PER DAY"],
+      "1": "DID NOT EAT FRUIT"
+    },
+    "parent": "q69",
+    "value_counts": {
+      "0": 167189,
+      "1": 26170
+    },
+    "value_percents": {
+      "0": 86.5,
+      "1": 13.5
+    }
+  },
+  "qn70_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Did not eat salad",
+    "year_min": 1999,
+    "year_max": 2023,
+    "year_count": 13,
+    "title": "No Green Salad Eating Among US High School Students",
+    "selection_alias": "Did not Eat Green Salad",
+    "compute_alias": "Did not Eat Green Salad",
+    "recoded_levels": {
+      "0": ["1 TO 3 TIMES", "4 OR MORE TIMES PER DAY", "4 TO 6 TIMES", "3 TIMES PER DAY", "1 TIME PER DAY", "2 TIMES PER DAY"],
+      "1": "DID NOT EAT GREEN SALAD"
+    },
+    "parent": "q70",
+    "value_counts": {
+      "0": 109235,
+      "1": 74104
+    },
+    "value_percents": {
+      "0": 59.6,
+      "1": 40.4
+    }
+  },
+  "qn71_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Did not eat potatoes",
+    "year_min": 1999,
+    "year_max": 2023,
+    "year_count": 13,
+    "title": "No Potato Eating Among US High School Students",
+    "selection_alias": "Did not Eat Potatoes",
+    "compute_alias": "Did not Eat Potatoes",
+    "recoded_levels": {
+      "0": ["4 TO 6 TIMES", "1 TO 3 TIMES", "2 TIMES PER DAY", "1 TIME PER DAY", "4 OR MORE TIMES PER DAY", "3 TIMES PER DAY"],
+      "1": "DID NOT EAT POTATOES"
+    },
+    "parent": "q71",
+    "value_counts": {
+      "0": 119821,
+      "1": 62910
+    },
+    "value_percents": {
+      "0": 65.6,
+      "1": 34.4
+    }
+  },
+  "qn72_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Did not eat carrots",
+    "year_min": 1999,
+    "year_max": 2023,
+    "year_count": 13,
+    "title": "No Carrot Eating Among US High School Students",
+    "selection_alias": "Did not Eat Carrots",
+    "compute_alias": "Did not Eat Carrots",
+    "recoded_levels": {
+      "0": ["1 TO 3 TIMES", "4 TO 6 TIMES", "4 OR MORE TIMES PER DAY", "1 TIME PER DAY", "2 TIMES PER DAY", "3 TIMES PER DAY"],
+      "1": "DID NOT EAT CARROTS"
+    },
+    "parent": "q72",
+    "value_counts": {
+      "0": 81330,
+      "1": 101369
+    },
+    "value_percents": {
+      "0": 44.5,
+      "1": 55.5
+    }
+  },
+  "qn73_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Did not eat other vegetables",
+    "year_min": 1999,
+    "year_max": 2023,
+    "year_count": 13,
+    "title": "No Vegetable Eating Among US High School Students",
+    "selection_alias": "Did not Eat Other Vegetables",
+    "compute_alias": "Did not Eat Other Vegetables",
+    "recoded_levels": {
+      "0": ["4 TO 6 TIMES", "1 TIME PER DAY", "1 TO 3 TIMES", "2 TIMES PER DAY", "4 OR MORE TIMES PER DAY", "3 TIMES PER DAY"],
+      "1": "DID NOT EAT OTHER VEGETABLES"
+    },
+    "parent": "q73",
+    "value_counts": {
+      "0": 147167,
+      "1": 35335
+    },
+    "value_percents": {
+      "0": 80.6,
+      "1": 19.4
+    }
+  },
+  "qn74_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Did not drink a can, bottle, or glass of soda or pop",
+    "year_min": 2007,
+    "year_max": 2023,
+    "year_count": 9,
+    "title": "No Soda Drinking Among US High School Students",
+    "selection_alias": "Did not Drink Soda or Pop",
+    "compute_alias": "Did not Drink Soda or Pop",
+    "recoded_levels": {
+      "0": ["4 OR MORE TIMES PER DAY", "1 TO 3 TIMES", "1 TIME PER DAY", "3 TIMES PER DAY", "4 TO 6 TIMES", "2 TIMES PER DAY"],
+      "1": "DID NOT DRINK SODA OR POP"
+    },
+    "parent": "q74",
+    "value_counts": {
+      "0": 95878,
+      "1": 30716
+    },
+    "value_percents": {
+      "0": 75.7,
+      "1": 24.3
+    }
+  },
+  "qn75_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Did not eat breakfast",
+    "year_min": 2011,
+    "year_max": 2023,
+    "year_count": 7,
+    "title": "No Breakfast Eating Among US High School Students",
+    "selection_alias": "Did not Eat Breakfast",
+    "compute_alias": "Did not Eat Breakfast",
+    "recoded_levels": {
+      "0": ["4 DAYS", "7 DAYS", "3 DAYS", "1 DAY", "2 DAYS", "6 DAYS", "5 DAYS"],
+      "1": "0 DAYS"
+    },
+    "parent": "q75",
+    "value_counts": {
+      "0": 77384,
+      "1": 15665
+    },
+    "value_percents": {
+      "0": 83.2,
+      "1": 16.8
+    }
+  },
+  "qn76_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Were physically active at least 60 minutes per day on 5 or more days",
+    "year_min": 2011,
+    "year_max": 2023,
+    "year_count": 7,
+    "title": "Regular Physical Activity Among US High School Students",
+    "selection_alias": "Physically Active at Least 60 Minutes per Day on 5 or more Days",
+    "compute_alias": "Physically Active at Least 60 Minutes per Day on 5 or more Days",
+    "recoded_levels": {
+      "0": ["4 DAYS", "0 DAYS", "2 DAYS", "3 DAYS", "1 DAY"],
+      "1": ["7 DAYS", "6 DAYS", "5 DAYS"]
+    },
+    "parent": "q76",
+    "value_counts": {
+      "0": 57771,
+      "1": 48818
+    },
+    "value_percents": {
+      "0": 54.2,
+      "1": 45.8
+    }
+  },
+  "qn77_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Attended physical education (PE) classes on 1 or more days",
+    "year_min": 1991,
+    "year_max": 2023,
+    "year_count": 17,
+    "title": "Physical Education Attendance Among US High School Students",
+    "selection_alias": "Attended Physical Education Classes on 1 or more Days",
+    "compute_alias": "Attended Physical Education Classes on 1 or more Days",
+    "recoded_levels": {
+      "0": "0 DAYS",
+      "1": ["5 DAYS", "1 DAY", "3 DAYS", "4 DAYS", "2 DAYS"]
+    },
+    "parent": "q77",
+    "value_counts": {
+      "0": 117223,
+      "1": 114371
+    },
+    "value_percents": {
+      "0": 50.6,
+      "1": 49.4
+    }
+  },
+  "qn78_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Played on at least one sports team",
+    "year_min": 1999,
+    "year_max": 2023,
+    "year_count": 13,
+    "title": "Sports Team Participation Among US High School Students",
+    "selection_alias": "Played on at Least One Sports Team",
+    "compute_alias": "Played on at Least One Sports Team",
+    "recoded_levels": {
+      "0": "0 TEAMS",
+      "1": ["1 TEAM", "3 OR MORE TEAMS", "2 TEAMS"]
+    },
+    "parent": "q78",
+    "value_counts": {
+      "0": 78733,
+      "1": 92392
+    },
+    "value_percents": {
+      "0": 46,
+      "1": 54
+    }
+  },
+  "qn79_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Had a concussion from playing a sport or being physically active",
+    "year_min": 2017,
+    "year_max": 2023,
+    "year_count": 4,
+    "title": "Concussion from Sports Among US High School Students",
+    "selection_alias": "Had a Concussion from Playing a Sport or Being Physically Active",
+    "compute_alias": "Had a Concussion from Playing a Sport or Being Physically Active",
+    "recoded_levels": {
+      "0": "0 TIMES",
+      "1": ["2 TIMES", "1 TIME", "4 OR MORE TIMES", "3 TIMES"]
+    },
+    "parent": "q79",
+    "value_counts": {
+      "0": 48760,
+      "1": 8115
+    },
+    "value_percents": {
+      "0": 85.7,
+      "1": 14.3
+    }
+  },
+  "qn80_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Used social media several times a day",
+    "year_min": 2023,
+    "year_max": 2023,
+    "year_count": 1,
+    "title": "Social Media Use Among US High School Students",
+    "selection_alias": "Used Social Media Several Times a Day",
+    "compute_alias": "Used Social Media Several Times a Day",
+    "recoded_levels": {
+      "0": ["A FEW TIMES A WEEK", "ABOUT ONCE A DAY", "ABOUT ONCE A WEEK", "I DO NOT USE SOCIAL MEDIA", "A FEW TIMES A MONTH"],
+      "1": ["MORE THAN ONCE AN HOUR", "SEVERAL TIMES A DAY", "ABOUT ONCE AN HOUR"]
+    },
+    "parent": "q80",
+    "value_counts": {
+      "0": 3331,
+      "1": 11872
+    },
+    "value_percents": {
+      "0": 21.9,
+      "1": 78.1
+    }
+  },
+  "qn81_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Were ever tested for human immunodeficiency virus (HIV)",
+    "year_min": 2005,
+    "year_max": 2023,
+    "year_count": 10,
+    "title": "HIV Testing Among US High School Students",
+    "selection_alias": "Ever Tested for Human Immunodeficiency Virus",
+    "compute_alias": "Ever Tested for Human Immunodeficiency Virus",
+    "recoded_levels": {
+      "0": ["NO", "NOT SURE"],
+      "1": "YES"
+    },
+    "parent": "q81",
+    "value_counts": {
+      "0": 116746,
+      "1": 15215
+    },
+    "value_percents": {
+      "0": 88.5,
+      "1": 11.5
+    }
+  },
+  "qn82_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Were tested for a sexually transmitted disease (STD) other than HIV",
+    "year_min": 2019,
+    "year_max": 2023,
+    "year_count": 3,
+    "title": "STD Testing Among US High School Students",
+    "selection_alias": "Tested for a Sexually Transmitted Disease Other than HIV",
+    "compute_alias": "Tested for a Sexually Transmitted Disease Other than HIV",
+    "recoded_levels": {
+      "0": ["NO", "NOT SURE"],
+      "1": "YES"
+    },
+    "parent": "q82",
+    "value_counts": {
+      "0": 30367,
+      "1": 2192
+    },
+    "value_percents": {
+      "0": 93.3,
+      "1": 6.7
+    }
+  },
+  "qn83_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Saw a dentist",
+    "year_min": 2001,
+    "year_max": 2023,
+    "year_count": 7,
+    "title": "Oral Health Care Among US High School Students",
+    "selection_alias": "Saw a Dentist",
+    "compute_alias": "Saw a Dentist",
+    "recoded_levels": {
+      "0": ["BETWEEN 12 AND 24 MONTHS AGO", "MORE THAN 24 MONTHS AGO", "NEVER", "NOT SURE"],
+      "1": "DURING THE PAST 12 MONTHS"
+    },
+    "parent": "q83",
+    "value_counts": {
+      "0": 28612,
+      "1": 70855
+    },
+    "value_percents": {
+      "0": 28.8,
+      "1": 71.2
+    }
+  },
+  "qn84_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Reported that their mental health was most of the time or always not good",
+    "year_min": 2021,
+    "year_max": 2023,
+    "year_count": 2,
+    "title": "Poor Mental Health Among US High School Students",
+    "selection_alias": "Mental Health Was Most of the Time or Always not Good",
+    "compute_alias": "Mental Health Was Most of the Time or Always not Good",
+    "recoded_levels": {
+      "0": ["NEVER", "SOMETIMES", "RARELY"],
+      "1": ["ALWAYS", "MOST OF THE TIME"]
+    },
+    "parent": "q84",
+    "value_counts": {
+      "0": 19963,
+      "1": 8537
+    },
+    "value_percents": {
+      "0": 70,
+      "1": 30
+    }
+  },
+  "qn85_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Got 8 or more hours of sleep",
+    "year_min": 2007,
+    "year_max": 2023,
+    "year_count": 9,
+    "title": "Regular Sleep Among US High School Students",
+    "selection_alias": "Got 8 or more Hours of Sleep",
+    "compute_alias": "Got 8 or more Hours of Sleep",
+    "recoded_levels": {
+      "0": ["7 HOURS", "5 HOURS", "4 OR LESS HOURS", "6 HOURS"],
+      "1": ["8 HOURS", "10 OR MORE HOURS", "9 HOURS"]
+    },
+    "parent": "q85",
+    "value_counts": {
+      "0": 88826,
+      "1": 33149
+    },
+    "value_percents": {
+      "0": 72.8,
+      "1": 27.2
+    }
+  },
+  "qn86_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Experience unstable housing",
+    "year_min": 2021,
+    "year_max": 2023,
+    "year_count": 2,
+    "title": "Homelessness Among US High School Students",
+    "selection_alias": "Usually Did not Sleep in their Parent's or Guardian's Home",
+    "compute_alias": "Usually Did not Sleep in their Parent's or Guardian's Home",
+    "recoded_levels": {
+      "0": ["HOME OF PARENT OR GAURDIAN", "SOMEWHERE ELSE"],
+      "1": ["HOME OF OTHER PEOPLE", "MOTEL OR HOTEL", "SHELTER OR EMERGENCY HOUSING", "NO USUAL PLACE", "PUBLIC PLACE"]
+    },
+    "parent": "q86",
+    "value_counts": {
+      "0": 26471,
+      "1": 917
+    },
+    "value_percents": {
+      "0": 96.7,
+      "1": 3.3
+    }
+  },
+  "qn87_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Described their grades in school as mostly A's or B's",
+    "year_min": 2001,
+    "year_max": 2023,
+    "year_count": 7,
+    "title": "Grades in School Among US High School Students",
+    "selection_alias": "Grades in School are Mostly A's or B's",
+    "compute_alias": "Grades in School are Mostly A's or B's",
+    "recoded_levels": {
+      "0": ["MOSTLY C'S", "MOSTLY F'S", "NOT SURE", "MOSTLY D'S", "NONE OF THESE GRADES"],
+      "1": ["MOSTLY B'S", "MOSTLY A'S"]
+    },
+    "parent": "q87",
+    "value_counts": {
+      "0": 31043,
+      "1": 68461
+    },
+    "value_percents": {
+      "0": 31.2,
+      "1": 68.8
+    }
+  },
+  "qnfrcig_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Currently smoked cigarettes frequently",
+    "year_min": 1991,
+    "year_max": 2023,
+    "year_count": 17,
+    "title": "Frequent Cigarette Smoking Among US High School Students",
+    "selection_alias": "Currently Smoke Cigarettes Frequently",
+    "compute_alias": "Currently Smoke Cigarettes Frequently",
+    "recoded_levels": {
+      "0": ["0 DAYS", "1 OR 2 DAYS", "6 TO 9 DAYS", "3 TO 5 DAYS", "10 TO 19 DAYS"],
+      "1": ["ALL 30 DAYS", "20 TO 29 DAYS"]
+    },
+    "parent": "q33",
+    "value_counts": {
+      "0": 227225,
+      "1": 16421
+    },
+    "value_percents": {
+      "0": 93.3,
+      "1": 6.7
+    }
+  },
+  "qndaycig_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Currently smoked cigarettes daily",
+    "year_min": 1991,
+    "year_max": 2023,
+    "year_count": 17,
+    "title": "Daily Cigarette Smoking Among US High School Students",
+    "selection_alias": "Currently Smoke Cigarettes Daily",
+    "compute_alias": "Currently Smoke Cigarettes Daily",
+    "recoded_levels": {
+      "0": ["0 DAYS", "1 OR 2 DAYS", "6 TO 9 DAYS", "20 TO 29 DAYS", "3 TO 5 DAYS", "10 TO 19 DAYS"],
+      "1": "ALL 30 DAYS"
+    },
+    "parent": "q33",
+    "value_counts": {
+      "0": 231519,
+      "1": 12127
+    },
+    "value_percents": {
+      "0": 95,
+      "1": 5
+    }
+  },
+  "qnfrevp_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Currently smoked electronic vapor products frequently",
+    "year_min": 2015,
+    "year_max": 2023,
+    "year_count": 5,
+    "title": "Frequent Electronic Vapor Product Use Among US High School Students",
+    "selection_alias": "Currently Used Electronic Vapor Products Frequently",
+    "compute_alias": "Currently Used Electronic Vapor Products Frequently",
+    "recoded_levels": {
+      "0": ["0 DAYS", "1 OR 2 DAYS", "3 TO 5 DAYS", "6 TO 9 DAYS", "10 TO 19 DAYS"],
+      "1": ["20 TO 29 DAYS", "ALL 30 DAYS"]
+    },
+    "parent": "q36",
+    "value_counts": {
+      "0": 71217,
+      "1": 4880
+    },
+    "value_percents": {
+      "0": 93.6,
+      "1": 6.4
+    }
+  },
+  "qndayevp_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Currently smoked electronic vapor products daily",
+    "year_min": 2015,
+    "year_max": 2023,
+    "year_count": 5,
+    "title": "Daily Electronic Vapor Product Use Among US High School Students",
+    "selection_alias": "Currently Used Electronic Vapor Products Daily",
+    "compute_alias": "Currently Used Electronic Vapor Products Daily",
+    "recoded_levels": {
+      "0": ["0 DAYS", "1 OR 2 DAYS", "3 TO 5 DAYS", "6 TO 9 DAYS", "20 TO 29 DAYS", "10 TO 19 DAYS"],
+      "1": "ALL 30 DAYS"
+    },
+    "parent": "q36",
+    "value_counts": {
+      "0": 72547,
+      "1": 3550
+    },
+    "value_percents": {
+      "0": 95.3,
+      "1": 4.7
+    }
+  },
+  "qnfrskl_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Currently used smokeless tobacco frequently",
+    "year_min": 2017,
+    "year_max": 2023,
+    "year_count": 4,
+    "title": "Frequent Smokeless Tobacco Use Among US High School Students",
+    "selection_alias": "Currently Used Smokeless Tobacco Frequently",
+    "compute_alias": "Currently Used Smokeless Tobacco Frequently",
+    "recoded_levels": {
+      "0": ["10 TO 19 DAYS", "0 DAYS", "1 OR 2 DAYS", "3 TO 5 DAYS", "6 TO 9 DAYS"],
+      "1": ["ALL 30 DAYS", "20 TO 29 DAYS"]
+    },
+    "parent": "q38",
+    "value_counts": {
+      "0": 61793,
+      "1": 645
+    },
+    "value_percents": {
+      "0": 99,
+      "1": 1
+    }
+  },
+  "qndayskl_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Currently used smokeless tobacco daily",
+    "year_min": 2017,
+    "year_max": 2023,
+    "year_count": 4,
+    "title": "Daily Smokeless Tobacco Use Among US High School Students",
+    "selection_alias": "Currently Used Smokeless Tobacco Daily",
+    "compute_alias": "Currently Used Smokeless Tobacco Daily",
+    "recoded_levels": {
+      "0": ["10 TO 19 DAYS", "0 DAYS", "1 OR 2 DAYS", "20 TO 29 DAYS", "3 TO 5 DAYS", "6 TO 9 DAYS"],
+      "1": "ALL 30 DAYS"
+    },
+    "parent": "q38",
+    "value_counts": {
+      "0": 61891,
+      "1": 547
+    },
+    "value_percents": {
+      "0": 99.1,
+      "1": 0.9
+    }
+  },
+  "qnfrcgr_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Currently smoked cigars frequently",
+    "year_min": 1999,
+    "year_max": 2023,
+    "year_count": 13,
+    "title": "Frequent Cigar Smoking Among US High School Students",
+    "selection_alias": "Currently Smoked Cigars Frequently",
+    "compute_alias": "Currently Smoked Cigars Frequently",
+    "recoded_levels": {
+      "0": ["0 DAYS", "3 TO 5 DAYS", "6 TO 9 DAYS", "1 OR 2 DAYS", "10 TO 19 DAYS"],
+      "1": ["20 TO 29 DAYS", "ALL 30 DAYS"]
+    },
+    "parent": "q39",
+    "value_counts": {
+      "0": 188374,
+      "1": 3008
+    },
+    "value_percents": {
+      "0": 98.4,
+      "1": 1.6
+    }
+  },
+  "qndaycgr_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Currently smoked cigars daily",
+    "year_min": 1999,
+    "year_max": 2023,
+    "year_count": 13,
+    "title": "Daily Cigar Smoking Among US High School Students",
+    "selection_alias": "Currently Smoked Cigars Daily",
+    "compute_alias": "Currently Smoked Cigars Daily",
+    "recoded_levels": {
+      "0": ["0 DAYS", "3 TO 5 DAYS", "6 TO 9 DAYS", "1 OR 2 DAYS", "20 TO 29 DAYS", "10 TO 19 DAYS"],
+      "1": "ALL 30 DAYS"
+    },
+    "parent": "q39",
+    "value_counts": {
+      "0": 189170,
+      "1": 2212
+    },
+    "value_percents": {
+      "0": 98.8,
+      "1": 1.2
+    }
+  },
+  "qntb2_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Currently smoked cigarettes or cigars",
+    "year_min": 1999,
+    "year_max": 2023,
+    "year_count": 13,
+    "title": "Current Cigarette or Cigar Smoking Among US High School Students",
+    "selection_alias": "Currently Smoked Cigarettes or Cigars",
+    "compute_alias": "Currently Smoked Cigarettes or Cigars",
+    "parent": "q33; q39",
+    "value_counts": {
+      "0": 149921,
+      "1": 33936
+    },
+    "value_percents": {
+      "0": 81.5,
+      "1": 18.5
+    }
+  },
+  "qntb3_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Currently smoked cigarettes or cigars or used smokeless tobacco",
+    "year_min": 2017,
+    "year_max": 2023,
+    "year_count": 4,
+    "title": "Current Cigarette, Cigar or Smokeless Tobacco Use Among US High School Students",
+    "selection_alias": "Currently Smoked Cigarettes or Cigars or Used Smokeless Tobacco",
+    "compute_alias": "Currently Smoked Cigarettes or Cigars or Used Smokeless Tobacco",
+    "parent": "q33; q38; q39",
+    "value_counts": {
+      "0": 54564,
+      "1": 5197
+    },
+    "value_percents": {
+      "0": 91.3,
+      "1": 8.7
+    }
+  },
+  "qntb4_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Currently smoked cigarettes or cigars or used smokeless tobacco or electronic vapor products",
+    "year_min": 2017,
+    "year_max": 2023,
+    "year_count": 4,
+    "title": "Current Cigarette, Cigar, Smokeless Tobacco, or Electronic Vapor Product Use Among US High School Students",
+    "selection_alias": "Currently Smoked Cigarettes or Cigars or Used Smokeless Tobacco or Electronic Vapor Products",
+    "compute_alias": "Currently Smoked Cigarettes or Cigars or Used Smokeless Tobacco or Electronic Vapor Products",
+    "parent": "q33; q36; q38; q39",
+    "value_counts": {
+      "0": 44202,
+      "1": 11941
+    },
+    "value_percents": {
+      "0": 78.7,
+      "1": 21.3
+    }
+  },
+  "qntb5_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Currently smoked cigarettes or used electronic vapor products",
+    "year_min": 2015,
+    "year_max": 2023,
+    "year_count": 5,
+    "title": "Current Cigarette or Electronic Vapor Product Use Among US High School Students",
+    "selection_alias": "Currently Smoked Cigarettes or Used Electronic Vapor Products",
+    "compute_alias": "Currently Smoked Cigarettes or Used Electronic Vapor Products",
+    "parent": "q33; q36",
+    "value_counts": {
+      "0": 57771,
+      "1": 16132
+    },
+    "value_percents": {
+      "0": 78.2,
+      "1": 21.8
+    }
+  },
+  "qniudimp_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Used an IUD (such as Mirena or ParaGard) or implant (such as Implanon or Nexplanon) before last sexual intercourse with an opposite-sex partner",
+    "year_min": 2021,
+    "year_max": 2023,
+    "year_count": 2,
+    "title": "Use of IUD or Implant for Birth Control Among US High School Students",
+    "selection_alias": "Used an IUD or Implant Before Last Sexual Intercourse",
+    "compute_alias": "Used an IUD or Implant Before Last Sexual Intercourse",
+    "parent": "q59; q62",
+    "value_counts": {
+      "0": 5973,
+      "1": 584
+    },
+    "value_percents": {
+      "0": 91.1,
+      "1": 8.9
+    }
+  },
+  "qnothhpl_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Used birth control pills; an IUD (such as Mirena or ParaGard) or implant (such as Implanon or Nexplanon); or a shot (such as Depo-Provera), patch (such as OrthoEvra), or birth control ring (such as NuvaRing) before last sexual intercourse with an opposite-",
+    "year_min": 2021,
+    "year_max": 2023,
+    "year_count": 2,
+    "title": "Birth Control Use Among US High School Students",
+    "selection_alias": "Used Birth Control Pills; an IUD or Implant ; or a Shot , Patch , or Birth Control Ring Before Last Sexual Intercourse with an Opposite-Sex Partner",
+    "compute_alias": "Used Birth Control Pills; an IUD or Implant ; or a Shot , Patch , or Birth Control Ring Before Last Sexual Intercourse with an Opposite-Sex Partner",
+    "parent": "q59; q62",
+    "value_counts": {
+      "0": 4302,
+      "1": 2255
+    },
+    "value_percents": {
+      "0": 65.6,
+      "1": 34.4
+    }
+  },
+  "qnbcnone_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Did not use any method to prevent pregnancy during last sexual intercourse with an opposite-sex partner",
+    "year_min": 2021,
+    "year_max": 2023,
+    "year_count": 2,
+    "title": "No Pregnancy Prevention Methods Used Among US High School Students",
+    "selection_alias": "Did not Use any Method to Prevent Pregnancy During Last Sexual Intercourse with an Opposite-Sex Partner",
+    "compute_alias": "Did not Use any Method to Prevent Pregnancy During Last Sexual Intercourse with an Opposite-Sex Partner",
+    "parent": "q59; q62",
+    "value_counts": {
+      "0": 5697,
+      "1": 860
+    },
+    "value_percents": {
+      "0": 86.9,
+      "1": 13.1
+    }
+  },
+  "qnfr0_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Did not eat fruit or drink 100% fruit juices",
+    "year_min": 1999,
+    "year_max": 2023,
+    "year_count": 13,
+    "title": "No Fruit or Fruit Juice Consumption Among US High School Students",
+    "selection_alias": "Did not Eat Fruit or Drink 100% Fruit Juices",
+    "compute_alias": "Did not Eat Fruit or Drink 100% Fruit Juices",
+    "parent": "q68; q69",
+    "value_counts": {
+      "0": 174816,
+      "1": 11449
+    },
+    "value_percents": {
+      "0": 93.9,
+      "1": 6.1
+    }
+  },
+  "qnfr1_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Ate fruit or drank 100% fruit juices one or more times per day",
+    "year_min": 1999,
+    "year_max": 2023,
+    "year_count": 13,
+    "title": "Fruit and Fruit Juice Consumption One or More per Day Among US High School Students",
+    "selection_alias": "Ate Fruit or Drank 100% Fruit Juices One or more Times per Day",
+    "compute_alias": "Ate Fruit or Drank 100% Fruit Juices One or more Times per Day",
+    "parent": "q68; q69",
+    "value_counts": {
+      "0": 75079,
+      "1": 111186
+    },
+    "value_percents": {
+      "0": 40.3,
+      "1": 59.7
+    }
+  },
+  "qnfr2_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Ate fruit or drank 100% fruit juices two or more times per day",
+    "year_min": 1999,
+    "year_max": 2023,
+    "year_count": 13,
+    "title": "Fruit and Juice Consumption Two or More per Day Among US High School Students",
+    "selection_alias": "Ate Fruit or Drank 100% Fruit Juices Two or more Times per Day",
+    "compute_alias": "Ate Fruit or Drank 100% Fruit Juices Two or more Times per Day",
+    "parent": "q68; q69",
+    "value_counts": {
+      "0": 128295,
+      "1": 57970
+    },
+    "value_percents": {
+      "0": 68.9,
+      "1": 31.1
+    }
+  },
+  "qnveg0_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Did not eat vegetables",
+    "year_min": 1999,
+    "year_max": 2023,
+    "year_count": 13,
+    "title": "No Vegetable Consumption Among US High School Students",
+    "selection_alias": "Did not Eat Vegetables",
+    "compute_alias": "Did not Eat Vegetables",
+    "parent": "q70; q71; q72; q73",
+    "value_counts": {
+      "0": 167709,
+      "1": 13343
+    },
+    "value_percents": {
+      "0": 92.6,
+      "1": 7.4
+    }
+  },
+  "qnveg1_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Ate vegetables one or more times per day",
+    "year_min": 1999,
+    "year_max": 2023,
+    "year_count": 13,
+    "title": "Vegetable Consumption Once or More per Day Among US High School Students",
+    "selection_alias": "Ate Vegetables One or more Times per Day",
+    "compute_alias": "Ate Vegetables One or more Times per Day",
+    "parent": "q70; q71; q72; q73",
+    "value_counts": {
+      "0": 75042,
+      "1": 106010
+    },
+    "value_percents": {
+      "0": 41.4,
+      "1": 58.6
+    }
+  },
+  "qnveg2_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Ate vegetables two or more times per day",
+    "year_min": 1999,
+    "year_max": 2023,
+    "year_count": 13,
+    "title": "Vegetable Consumption Twice or More per Day Among US High School Students",
+    "selection_alias": "Ate Vegetables Two or more Times per Day",
+    "compute_alias": "Ate Vegetables Two or more Times per Day",
+    "parent": "q70; q71; q72; q73",
+    "value_counts": {
+      "0": 134026,
+      "1": 47026
+    },
+    "value_percents": {
+      "0": 74,
+      "1": 26
+    }
+  },
+  "qnveg3_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Ate vegetables three or more times per day",
+    "year_min": 1999,
+    "year_max": 2023,
+    "year_count": 13,
+    "title": "Vegetable Consumption Three Times or More per Day Among US High School Students",
+    "selection_alias": "Ate Vegetables Three or more Times per Day",
+    "compute_alias": "Ate Vegetables Three or more Times per Day",
+    "parent": "q70; q71; q72; q73",
+    "value_counts": {
+      "0": 156135,
+      "1": 24917
+    },
+    "value_percents": {
+      "0": 86.2,
+      "1": 13.8
+    }
+  },
+  "qnsoda1_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Drank a can, bottle, or glass of soda or pop one or more times per day",
+    "year_min": 2007,
+    "year_max": 2023,
+    "year_count": 9,
+    "title": "Soda or Pop Consumption Once or More per Day Among US High School Students",
+    "selection_alias": "Drank Soda or Pop One or more Times per Day",
+    "compute_alias": "Drank Soda or Pop One or more Times per Day",
+    "recoded_levels": {
+      "0": ["1 TO 3 TIMES", "DID NOT DRINK SODA OR POP", "4 TO 6 TIMES"],
+      "1": ["4 OR MORE TIMES PER DAY", "1 TIME PER DAY", "3 TIMES PER DAY", "2 TIMES PER DAY"]
+    },
+    "parent": "q74",
+    "value_counts": {
+      "0": 96980,
+      "1": 29614
+    },
+    "value_percents": {
+      "0": 76.6,
+      "1": 23.4
+    }
+  },
+  "qnsoda2_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Drank a can, bottle, or glass of soda or pop two or more times per day",
+    "year_min": 2007,
+    "year_max": 2023,
+    "year_count": 9,
+    "title": "Soda or Pop Consumption Twice or More per Day Among US High School Students",
+    "selection_alias": "Drank Soda or Pop Two or more Times per Day",
+    "compute_alias": "Drank Soda or Pop Two or more Times per Day",
+    "recoded_levels": {
+      "0": ["1 TO 3 TIMES", "1 TIME PER DAY", "DID NOT DRINK SODA OR POP", "4 TO 6 TIMES"],
+      "1": ["4 OR MORE TIMES PER DAY", "3 TIMES PER DAY", "2 TIMES PER DAY"]
+    },
+    "parent": "q74",
+    "value_counts": {
+      "0": 106651,
+      "1": 19943
+    },
+    "value_percents": {
+      "0": 84.2,
+      "1": 15.8
+    }
+  },
+  "qnbk7day_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Ate breakfast on all 7 days",
+    "year_min": 2011,
+    "year_max": 2023,
+    "year_count": 7,
+    "title": "Daily Breakfast Consumption Among US High School Students",
+    "selection_alias": "Ate Breakfast on all 7 Days",
+    "compute_alias": "Ate Breakfast on all 7 Days",
+    "recoded_levels": {
+      "0": ["4 DAYS", "3 DAYS", "0 DAYS", "1 DAY", "2 DAYS", "6 DAYS", "5 DAYS"],
+      "1": "7 DAYS"
+    },
+    "parent": "q75",
+    "value_counts": {
+      "0": 63634,
+      "1": 29415
+    },
+    "value_percents": {
+      "0": 68.4,
+      "1": 31.6
+    }
+  },
+  "qnpa0day_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Did not participate in at least 60 minutes of physical activity on at least 1 day",
+    "year_min": 2011,
+    "year_max": 2023,
+    "year_count": 7,
+    "title": "No Physical Activity Among US High School Students",
+    "selection_alias": "Did not Participate in at Least 60 Minutes of Physical Activity on at Least 1 Day",
+    "compute_alias": "Did not Participate in at Least 60 Minutes of Physical Activity on at Least 1 Day",
+    "recoded_levels": {
+      "0": ["7 DAYS", "4 DAYS", "6 DAYS", "5 DAYS", "2 DAYS", "3 DAYS", "1 DAY"],
+      "1": "0 DAYS"
+    },
+    "parent": "q76",
+    "value_counts": {
+      "0": 89612,
+      "1": 16977
+    },
+    "value_percents": {
+      "0": 84.1,
+      "1": 15.9
+    }
+  },
+  "qnpa7day_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Were physically active at least 60 minutes per day on all 7 days",
+    "year_min": 2011,
+    "year_max": 2023,
+    "year_count": 7,
+    "title": "Daily Physical Activity Among US High School Students",
+    "selection_alias": "Physically Active at Least 60 Minutes per Day on all 7 Days",
+    "compute_alias": "Physically Active at Least 60 Minutes per Day on all 7 Days",
+    "recoded_levels": {
+      "0": ["4 DAYS", "6 DAYS", "0 DAYS", "5 DAYS", "2 DAYS", "3 DAYS", "1 DAY"],
+      "1": "7 DAYS"
+    },
+    "parent": "q76",
+    "value_counts": {
+      "0": 79626,
+      "1": 26963
+    },
+    "value_percents": {
+      "0": 74.7,
+      "1": 25.3
+    }
+  },
+  "qndlype_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Attended physical education (PE) classes on all 5 days",
+    "year_min": 1991,
+    "year_max": 2023,
+    "year_count": 17,
+    "title": "Attendance of Physical Education Classes Among US High School Students",
+    "selection_alias": "Attended Physical Education Classes on all 5 Days",
+    "compute_alias": "Attended Physical Education Classes on all 5 Days",
+    "recoded_levels": {
+      "0": ["0 DAYS", "1 DAY", "3 DAYS", "4 DAYS", "2 DAYS"],
+      "1": "5 DAYS"
+    },
+    "parent": "q77",
+    "value_counts": {
+      "0": 160119,
+      "1": 71475
+    },
+    "value_percents": {
+      "0": 69.1,
+      "1": 30.9
+    }
+  },
+  "qnnodnt_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Never saw a dentist",
+    "year_min": 2001,
+    "year_max": 2023,
+    "year_count": 7,
+    "title": "No Dental Care Among US High School Students",
+    "selection_alias": "Never Saw a Dentist",
+    "compute_alias": "Never Saw a Dentist",
+    "recoded_levels": {
+      "0": ["BETWEEN 12 AND 24 MONTHS AGO", "DURING THE PAST 12 MONTHS", "MORE THAN 24 MONTHS AGO", "NOT SURE"],
+      "1": "NEVER"
+    },
+    "parent": "q83",
+    "value_counts": {
+      "0": 97109,
+      "1": 2358
+    },
+    "value_percents": {
+      "0": 97.6,
+      "1": 2.4
+    }
+  },
+  "qnbasicneedsace_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Reported that an adult in their household most of the time or always tried to make sure their basic needs were met",
+    "year_min": 2023,
+    "year_max": 2023,
+    "year_count": 1,
+    "title": "Basic Needs Met by an Adult in the Household Among US High School Students",
+    "selection_alias": "Adult in their Household Tried to Meet Theid Basic Needs",
+    "compute_alias": "Adult in their Household Tried to Meet Theid Basic Needs",
+    "recoded_levels": {
+      "0": ["NEVER", "SOMETIMES", "RARELY"],
+      "1": ["ALWAYS", "MOST OF THE TIME"]
+    },
+    "parent": "qbasicneedsace",
+    "value_counts": {
+      "0": 2175,
+      "1": 13575
+    },
+    "value_percents": {
+      "0": 13.8,
+      "1": 86.2
+    }
+  },
+  "qnclose2people_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Strongly agree or agree that they feel close to people at their school",
+    "year_min": 2021,
+    "year_max": 2023,
+    "year_count": 2,
+    "title": "Feeling Close to People at their School Among US High School Students",
+    "selection_alias": "Feel Close to People at their School",
+    "compute_alias": "Feel Close to People at their School",
+    "recoded_levels": {
+      "0": ["NOT SURE", "STRONGLY DISAGREE", "DISAGREE"],
+      "1": ["AGREE", "STRONGLY AGREE"]
+    },
+    "parent": "qclose2people",
+    "value_counts": {
+      "0": 8951,
+      "1": 11595
+    },
+    "value_percents": {
+      "0": 43.6,
+      "1": 56.4
+    }
+  },
+  "qnconsentsexcont_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Verbally asked for consent the last time they had sexual contact",
+    "year_min": 2023,
+    "year_max": 2023,
+    "year_count": 1,
+    "title": "Asked for Sexual Consent Among US High School Students",
+    "selection_alias": "Verbally Asked for Consent the Last Time They Had Sexual Contact",
+    "compute_alias": "Verbally Asked for Consent the Last Time They Had Sexual Contact",
+    "recoded_levels": {
+      "0": "NO",
+      "1": "YES"
+    },
+    "parent": "qconsentsexcont",
+    "value_counts": {
+      "0": 1075,
+      "1": 4417
+    },
+    "value_percents": {
+      "0": 19.6,
+      "1": 80.4
+    }
+  },
+  "qncurrentopioid_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Currently took prescription pain medicine without a doctor's prescription or differently than how a doctor told them to use it",
+    "year_min": 2019,
+    "year_max": 2023,
+    "year_count": 3,
+    "title": "Prescription Pain Medicine Abuse Among US High School Students",
+    "selection_alias": "Currently Took Prescription Pain Medicine without a Prescription",
+    "compute_alias": "Currently Took Prescription Pain Medicine without a Prescription",
+    "recoded_levels": {
+      "0": "0 TIMES",
+      "1": ["1 OR 2 TIMES", "3 TO 9 TIMES", "40 OR MORE TIMES", "10 TO 19 TIMES", "20 TO 39 TIMES"]
+    },
+    "parent": "qcurrentopioid",
+    "value_counts": {
+      "0": 28970,
+      "1": 1954
+    },
+    "value_percents": {
+      "0": 93.7,
+      "1": 6.3
+    }
+  },
+  "qnemoabuseace_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Reported that a parent or other adult in their home most of the time or always insulted them or put them down",
+    "year_min": 2023,
+    "year_max": 2023,
+    "year_count": 1,
+    "title": "Parental Emotional Abuse ACEs Among US High School Students",
+    "selection_alias": "Reported that a Parent or Other Adult in their Home Most of the Time or Always Insulted Them or Put Them Down",
+    "compute_alias": "Reported that a Parent or Other Adult in their Home Most of the Time or Always Insulted Them or Put Them Down",
+    "recoded_levels": {
+      "0": ["NEVER", "SOMETIMES", "RARELY"],
+      "1": ["ALWAYS", "MOST OF THE TIME"]
+    },
+    "parent": "qemoabuseace",
+    "value_counts": {
+      "0": 12129,
+      "1": 1791
+    },
+    "value_percents": {
+      "0": 87.1,
+      "1": 12.9
+    }
+  },
+  "qnhallucdrug_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Ever used hallucinogenic drugs",
+    "year_min": 2001,
+    "year_max": 2023,
+    "year_count": 12,
+    "title": "Hallucinogenic Drug Use Among US High School Students",
+    "selection_alias": "Hallucinogenic Drug Use",
+    "compute_alias": "Hallucinogenic Drug Use",
+    "recoded_levels": {
+      "0": "0 TIMES",
+      "1": ["3 TO 9 TIMES", "20 TO 39 TIMES", "40 OR MORE TIMES", "1 OR 2 TIMES", "10 TO 19 TIMES"]
+    },
+    "parent": "qhallucdrug",
+    "value_counts": {
+      "0": 128980,
+      "1": 10785
+    },
+    "value_percents": {
+      "0": 92.3,
+      "1": 7.7
+    }
+  },
+  "qnillict_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Ever used select illicit drugs",
+    "year_min": 2001,
+    "year_max": 2023,
+    "year_count": 12,
+    "title": "Illicit Drug Use Among US High School Students",
+    "selection_alias": "Ever Used Select Illicit Drugs",
+    "compute_alias": "Ever Used Select Illicit Drugs",
+    "recoded_levels": {
+      "0": "0 TIMES",
+      "1": ["3 TO 9 TIMES", "0 TIMES", "20 TO 39 TIMES", "40 OR MORE TIMES", "1 OR 2 TIMES", "10 TO 19 TIMES"]
+    },
+    "parent": "qhallucdrug",
+    "value_counts": {
+      "0": 113940,
+      "1": 24412
+    },
+    "value_percents": {
+      "0": 82.4,
+      "1": 17.6
+    }
+  },
+  "qnincarparentace_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Have ever been separated from a parent or guardian because they went to jail, prison, or a detention center",
+    "year_min": 2023,
+    "year_max": 2023,
+    "year_count": 1,
+    "title": "Parent/Guardian Ever Incarcerated Among US High School Students",
+    "selection_alias": "Have Ever Been Separated from a Parent or Guardian Because They Went to Jail, Prison, or a Detention Center",
+    "compute_alias": "Have Ever Been Separated from a Parent or Guardian Because They Went to Jail, Prison, or a Detention Center",
+    "recoded_levels": {
+      "0": "NO",
+      "1": "YES"
+    },
+    "parent": "qincarparentace",
+    "value_counts": {
+      "0": 10982,
+      "1": 2360
+    },
+    "value_percents": {
+      "0": 82.3,
+      "1": 17.7
+    }
+  },
+  "qnintviolenceace_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Reported that their parents or other adults in their home most of the time or always slapped, hit, kicked, punched, or beat each other up",
+    "year_min": 2023,
+    "year_max": 2023,
+    "year_count": 1,
+    "title": "Intimate Partner Violence Between Adults in Home Among US High School Students",
+    "selection_alias": "Reported that their Parents or Other Adults in their Home Most of the Time or Always Slapped, Hit, Kicked, Punched, or Beat Each Other Up",
+    "compute_alias": "Reported that their Parents or Other Adults in their Home Most of the Time or Always Slapped, Hit, Kicked, Punched, or Beat Each Other Up",
+    "recoded_levels": {
+      "0": ["NEVER", "SOMETIMES", "RARELY"],
+      "1": ["ALWAYS", "MOST OF THE TIME"]
+    },
+    "parent": "qintviolenceace",
+    "value_counts": {
+      "0": 13396,
+      "1": 357
+    },
+    "value_percents": {
+      "0": 97.4,
+      "1": 2.6
+    }
+  },
+  "qnlivedwabuseace_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Ever lived with a parent or guardian who was having a problem with alcohol or drug use",
+    "year_min": 2023,
+    "year_max": 2023,
+    "year_count": 1,
+    "title": "Lived with Parent/Guardian Engaging in Substance Abuse Among US High School Students",
+    "selection_alias": "Ever Lived with a Parent or Guardian Who Was Having a Problem with Alcohol or Drug Use",
+    "compute_alias": "Ever Lived with a Parent or Guardian Who Was Having a Problem with Alcohol or Drug Use",
+    "recoded_levels": {
+      "0": "NO",
+      "1": "YES"
+    },
+    "parent": "qlivedwabuseace",
+    "value_counts": {
+      "0": 9398,
+      "1": 3829
+    },
+    "value_percents": {
+      "0": 71.1,
+      "1": 28.9
+    }
+  },
+  "qnlivedwillace_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Ever lived with a parent or guardian who had severe depression, anxiety, or another mental illness, or was suicidal",
+    "year_min": 2023,
+    "year_max": 2023,
+    "year_count": 1,
+    "title": "Lived with Parent/Guardian with Mental Illness Among US High School Students",
+    "selection_alias": "Ever Lived with a Parent or Guardian Who Had Severe Depression, Anxiety, or Another Mental Illness, or Was Suicidal",
+    "compute_alias": "Ever Lived with a Parent or Guardian Who Had Severe Depression, Anxiety, or Another Mental Illness, or Was Suicidal",
+    "recoded_levels": {
+      "0": "NO",
+      "1": "YES"
+    },
+    "parent": "qlivedwillace",
+    "value_counts": {
+      "0": 8999,
+      "1": 4306
+    },
+    "value_percents": {
+      "0": 67.6,
+      "1": 32.4
+    }
+  },
+  "qnmusclestrength_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Did exercises to strengthen or tone their muscles on three or more days",
+    "year_min": 1991,
+    "year_max": 2023,
+    "year_count": 14,
+    "title": "Muscle Strengthening Among US High School Students",
+    "selection_alias": "Did Exercises to Strengthen or Tone their Muscles on Three or more Days",
+    "compute_alias": "Did Exercises to Strengthen or Tone their Muscles on Three or more Days",
+    "recoded_levels": {
+      "0": ["1 DAY", "0 DAYS", "2 DAYS"],
+      "1": ["3 DAYS", "7 DAYS", "6 DAYS", "5 DAYS", "4 DAYS"]
+    },
+    "parent": "qmusclestrength",
+    "value_counts": {
+      "0": 87628,
+      "1": 85727
+    },
+    "value_percents": {
+      "0": 50.5,
+      "1": 49.5
+    }
+  },
+  "qnparentalmonitoring_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Reported that their parents or other adults in their family most of the time or always know where they are going or with whom they will be",
+    "year_min": 2021,
+    "year_max": 2023,
+    "year_count": 2,
+    "title": "Parental Monitoring Among US High School Students",
+    "selection_alias": "Parents or Other Adults in their Family Most of the Time or Always Know where They are Going or with Whom They will be",
+    "compute_alias": "Parents or Other Adults in their Family Most of the Time or Always Know where They are Going or with Whom They will be",
+    "recoded_levels": {
+      "0": ["SOMETIMES", "NEVER", "RARELY"],
+      "1": ["ALWAYS", "MOST OF THE TIME"]
+    },
+    "parent": "qparentalmonitoring",
+    "value_counts": {
+      "0": 3146,
+      "1": 16796
+    },
+    "value_percents": {
+      "0": 15.8,
+      "1": 84.2
+    }
+  },
+  "qnphyabuseace_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Reported that a parent or other adult in their home most of the time or always hit, beat, kicked, or physically hurt them in any way",
+    "year_min": 2023,
+    "year_max": 2023,
+    "year_count": 1,
+    "title": "Frequent Parental Physical Abuse Among US High School Students",
+    "selection_alias": "Reported that a Parent or Other Adult in their Home Most of the Time or Always Hit, Beat, Kicked, or Physically Hurt Them in any Way",
+    "compute_alias": "Reported that a Parent or Other Adult in their Home Most of the Time or Always Hit, Beat, Kicked, or Physically Hurt Them in any Way",
+    "recoded_levels": {
+      "0": ["NEVER", "RARELY", "SOMETIMES"],
+      "1": ["MOST OF THE TIME", "ALWAYS"]
+    },
+    "parent": "qphyabuseace",
+    "value_counts": {
+      "0": 13524,
+      "1": 393
+    },
+    "value_percents": {
+      "0": 97.2,
+      "1": 2.8
+    }
+  },
+  "qnsexabuseace_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Reported that an adult or person at least 5 years older than them ever made them do sexual things they did not want to do",
+    "year_min": 2023,
+    "year_max": 2023,
+    "year_count": 1,
+    "title": "Prevalence of Sexual Abuse by Adult or Older Person Among US High School Students",
+    "selection_alias": "Reported that an Adult or Person at Least 5 Years Older than Them Ever Made Them Do Sexual Things They Did not Want to Do",
+    "compute_alias": "Reported that an Adult or Person at Least 5 Years Older than Them Ever Made Them Do Sexual Things They Did not Want to Do",
+    "recoded_levels": {
+      "0": "NO",
+      "1": "YES"
+    },
+    "parent": "qsexabuseace",
+    "value_counts": {
+      "0": 12648,
+      "1": 1175
+    },
+    "value_percents": {
+      "0": 91.5,
+      "1": 8.5
+    }
+  },
+  "qnsportsdrink_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Did not drink a can, bottle, or glass of a sports drink",
+    "year_min": 2015,
+    "year_max": 2023,
+    "year_count": 5,
+    "title": "No Sports Drinks Consumed Among US High School Students",
+    "selection_alias": "Did not Drink Sports Drink",
+    "compute_alias": "Did not Drink Sports Drink",
+    "recoded_levels": {
+      "0": ["4 TO 6 TIMES", "4 OR MORE TIMES PER DAY", "1 TO 3 TIMES", "2 TIMES PER DAY", "1 TIME PER DAY", "3 TIMES PER DAY"],
+      "1": "I DID NOT DRINK"
+    },
+    "parent": "qsportsdrink",
+    "value_counts": {
+      "0": 28785,
+      "1": 23994
+    },
+    "value_percents": {
+      "0": 54.5,
+      "1": 45.5
+    }
+  },
+  "qnspdrk1_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Drank a can, bottle, or glass of a sports drink one or more times per day",
+    "year_min": 2015,
+    "year_max": 2023,
+    "year_count": 5,
+    "title": "Sports Drink Consumption One or More Times per Day Among US High School Students",
+    "selection_alias": "Drank a Sports Drink One or more Times per Day",
+    "compute_alias": "Drank a Sports Drink One or more Times per Day",
+    "recoded_levels": {
+      "0": ["4 TO 6 TIMES", "I DID NOT DRINK", "1 TO 3 TIMES"],
+      "1": ["4 OR MORE TIMES PER DAY", "2 TIMES PER DAY", "1 TIME PER DAY", "3 TIMES PER DAY"]
+    },
+    "parent": "qsportsdrink",
+    "value_counts": {
+      "0": 46022,
+      "1": 6757
+    },
+    "value_percents": {
+      "0": 87.2,
+      "1": 12.8
+    }
+  },
+  "qnspdrk2_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Drank a can, bottle, or glass of a sports drink two or more times per day",
+    "year_min": 2015,
+    "year_max": 2023,
+    "year_count": 5,
+    "title": "Sports Drink Consumption Two or More Times per Day Among US High School Students",
+    "selection_alias": "Drank a Sports Drink Two or more Times per Day",
+    "compute_alias": "Drank a Sports Drink Two or more Times per Day",
+    "recoded_levels": {
+      "0": ["4 TO 6 TIMES", "I DID NOT DRINK", "1 TO 3 TIMES", "1 TIME PER DAY"],
+      "1": ["4 OR MORE TIMES PER DAY", "2 TIMES PER DAY", "3 TIMES PER DAY"]
+    },
+    "parent": "qsportsdrink",
+    "value_counts": {
+      "0": 48733,
+      "1": 4046
+    },
+    "value_percents": {
+      "0": 92.3,
+      "1": 7.7
+    }
+  },
+  "qnsunburn_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Had a sunburn",
+    "year_min": 2015,
+    "year_max": 2023,
+    "year_count": 4,
+    "title": "Sunburn Among US High School Students",
+    "selection_alias": "Had a Sunburn",
+    "compute_alias": "Had a Sunburn",
+    "recoded_levels": {
+      "0": "0 TIMES",
+      "1": ["2 TIMES", "1 TIME", "3 TIMES", "5 OR MORE TIMES", "4 TIMES"]
+    },
+    "parent": "qsunburn",
+    "value_counts": {
+      "0": 19006,
+      "1": 22807
+    },
+    "value_percents": {
+      "0": 45.5,
+      "1": 54.5
+    }
+  },
+  "qntransgender_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Are transgender",
+    "year_min": 2023,
+    "year_max": 2023,
+    "year_count": 1,
+    "title": "Transgender Among US High School Students",
+    "selection_alias": "Are Transgender",
+    "compute_alias": "Are Transgender",
+    "recoded_levels": {
+      "0": ["NO", "NOT SURE IF I AM TRANSGENDER", "DON'T KNOW WHAT QUESTION IS ASKING"],
+      "1": "YES, I AM TRANSGENDER"
+    },
+    "parent": "qtransgender",
+    "value_counts": {
+      "0": 17689,
+      "1": 612
+    },
+    "value_percents": {
+      "0": 96.7,
+      "1": 3.3
+    }
+  },
+  "qnunfairlydisc_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Have been unfairly disciplined at school",
+    "year_min": 2023,
+    "year_max": 2023,
+    "year_count": 1,
+    "title": "Unfairly Disciplined at School Among US High School Students",
+    "selection_alias": "Have Been Unfairly Disciplined at School",
+    "compute_alias": "Have Been Unfairly Disciplined at School",
+    "recoded_levels": {
+      "0": "NO",
+      "1": "YES"
+    },
+    "parent": "qunfairlydisc",
+    "value_counts": {
+      "0": 8412,
+      "1": 2171
+    },
+    "value_percents": {
+      "0": 79.5,
+      "1": 20.5
+    }
+  },
+  "qnwater_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Did not drink a bottle or glass of plain water",
+    "year_min": 2015,
+    "year_max": 2023,
+    "year_count": 5,
+    "title": "No Plain Water Consumption Among US High School Students",
+    "selection_alias": "Did not Drink a Bottle or Glass of Plain Water",
+    "compute_alias": "Did not Drink a Bottle or Glass of Plain Water",
+    "recoded_levels": {
+      "0": ["4 OR MORE TIMES PER DAY", "4 TO 6 TIMES", "1 TO 3 TIMES", "3 TIMES PER DAY", "2 TIMES PER DAY", "1 TIME PER DAY"],
+      "1": "DID NOT DRINK WATER"
+    },
+    "parent": "qwater",
+    "value_counts": {
+      "0": 55930,
+      "1": 2313
+    },
+    "value_percents": {
+      "0": 96,
+      "1": 4
+    }
+  },
+  "qnwater1_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Drank a bottle or glass of plain water one or more times per day",
+    "year_min": 2015,
+    "year_max": 2023,
+    "year_count": 5,
+    "title": "Plain Water Consumption One or More Glasses per Day Among US High School Students",
+    "selection_alias": "Drank a Bottle or Glass of Plain Water One or more Times per Day",
+    "compute_alias": "Drank a Bottle or Glass of Plain Water One or more Times per Day",
+    "recoded_levels": {
+      "0": ["4 TO 6 TIMES", "1 TO 3 TIMES", "DID NOT DRINK WATER"],
+      "1": ["4 OR MORE TIMES PER DAY", "3 TIMES PER DAY", "2 TIMES PER DAY", "1 TIME PER DAY"]
+    },
+    "parent": "qwater",
+    "value_counts": {
+      "0": 14712,
+      "1": 43531
+    },
+    "value_percents": {
+      "0": 25.3,
+      "1": 74.7
+    }
+  },
+  "qnwater2_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Drank a bottle or glass of plain water two or more times per day",
+    "year_min": 2015,
+    "year_max": 2023,
+    "year_count": 5,
+    "title": "Plain Water Consumption Two or More Glasses per Day Among US High School Students",
+    "selection_alias": "Drank a Bottle or Glass of Plain Water Two or more Times per Day",
+    "compute_alias": "Drank a Bottle or Glass of Plain Water Two or more Times per Day",
+    "recoded_levels": {
+      "0": ["4 TO 6 TIMES", "1 TO 3 TIMES", "DID NOT DRINK WATER", "1 TIME PER DAY"],
+      "1": ["4 OR MORE TIMES PER DAY", "3 TIMES PER DAY", "2 TIMES PER DAY"]
+    },
+    "parent": "qwater",
+    "value_counts": {
+      "0": 19407,
+      "1": 38836
+    },
+    "value_percents": {
+      "0": 33.3,
+      "1": 66.7
+    }
+  },
+  "qnwater3_rec": {
+    "type": "binary",
+    "raw_recode": "recoded",
+    "outcome_demo": "outcome",
+    "label_original": "Drank a bottle or glass of plain water three or more times per day",
+    "year_min": 2015,
+    "year_max": 2023,
+    "year_count": 5,
+    "title": "Plain Water Consumption Three or More Glasses per Day Among US High School Students",
+    "selection_alias": "Drank a Bottle or Glass of Plain Water Three or more Times per Day",
+    "compute_alias": "Drank a Bottle or Glass of Plain Water Three or more Times per Day",
+    "recoded_levels": {
+      "0": ["4 TO 6 TIMES", "1 TO 3 TIMES", "2 TIMES PER DAY", "DID NOT DRINK WATER", "1 TIME PER DAY"],
+      "1": ["4 OR MORE TIMES PER DAY", "3 TIMES PER DAY"]
+    },
+    "parent": "qwater",
+    "value_counts": {
+      "0": 27999,
+      "1": 30244
+    },
+    "value_percents": {
+      "0": 48.1,
+      "1": 51.9
+    }
+  }
+}
