@@ -121,26 +121,36 @@ def _get_basic_categories(source: str) -> Dict[str, List[str]]:
 
 @app.get("/")
 async def root():
-    """Root endpoint with API information."""
+    """Root endpoint with API information - publicly accessible."""
     return {
         "message": "aCOMPUTE Statistical Analysis API",
         "version": "2.0.0",
         "status": "running",
+        "public_endpoint": True,
+        "deployment": "Vercel Production",
         "endpoints": {
             "POST /analyze": "Perform statistical analysis",
             "GET /dictionary": "Get variable dictionary",
             "GET /categories": "Get variable categories",
             "GET /sources": "Get available data sources",
-            "GET /health": "Health check"
+            "GET /health": "Health check",
+            "GET /ping": "Simple ping test"
         }
     }
 
+@app.get("/ping")
+async def ping():
+    """Simple ping endpoint - publicly accessible."""
+    return {"message": "pong", "timestamp": "2025-10-01", "status": "ok"}
+
 @app.get("/health")
 async def health_check():
-    """Health check endpoint."""
+    """Health check endpoint - publicly accessible."""
     return {
         "status": "healthy",
         "message": "aCOMPUTE API is running",
+        "version": "2.0.0",
+        "public_endpoint": True,
         "authentication": "API key verification active" if API_KEY else "No authentication",
         "storage": "Tigris enabled" if USE_TIGRIS else "Local files only"
     }
